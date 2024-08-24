@@ -15,9 +15,12 @@ const Header: React.FC = () => {
   const { links, cta, mobileMenu } = content.navbar;
 
   return (
-    <header className="bg-transparent mx-auto px-8 py-6 flex items-center justify-between md:justify-center">
-        <div className="flex flex-row items-center align-middle gap-1">
-            <img src={logo} alt={`${brand} Logo`} fetchPriority='high' className='w-8 h-8' />
+    <header className="max-w-7xl bg-transparent mx-auto px-8 py-5 flex items-center justify-between md:py-10">
+        <div className="flex flex-row items-center align-middle gap-1 md:w-40 pl-8">
+            <motion.img src={logo} alt={`${brand} Logo`} fetchPriority='high' className='w-8 h-8'
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: 'spring', stiffness: 200 }}
+            />
             <h1 className="text-white text-xl font-semibold">{brand}</h1>
         </div>
         <nav className="flex items-center pl-12 md:pl-20 gap-4 md:gap-12">
@@ -65,7 +68,7 @@ const Header: React.FC = () => {
         <AnimatePresence>
   {isOpen && (
     <motion.div
-      className="md:hidden mt-7 flex flex-col gap-2 absolute top-16 left-0 w-full bg-transparent items-center justify-center p-5"
+      className="md:hidden mt-7 flex flex-col gap-2 z-40 absolute top-16 left-0 w-full bg-black items-center justify-center p-5"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -75,7 +78,7 @@ const Header: React.FC = () => {
         <motion.a
             key={item.text}
             href={item.href}
-            className="block font-brico text-gray-300 hover:text-white px-3 py-2 items-center text-center"
+            className="block font-brico text-gray-300 hover:text-white px-3 py-2 bg-black items-center text-center"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
@@ -86,7 +89,7 @@ const Header: React.FC = () => {
         ))}
       <motion.a
         href={cta.href}
-        className="bg-transparent font-brico border border-gray-500 text-gray-300 px-4 py-2 rounded-lg flex flex-row items-center gap-1  group"
+        className="bg-black font-brico border border-gray-500 text-gray-300 px-4 py-2 rounded-lg flex flex-row items-center gap-1  group"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -10 }}
