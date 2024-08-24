@@ -6,6 +6,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --b1: 0 0% 13%;
+
+  /* Text variables */
+  --highlight-text: 91 100% 33%; /* Highlight text color */
+
    /* Button variables */
   --p: 43 100% 55%; /* Primary color */
   --pc: 180 7% 8%; /* Primary text color */
@@ -102,4 +108,32 @@ body {
 
 .btn-wide{
   width: 16rem;
+}
+
+
+.text-accent{
+  --tw-text-opacity:1;
+  color:hsl(var(--highlight-text) / var(--tw-text-opacity));
+}
+
+
+.avatar-group{
+  display: flex;
+  overflow: hidden;
+}
+.avatar{
+  position: relative;
+  display: inline-flex;
+}
+.avatar-group :where(.avatar){
+  overflow: hidden;
+  border-radius: 9999px;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--b1) / var(--tw-border-opacity));
+}
+.avatar img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
