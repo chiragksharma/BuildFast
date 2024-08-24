@@ -1,0 +1,58 @@
+{
+    "theme": {
+      "colors": {
+        "primary": "#3490dc",
+        "secondary": "#ffed4a",
+        "background": "#f8fafc"
+      },
+      "font": "Arial, sans-serif"
+    },
+    "logo": "/brand_logo.svg",
+    "brand": "BuildFast",
+    "content": {
+      "navbar": {
+        "links": [
+          { "text": "Pricing", "href": "#" },
+          { "text": "Reviews", "href": "#" },
+          { "text": "FAQ", "href": "#" },
+          { "text": "Contact", "href": "#" }
+        ],
+        "cta": {
+          "text": "Get Started",
+          "href": "#"
+        },
+        "mobileMenu": [
+            { "text": "Pricing", "href": "#" },
+            { "text": "Reviews", "href": "#" },
+            { "text": "FAQ", "href": "#" },
+            { "text": "Contact", "href": "#" }
+        ]
+      },
+      "hero": {
+        "heading": "Transform Your Business",
+        "description": "Our SaaS product helps you achieve more with less effort.",
+        "ctaText": "Get Started",
+        "ctaLink": "/get-started"
+      },
+      "features": [
+        {
+          "title": "Feature One",
+          "description": "Description of feature one."
+        },
+        {
+          "title": "Feature Two",
+          "description": "Description of feature two."
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "This product changed my life!",
+          "author": "Happy Customer"
+        }
+      ],
+      "contact": {
+        "heading": "Get in Touch",
+        "description": "We'd love to hear from you."
+      }
+    }
+  }
