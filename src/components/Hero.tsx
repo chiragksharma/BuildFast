@@ -16,7 +16,8 @@ const Hero: React.FC = () => {
                 </h1>
                 <p className="text-lg opacity-80 leading-relaxed">The NextJS boilerplate with all you need to build your SaaS product Landing page. Super easy to customize. </p>
                 <div className='space-y-4'>
-                    <button className='btn btn-primary group btn-wide plausible-event-name=Checkout' title='Go to BuildFast Chekout'>
+                    <button className='btn btn-primary group btn-wide text-base font-bold plausible-event-name=Checkout' title='Go to BuildFast Chekout'>
+                        <img src="/brand_logo_black.svg" alt="brand_logo_black" className='w-6 h-6 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' />
                         Get Started
                     </button>
                     <p className='text-sm flex justify-center items-center gap-2 md:text-sm'>
@@ -25,7 +26,7 @@ const Hero: React.FC = () => {
                 </div>
                 </div>
                 
-                <div className="relative max-md:-m-4 lg:w-full">
+                <div className="relative max-md:-m-4 lg:w-full -mt-24">
                     <img src="/Hero_image.png" alt="Hero Image" className="w-full h-auto " style={{color:'transparent'}} />
                 </div>
             </div>
