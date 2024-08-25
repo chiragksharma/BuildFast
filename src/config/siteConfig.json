@@ -29,10 +29,13 @@
         ]
       },
       "hero": {
-        "heading": "Transform Your Business",
-        "description": "Our SaaS product helps you achieve more with less effort.",
+        "heading": "Build your Landing page in hours, not days",
+        "highlightedText": "not days",
+        "description": "The NextJS boilerplate with all you need to build your SaaS product Landing page. Super easy to customize.",
         "ctaText": "Get Started",
-        "ctaLink": "/get-started"
+        "ctaLink": "/get-started",
+        "highlightTagColor": "#ffed4a",
+        "highlightTextColor": "#ffed4a"
       },
       "features": [
         {
