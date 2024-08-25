@@ -1,9 +1,14 @@
 {
     "theme": {
       "colors": {
-        "primary": "#3490dc",
+        "primary": "#F59E0B",
         "secondary": "#ffed4a",
         "background": "#f8fafc"
+      },
+      "text": {
+        "primary": "#333",
+        "secondary": "#666",
+        "highlight": "#78350F"
       },
       "font": "Arial, sans-serif"
     },
@@ -34,8 +39,21 @@
         "description": "The NextJS boilerplate with all you need to build your SaaS product Landing page. Super easy to customize.",
         "ctaText": "Get Started",
         "ctaLink": "/get-started",
+        "highlightedSmallText": "FREE",
+        "smallText": "for first 1000 customers",
         "highlightTagColor": "#ffed4a",
-        "highlightTextColor": "#ffed4a"
+        "highlightTextColor": "#ffed4a",
+        "images":{
+          "heroImage": "/Hero_image.png",
+          "avatars": [
+            "/avatars/avatar_1.png",
+            "/avatars/avatar_2.png",
+            "/avatars/avatar_3.png",
+            "/avatars/avatar_4.png",
+            "/avatars/avatar_5.png",
+            "/avatars/avatar_6.png"
+          ]
+        }
       },
       "features": [
         {
