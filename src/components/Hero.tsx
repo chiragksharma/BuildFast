@@ -6,7 +6,7 @@ import siteConfig from '@config/siteConfig.json';
 const Hero: React.FC = () => {
     const { hero } = siteConfig.content;
     const { theme } = siteConfig;
-    const { heading, description, ctaText, ctaLink,highlightedText,smallText,highlightedSmallText } = hero;
+    const { heading, description, ctaText, ctaLink,highlightedText,smallText,highlightedSmallText,avatar_text,bold_avatar_text } = hero;
     const {heroImage,avatars} = hero.images;
 
     // const parts = heading.split(new RegExp(`(${highlightedText})`, 'gi'));
@@ -81,7 +81,6 @@ const Hero: React.FC = () => {
                 </div>
                 <div className='flex flex-col md:flex-row justify-center align-center gap-3'>
                     <div className='-space-x-5 avatar-group justify-start overflow-hidden rounded-full '>
-                            
                             {avatars.map((avatar, index) => (
                                 <div className='avatar w-12 h-12 relative inline-flex'>
                                     <img key={index} src={avatar} alt={`Avatar ${index + 1}`} fetchPriority='high' width={400} height={400} decoding='async' style={{color:'transparent'}}  />
@@ -113,8 +112,8 @@ const Hero: React.FC = () => {
                             />
                         </div>
                         <div className='text-base '>
-                            <span className='font-semibold text-base'>100 </span>
-                            maker's build faster
+                            <span className='font-semibold text-base'>{bold_avatar_text} </span>
+                            {avatar_text}
                         </div>
                     </div>
                 </div>
