@@ -6,7 +6,7 @@ import siteConfig from '@config/siteConfig.json';
 
 
 const FeaturedIn: React.FC = () => {
-    const { title, logos } = siteConfig.content.featured;
+    const { logos } = siteConfig.content.featured;
 
     return (
         <section className='p-8 md:p-12 flex flex-wrap items-center justify-center gap-4 md:gap-8'>

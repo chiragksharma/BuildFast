@@ -105,6 +105,168 @@
       "contact": {
         "heading": "Get in Touch",
         "description": "We'd love to hear from you."
+      },
+      "featuresListicle": {
+        "quote": "const lunch time = '12:30 PM';",
+        "heading": "Supercharge your app instantly, launch faster, make $",
+        "description": "Login users, process payments and send emails at lightspeed. Spend your time building your startup, not integrating APIs. ShipFast provides you with the boilerplate code you need to launch, FAST.",
+        "features": [
+        {
+          "title": "Emails",
+          "details": {
+            "title": "Email Integration",
+            "items": [
+              "Setup SMTP",
+              "Transactional emails",
+              "Email templates",
+              "Time saved: 3 hours"
+            ],
+            "links": [
+              {
+                "text": "SendGrid",
+                "href": "https://sendgrid.com/"
+              },
+              {
+                "text": "Mailgun",
+                "href": "https://www.mailgun.com/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Payments",
+          "details": {
+            "title": "Payment Processing",
+            "items": [
+              "Stripe integration",
+              "Recurring billing",
+              "Refund handling",
+              "Time saved: 5 hours"
+            ],
+            "links": [
+              {
+                "text": "Stripe",
+                "href": "https://stripe.com/"
+              },
+              {
+                "text": "PayPal",
+                "href": "https://www.paypal.com/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Login",
+          "details": {
+            "title": "User authentication",
+            "items": [
+              "Magic links setup",
+              "Login with Google walkthrough",
+              "Save user in MongoDB/Supabase",
+              "Private/protected pages & API calls",
+              "Time saved: 4 hours"
+            ],
+            "links": [
+              {
+                "text": "NextAuth",
+                "href": "https://next-auth.js.org/"
+              },
+              {
+                "text": "Supabase",
+                "href": "https://supabase.com/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Database",
+          "details": {
+            "title": "Database Management",
+            "items": [
+              "Setup MongoDB",
+              "Database schema design",
+              "Data migration",
+              "Time saved: 6 hours"
+            ],
+            "links": [
+              {
+                "text": "MongoDB",
+                "href": "https://www.mongodb.com/"
+              },
+              {
+                "text": "PostgreSQL",
+                "href": "https://www.postgresql.org/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "SEO",
+          "details": {
+            "title": "Search Engine Optimization",
+            "items": [
+              "Meta tags setup",
+              "Sitemap generation",
+              "Analytics integration",
+              "Time saved: 2 hours"
+            ],
+            "links": [
+              {
+                "text": "Google Analytics",
+                "href": "https://analytics.google.com/"
+              },
+              {
+                "text": "Yoast SEO",
+                "href": "https://yoast.com/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Style",
+          "details": {
+            "title": "Styling and Theming",
+            "items": [
+              "CSS framework setup",
+              "Custom themes",
+              "Responsive design",
+              "Time saved: 4 hours"
+            ],
+            "links": [
+              {
+                "text": "Tailwind CSS",
+                "href": "https://tailwindcss.com/"
+              },
+              {
+                "text": "Bootstrap",
+                "href": "https://getbootstrap.com/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "More",
+          "details": {
+            "title": "Additional Features",
+            "items": [
+              "Feature toggles",
+              "A/B testing",
+              "User feedback",
+              "Time saved: 3 hours"
+            ],
+            "links": [
+              {
+                "text": "LaunchDarkly",
+                "href": "https://launchdarkly.com/"
+              },
+              {
+                "text": "Optimizely",
+                "href": "https://www.optimizely.com/"
+              }
+            ]
+          }
+        }
+      ]
       }
     }
   }
