@@ -3,6 +3,7 @@ import { Bricolage_Grotesque } from "next/font/google";
 import Header from "@components/Header";
 import "@styles/globals.css";
 import Head from "next/head";
+import Footer from "@components/Footer";
 
 const Bricolage = Bricolage_Grotesque({
     weight: ['400', '700'],
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={Bricolage.className}>
           <Header/>
           {children}
+          <Footer/>
         </body>
     </html>
   );

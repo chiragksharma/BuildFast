@@ -46,7 +46,12 @@
       ],
       "@config/*": [
         "config/*"
-      ]
+      ],
+      "@customTypes/*": [
+        "customTypes/*"
+      ],
+      
+
     },
   },
   "include": [

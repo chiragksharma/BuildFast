@@ -1,14 +1,16 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
+import Features from '@components/atoms/FeatureDetails';
 
 const FeaturesListicle: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
     const [toggleClicked, setToggleClicked] = useState<boolean>(false);
-    const { quote, heading, description, features } = siteConfig.content.featuresListicle;
+    const { quote, heading, description, features,automatic_timer } = siteConfig.content.featuresListicle;
 
     // Iterate over all the features and call the after every 5 seconds which means it should be a carousel of features changing after every 5 seconds
     useEffect(() => {
+        if(automatic_timer){
         const interval = setInterval(() => {
             if(!toggleClicked) {
                 setActiveIndex((prev) => {
@@ -21,7 +23,8 @@ const FeaturesListicle: React.FC = () => {
             }
         }, 5000);
         return () => clearInterval(interval);
-    }, [features.length,toggleClicked]);
+    }
+    }, [features.length,toggleClicked,automatic_timer]);
 
 
     const toggleAccordion = (index: number) => {
@@ -64,32 +67,11 @@ const FeaturesListicle: React.FC = () => {
                         ))}
                     </div>
 
-                    
-                    <div className="bg-base-200">
-                    <div className="max-w-3xl mx-auto flex flex-col md:flex-row justify-center md:justify-start md:items-center gap-12">
-                            {activeIndex !== null && (
-                                <div className="text-base-content/80 leading-relaxed space-y-4 px-12 md:px-0 py-12 max-w-xl animate-opacity">
-                                    <p className="font-medium text-base-content text-lg">{features[activeIndex].details.title}</p>
-                                    <ul className="space-y-1">
-                                        {features[activeIndex].details.items.map((item, idx) => (
-                                            <li key={idx} className="flex items-center gap-2">
-                                                {item}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <div className="pt-3 flex items-center gap-2 text-sm font-semibold">
-                                        {features[activeIndex].details.links.map((link, idx) => (
-                                            <span key={idx}>
-                                                <a className="link" href={link.href} target="_blank" rel="noopener noreferrer">{link.text}</a>
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
-                                <div className="hidden aspect-square max-md:w-full md:h-[28rem] bg-neutral md:order-first">
-                            </div>
-                        </div>
-                    </div>
+                    <Features
+                        features={features}
+                        activeIndex={activeIndex}
+                        toggleAccordion={toggleAccordion}
+                    />
                 </div>
 
             </div>
