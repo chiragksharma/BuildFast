@@ -20,9 +20,9 @@ const Hero: React.FC = () => {
 
 
     return (
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-20">
-                <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
-                <h1 className="text-4xl font-extrabold lg:text-6xl tracking-tight md:mb-4 flex flex-col gap-3 items-center lg:items-start">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-16">
+                <div className="flex flex-col gap-10 items-center justify-center text-center lg:text-left lg:items-start">
+                <h1 className="text-4xl font-extrabold lg:text-6xl tracking-tight md:mb-1 flex flex-col gap-3 items-center lg:items-start">
                         {/* Build your Landing page in <span className="relative inline-block">
                         <span className='relative whitespace-nowrap'>
                             hours, 
@@ -64,8 +64,8 @@ const Hero: React.FC = () => {
                 </h1>
                 <p className="text-lg opacity-80 leading-relaxed">{description}</p>
                 <div className='space-y-4'>
-                    <button className='btn btn-primary group btn-wide text-base font-bold plausible-event-name=Checkout' title='Go to BuildFast Chekout'>
-                        <img src="/brand_logo_black.svg" alt="brand_logo_black" className='w-6 h-6 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' />
+                    <button className='btn btn-primary group btn-wide text-xl font-extrabold plausible-event-name=Checkout' title='Go to BuildFast Chekout'>
+                        <img src="/brand_logo_black.svg" alt="brand_logo_black" className='w-7 h-7 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' />
                         {ctaText}
                     </button>
                     <p className='text-sm flex justify-center items-center gap-2 md:text-sm'>

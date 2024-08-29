@@ -7,6 +7,7 @@ import About from "@components/About";
 import Pricing from "@components/Pricing";
 import FAQ from "@components/FAQ";
 import CTA from "@components/CTA";
+import Testimonials11 from "@components/TestinomialGrid";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
         <FeaturesListicle />
         <About />
         <Pricing />
-        <FAQ/>
+        <Testimonials11 />
+        <FAQ/> 
         <CTA />
        
     </main>

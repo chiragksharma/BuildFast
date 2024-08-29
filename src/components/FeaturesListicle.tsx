@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import Features from '@components/atoms/FeatureDetails';
+import { At } from 'phosphor-react';
 
 const FeaturesListicle: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
@@ -58,6 +59,7 @@ const FeaturesListicle: React.FC = () => {
                                 onClick={() => toggleAccordion(index)}
                             >
                                 <span>
+                                    <At size={24} />
                                     {/* {activeIndex === index ?} */}
                                 </span>
                                 <span>

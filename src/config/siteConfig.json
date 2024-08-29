@@ -106,6 +106,7 @@
         "heading": "Get in Touch",
         "description": "We'd love to hear from you."
       },
+      
       "featuresListicle": {
         "quote": "const lunch time = '12:30 PM';",
         "heading": "Supercharge your app instantly, launch faster, make $",
@@ -114,6 +115,7 @@
         "features": [
         {
           "title": "Emails",
+          "icon" : "",
           "details": {
             "title": "Email Integration",
             "items": [
@@ -136,6 +138,7 @@
         },
         {
           "title": "Payments",
+          "icon" : "",
           "details": {
             "title": "Payment Processing",
             "items": [
@@ -158,6 +161,7 @@
         },
         {
           "title": "Login",
+          "icon" : "",
           "details": {
             "title": "User authentication",
             "items": [
@@ -181,6 +185,7 @@
         },
         {
           "title": "Database",
+          "icon" : "",
           "details": {
             "title": "Database Management",
             "items": [
@@ -203,6 +208,7 @@
         },
         {
           "title": "SEO",
+          "icon" : "",
           "details": {
             "title": "Search Engine Optimization",
             "items": [
@@ -225,6 +231,7 @@
         },
         {
           "title": "Style",
+          "icon" : "",
           "details": {
             "title": "Styling and Theming",
             "items": [
@@ -247,6 +254,7 @@
         },
         {
           "title": "More",
+          "icon"  : "",
           "details": {
             "title": "Additional Features",
             "items": [
@@ -268,6 +276,70 @@
           }
         }
       ]
+      },
+      "pricing":{
+        "sectionId": "pricing",
+        "backgroundColor": "bg-base-200",
+        "header": {
+          "title": "Pricing",
+          "titleClass": "font-medium text-primary mb-8",
+          "heading": "Save hours of repetitive code, ship fast, get profitable!",
+          "headingClass": "font-bold text-3xl lg:text-5xl tracking-tight mb-8 max-w-2xl mx-auto",
+          "offer": {
+            "text": "$100 off for the first 4440 customers",
+            "textClass": "text-sm md:text-base flex justify-center items-center gap-2",
+            "highlightClass": "text-accent"
+          }
+        },
+        "plans": [
+          {
+            "name": "Starter",
+            "originalPrice": "$269",
+            "discountedPrice": "$169",
+            "currency": "USD",
+            "popular": false,
+            "features": [
+              "NextJS boilerplate",
+              "NextJS boilerplate",
+              "NextJS boilerplate",
+              "NextJS boilerplate",
+              "NextJS boilerplate"
+            ],
+            "buttonText": "Get BuildFast",
+            "buttonClass": "btn btn-primary group btn-block",
+            "note": "Pay once. Build unlimited projects!",
+            "noteClass": "flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative"
+          },
+          {
+            "name": "Custom Pro Plan",
+            "originalPrice": "$269",
+            "discountedPrice": "$169",
+            "currency": "USD",
+            "popular": true,
+            "features": [
+              "NextJS boilerplate",
+              "NextJS boilerplate",
+              "NextJS boilerplate",
+              "NextJS boilerplate",
+              "NextJS boilerplate"
+            ],
+            "buttonText": "Get BuildFast",
+            "buttonClass": "btn btn-primary group btn-block",
+            "note": "Pay once. Build unlimited projects!",
+            "noteClass": "flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative",
+            "badge": {
+              "text": "POPULAR",
+              "badgeClass": "badge text-xs text-primary-content font-semibold border-0 bg-primary"
+            }
+          }
+        ],
+        "testimonial": {
+          "text": "I was able to launch my project in just one day! I made 170$ already.",
+          "author": "Mateus De Nardo",
+          "badge": "Built a SaaS",
+          "badgeClass": "badge badge-accent badge-outline",
+          "containerClass": "space-y-4 mx-auto max-w-md mt-24"
+        }
       },
       "FAQ":{
         "heading": "Frequently Asked Questions",

@@ -9,8 +9,8 @@ const FeaturedIn: React.FC = () => {
     const { logos } = siteConfig.content.featured;
 
     return (
-        <section className='p-8 md:p-12 flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-8'>
-            <span className="text-xs text-[10px] opacity-50 mb-4 md:mb-0">Featured on</span>
+        <section className='p-8 md:p-10 flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-8'>
+            <span className="text-base opacity-50 mb-4 md:mb-0">Featured on</span>
             <div className='flex flex-row gap-4 md:gap-5 h-10 md:h-40 items-center align-middle'>
             {logos.map((logo, index) => (
                 <motion.a
