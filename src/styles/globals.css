@@ -137,3 +137,24 @@ body {
   width: 100%;
   object-fit: cover;
 }
+
+
+
+.feature-liticle-gradient-border {
+  position: relative;
+}
+
+.feature-liticle-gradient-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px; /* Adjust the height as needed */
+  background: linear-gradient(to right, transparent, yellow, transparent);
+  border-radius: 0 0 4px 4px; /* Adjust the border radius as needed */
+}
+
+.feature-liticle-gradient-background {
+  background: linear-gradient(to right, rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.1));
+}

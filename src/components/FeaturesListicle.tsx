@@ -50,32 +50,35 @@ const FeaturesListicle: React.FC = () => {
                     </div>
                 </div>
                 <div>
-                    <div className='grid grid-cols-4 md:flex justify-start gap-4 md:gap-12 max-md:px-8 max-w-3xl mx-auto mb-8'>
+                    <div className='grid grid-cols-4 md:flex justify-start max-md:px-8 max-w-3xl mx-auto mb-8'>
 
                     {features.map((feature, index) => (
                             <span
-                                key={index}
-                                className='flex flex-col items-center justify-center gap-3 select-none cursor-pointer p-2 duration-100 text-primary'
-                                onClick={() => toggleAccordion(index)}
+                            key={index}
+                            className={`flex flex-col items-center justify-center gap-3 w-full sm:w-80 md:w-64 lg:w-80 xl:w-96 px-7 py-4 select-none cursor-pointer p-2 duration-100 text-primary ${
+                                activeIndex === index ? 'border-b-2 border-yellow-300' : 'border-b-2 border-b-gray-600'
+                            }`}
+                            onClick={() => toggleAccordion(index)}
                             >
                                 <span>
-                                    <At size={24} />
+                                    <At size={24} color={activeIndex === index? '#FDE047': 'white'} />
                                     {/* {activeIndex === index ?} */}
                                 </span>
-                                <span>
+                                <span className={`${activeIndex === index? 'text-yellow-300': 'text-white'}`}>
                                     {feature.title}
                                 </span>
                             </span>
                         ))}
                     </div>
+                </div>
 
+            </div>
+            <div className='w-full bg-gray-700'>
                     <Features
                         features={features}
                         activeIndex={activeIndex}
                         toggleAccordion={toggleAccordion}
                     />
-                </div>
-
             </div>
             
         </section>
