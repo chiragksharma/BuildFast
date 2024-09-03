@@ -2,11 +2,14 @@
 import React from 'react';
 import { Leaf } from 'phosphor-react';
 import {motion} from 'framer-motion';
+import Label from './atoms/Label';
+
 const ProblemsComponents: React.FC = () => {
     return (
         <section className='relative bg-neutral text-neutral-content rounded-lg p-8 md:p-12 border border-gray-800 max-w-xs md:max-w-3xl mx-auto text-center text-lg'>
             <div className='flex flex-col text-center w-full mb-10'>
-                    <p className="font-extralight text-sm align-middle items-center self-center text-primary mb-5 w-fit px-5 py-1 bg-opacity-40 bg-gray-800 border border-gray-600 rounded-full">Problem</p>                    <h2 className="font-bold text-3xl lg:text-5xl tracking-tight mb-2 max-w-2xl mx-auto">Shipfast sucks use BuildFast</h2>
+                    <Label text="Problem" />
+                    <h2 className="font-bold text-3xl lg:text-5xl tracking-tight mb-2 max-w-2xl mx-auto">Shipfast sucks use BuildFast</h2>
                     <p className='text-sm md:text-base flex justify-center items-center gap-2 '>
                 </p>
             </div>

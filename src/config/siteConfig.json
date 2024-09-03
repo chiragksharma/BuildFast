@@ -363,6 +363,89 @@
           "containerClass": "space-y-4 mx-auto max-w-md mt-24"
         }
       },
+      "testimonialsGrid": [
+      {
+        "tweetLink": "https://twitter.com/example/status/1234567890",
+        "profileName": "Jack F.",
+        "description": "I shipped in 6 days as a noob coder... This is awesome",
+        "image": "/avatars/jack.png",
+        "feedback": "This product changed my life!",
+        "link": "https://example.com",
+        "platform": "Twitter"
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Jane D.",
+        "description": "I built my first SaaS product with BuildFast. THis is awesome and super easy to get started!",
+        "image": "/avatars/jane.png",
+        "feedback": "BuildFast made it super easy to get started!",
+        "link": "https://example.com",
+        "platform": "LinkedIn"
+      },
+      {
+        "tweetLink": "https://twitter.com/example/status/1234567890",
+        "profileName": "Jack F.",
+        "description": "I shipped in 6 days as a noob coder... This is awesome",
+        "image": "/avatars/jack.png",
+        "feedback": "This product changed my life!",
+        "link": "https://example.com",
+        "platform": "Twitter"
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Jane D.",
+        "description": "I built my first SaaS product with BuildFast. THis is awesome and super easy to get started! pretty much everything you need to get started. I am so happy with the results.",
+        "image": "/avatars/jane.png",
+        "feedback": "BuildFast made it super easy to get started! awesome to seethe results ",
+        "link": "https://example.com",
+        "platform": "LinkedIn"
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Jane D.",
+        "description": "Pretty much awesome that actually converted viewers into customers. I am so happy with the results.",
+        "image": "/avatars/jane.png",
+        "feedback": "Really happy with the results! Such a great tool to get started. awesome to seethe results",
+        "link": "https://example.com",
+        "platform": "LinkedIn"
+      },
+      {
+        "tweetLink": "https://twitter.com/example/status/1234567890",
+        "profileName": "Jack F.",
+        "description": "I shipped in 6 days as a noob coder... This is awesome",
+        "image": "/avatars/jack.png",
+        "feedback": "This product changed my life!",
+        "link": "https://example.com",
+        "platform": "Twitter"
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Jane D.",
+        "description": "Pretty much awesome that actually converted viewers into customers. I am so happy with the results.",
+        "image": "/avatars/jane.png",
+        "feedback": "Really happy with the results! Such a great tool to get started. awesome to seethe results",
+        "link": "https://example.com",
+        "platform": "LinkedIn"
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Jane D.",
+        "description": "Pretty much awesome that actually converted viewers into customers. I am so happy with the results.",
+        "image": "/avatars/jane.png",
+        "feedback": "Really happy with the results! Such a great tool to get started. awesome to seethe results",
+        "link": "https://example.com",
+        "platform": "LinkedIn"
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Jane D.",
+        "description": "Pretty much awesome that actually converted viewers into customers. I am so happy with the results.",
+        "image": "/avatars/jane.png",
+        "feedback": "Really happy with the results! Such a great tool to get started. awesome to seethe results",
+        "link": "https://example.com",
+        "platform": "LinkedIn"
+      }
+    ],
       "FAQ":{
         "heading": "Frequently Asked Questions",
         "questions": [
