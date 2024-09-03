@@ -74,11 +74,11 @@ const FeaturesListicle: React.FC = () => {
 
             </div>
             <div className='w-full bg-gray-700'>
-                    <Features
-                        features={features}
-                        activeIndex={activeIndex}
-                        toggleAccordion={toggleAccordion}
-                    />
+                <Features
+                    features={features}
+                    activeIndex={activeIndex}
+                    toggleAccordion={toggleAccordion}
+                />
             </div>
             
         </section>

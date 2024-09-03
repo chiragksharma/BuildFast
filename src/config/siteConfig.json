@@ -277,6 +277,28 @@
         }
       ]
       },
+      "about": {
+        "profilePhoto": "/avatars/chirag_portfolio_image.jpeg",
+        "tagline": "Hey, I am Chirag 👋🏻",
+        "description": "A 22 yr old Full Stack Developer.I Quit my job to build something really cool. Rather then making something for someone else why not make somthing of your own.",
+        "pointers": [
+        {
+          "text": "Super easy to customize",
+          "highlight": ["Super easy"]
+              },
+              {
+                "text": "Saves a ton of time",
+                "highlight": []
+              },
+              {
+                "text": "Latest design components and features",
+                "highlight": []
+              }
+          ],
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "shortText": "The code in 3 minutes"
+      },
+
       "pricing":{
         "sectionId": "pricing",
         "backgroundColor": "bg-base-200",
