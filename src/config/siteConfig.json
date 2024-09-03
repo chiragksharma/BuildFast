@@ -310,41 +310,87 @@
           "offer": {
             "text": "$100 off for the first 4440 customers",
             "textClass": "text-sm md:text-base flex justify-center items-center gap-2",
-            "highlightClass": "text-accent"
+            "highlighted_text": "$100 off"
           }
         },
         "plans": [
           {
             "name": "Starter",
-            "originalPrice": "$269",
-            "discountedPrice": "$169",
+            "originalPrice": "$77",
+            "discountedPrice": "$0",
             "currency": "USD",
             "popular": false,
-            "features": [
-              "NextJS boilerplate",
-              "NextJS boilerplate",
-              "NextJS boilerplate",
-              "NextJS boilerplate",
-              "NextJS boilerplate"
-            ],
+            "features": {
+                "feature1": {
+                  "text": "NextJS boilerplate",
+                  "disabled": false,
+                  "highlighted_text": "NextJS",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "NextJS",
+                      "url": "https://nextjs.org"
+                    }
+                  ],
+                  "tags": ["boilerplate", "NextJS"],
+                  "hover_text": "This is a NextJS boilerplate"
+                },
+                "feature2": {
+                  "text": "Another feature",
+                  "disabled": true,
+                  "highlighted_text": "Another",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Another",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                }
+              },
             "buttonText": "Get BuildFast",
             "buttonClass": "btn btn-primary group btn-block",
             "note": "Pay once. Build unlimited projects!",
             "noteClass": "flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative"
           },
           {
-            "name": "Custom Pro Plan",
+            "name": "Pro Plan",
             "originalPrice": "$269",
             "discountedPrice": "$169",
             "currency": "USD",
             "popular": true,
-            "features": [
-              "NextJS boilerplate",
-              "NextJS boilerplate",
-              "NextJS boilerplate",
-              "NextJS boilerplate",
-              "NextJS boilerplate"
-            ],
+            "features": {
+                "feature1": {
+                  "text": "Access to community",
+                  "disabled": false,
+                  "highlighted_text": "",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "",
+                      "url": ""
+                    }
+                  ],
+                  "tags": [],
+                  "hover_text": "You will get access to big community"
+                },
+                "feature2": {
+                  "text": "Latest UI components",
+                  "disabled": false,
+                  "highlighted_text": "Latest",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Another",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                }
+              },
             "buttonText": "Get BuildFast",
             "buttonClass": "btn btn-primary group btn-block",
             "note": "Pay once. Build unlimited projects!",

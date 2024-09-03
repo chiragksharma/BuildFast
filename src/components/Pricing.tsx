@@ -2,26 +2,35 @@
 import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import {motion} from 'framer-motion';
+import Label from './atoms/Label';
+import { Plan,PricingFeature,PricingProps } from '@customTypes/events';
+import { Check,X } from 'phosphor-react';
 
-const Pricing: React.FC = () => {
+
+const Pricing: React.FC <PricingProps> = () => {
     const { sectionId, backgroundColor, header, plans, testimonial } = siteConfig.content.pricing;
+    const { text, textClass, highlighted_text } = header.offer;
+    const normalText = text.replace(highlighted_text, '').trim();
 
     return (
         <section className={backgroundColor} id={sectionId} >
             <div className='py-24 pb-0 px-8 max-w-5xl mx-auto'>
                 <div className='flex flex-col text-center w-full mb-20'>
-                <p className="font-medium text-primary mb-8">{header.title}</p>
-                <h2 className="font-bold text-3xl lg:text-5xl tracking-tight mb-8 max-w-2xl mx-auto">{header.heading}</h2>
+                <Label text="Pricing" />
+                <h2 className="font-bold text-3xl lg:text-5xl tracking-tight mt-3 mb-8 max-w-2xl mx-auto">{header.heading}</h2>
                 <p className='text-sm md:text-base flex justify-center items-center gap-2 '>
-                <span><span className="text-accent">$100 off</span> {header.offer.text}</span>
+                <span>
+                <span className="text-accent">{highlighted_text}</span> {normalText}
+                </span>
                 </p>
                 </div>
                 <div className='relative flex flex-col lg:flex-row items-center lg:items-stretch gap-8'>
-                {plans.map((plan, index) => (
+                {plans.map((plan:Plan, index) => (
                 <div key={index} 
                     className={`relative bg-gray-950  w-full rounded-xl border ${
                         plan.popular ? ' border-yellow-500' :'border-gray-800'
-                    } bg-gray-950 hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-900 transition-all duration-500`
+                    } bg-gray-950  transition-all duration-400 ease-in-out 
+                    ${plan.popular ? 'hover:shadow-lg hover:shadow-yellow-500/20' : ''}`
                     }                
                     >
                     {plan.badge && (
@@ -33,22 +42,22 @@ const Pricing: React.FC = () => {
                     )}
                     {plan.badge && <div className="absolute -inset-[1px] rounded-[8px] bg-primary z-10"></div>}
                     <div className='relative flex flex-col gap-5 lg:gap-8 z-10 bg-base-100 p-8 rounded-lg'>
-                        <div className='flex flex-col items-start gap-4'>
-                            <motion.div
+                        <div className='flex flex-col items-center gap-4'>
+                            {/* <motion.div
                                 whileHover={{ scale: 1.05, rotate:90 }}
                                 transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                                 className='text-2xl'
                             >
                                 🥰
-                            </motion.div>
-                            <div><p className="text-lg lg:text-xl font-bold ">{plan.name}</p></div>
+                            </motion.div> */}
+                            <div><p className="text-lg lg:text-xl font-bold  ">{plan.name}</p></div>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 mb-2">
                             <div className="flex flex-col justify-end mb-[4px] text-lg ">
-                                <p className="relative opacity-80">
-                                    <span className="absolute bg-base-content h-[1.5px] inset-x-0 top-[48%]"></span>
-                                    <span className="text-base-content">{plan.originalPrice}</span>
-                                </p>
+                            <p className="relative opacity-80">
+                                <span className="absolute bg-base-content h-[1.5px] inset-x-0 top-[48%]"></span>
+                                <span className="text-base-content line-through">{plan.originalPrice}</span>
+                            </p>
                             </div>
                             <p className="text-5xl tracking-tight font-extrabold">{plan.discountedPrice}</p>
                             <div className="flex flex-col justify-end mb-[4px]">
@@ -56,16 +65,45 @@ const Pricing: React.FC = () => {
                             </div>
                         </div>
                         <ul className='space-y-2.5 leading-relaxed text-base flex-1'>
-                            {plan.features.map((feature, i) => (
-                                <li key={i} className='flex items-center gap-2'>
-                                    <span>{feature}</span>
+                        {Object.keys(plan.features).map((key, i) => {
+                            const feature: PricingFeature = plan.features[key];
+                            return (
+                                <li
+                                key={i}
+                                className={`flex items-center gap-4 ${feature.disabled ? 'opacity-50 text-gray-500' : ''}`}
+                                title={feature.hover_text}
+                                >
+                                {feature.disabled ? (
+                                    <X size={24} />
+                                ) : (
+                                    <Check size={24} />
+                                )}
+                                <span className={`${feature.overall_highlighted ? 'font-bold text-yellow-500' : ''}`}>
+                                    {feature.text.split(' ').map((word, index) => (
+                                    feature.highlighted_text.includes(word) ? (
+                                        <span key={index} className="text-yellow-500">{word} </span>
+                                    ) : (
+                                        <span key={index}>{word} </span>
+                                    )
+                                    ))}
+                                </span>
+                                {/* {feature.links.map((link, index) => (
+                                    <a key={index} href={link.url} className="text-blue-500 underline ml-2">{link.text}</a>
+                                ))}
+                                {feature.tags && feature.tags.length > 0 && (
+                                    <span className="ml-2 bg-gray-200 text-gray-800 px-2 py-1 rounded">
+                                    {feature.tags.join(', ')}
+                                    </span>
+                                )} */}
                                 </li>
-                            ))}
+                            );
+                            })}
                         </ul>
                         <div className='space-y-2'>
-                            <button className='btn btn-primary group btn-block'>
-                                {plan.buttonText}
-                            </button>
+                        <button className='btn btn-primary group w-full text-lg font-extrabold' title='Go to BuildFast Chekout'>
+                            <img src="/brand_logo_black.svg" alt="brand_logo_black" className='w-6 h-6 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' />
+                            {plan.buttonText}
+                        </button>
                             <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">
                                 {plan.note}
                             </p>
