@@ -7,7 +7,7 @@ import { Plan,PricingFeature,PricingProps } from '@customTypes/events';
 import { Check,X } from 'phosphor-react';
 
 
-const Pricing: React.FC <PricingProps> = () => {
+const Pricing: React.FC = () => {
     const { sectionId, backgroundColor, header, plans, testimonial } = siteConfig.content.pricing;
     const { text, textClass, highlighted_text } = header.offer;
     const normalText = text.replace(highlighted_text, '').trim();
@@ -27,11 +27,10 @@ const Pricing: React.FC <PricingProps> = () => {
                 <div className='relative flex flex-col lg:flex-row items-center lg:items-stretch gap-8'>
                 {plans.map((plan:Plan, index) => (
                 <div key={index} 
-                    className={`relative bg-gray-950  w-full rounded-xl border ${
-                        plan.popular ? ' border-yellow-500' :'border-gray-800'
-                    } bg-gray-950  transition-all duration-400 ease-in-out 
-                    ${plan.popular ? 'hover:shadow-lg hover:shadow-yellow-500/20' : ''}`
-                    }                
+                    className={`relative  w-full rounded-xl border
+                        ${plan.popular ? 'border-yellow-500 bg-gradient-to-r from-yellow-400 to-yellow-600' : 'border-gray-800 bg-gray-950'}
+                        ${plan.popular ? 'hover:shadow-lg hover:shadow-yellow-500/20' : ''}`}
+
                     >
                     {plan.badge && (
                         <div className="absolute  px-3 rounded-xl top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-yellow-500 hover:bg-yellow-800">

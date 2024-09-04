@@ -4,6 +4,7 @@ import Header from "@components/Header";
 import "@styles/globals.css";
 import Head from "next/head";
 import Footer from "@components/Footer";
+import { ThemeProvider } from "next-themes";
 
 const Bricolage = Bricolage_Grotesque({
     weight: ['400', '700'],
@@ -22,12 +23,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body className={Bricolage.className}>
+        <ThemeProvider
+        defaultTheme="dark"
+        enableColorScheme
+        themes={['ruby', 'sapphire', 'daylight', 'emerald']}
+        >
           <Header/>
-          {children}
+            {children}
           <Footer/>
+          </ThemeProvider>
+
         </body>
     </html>
   );

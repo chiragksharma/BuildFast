@@ -16,6 +16,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        primary: 'hsl(var(--primary-color) / <alpha-value>)',
+        primaryText: 'hsl(var(--primary-text-color) / <alpha-value>)',
+        buttonBorder: 'hsl(var(--button-border-color) / <alpha-value>)',
+        buttonText: 'hsl(var(--button-text-color) / <alpha-value>)',
+      },
     },
   },
   plugins: [],
