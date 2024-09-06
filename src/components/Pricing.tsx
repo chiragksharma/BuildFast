@@ -13,14 +13,14 @@ const Pricing: React.FC = () => {
     const normalText = text.replace(highlighted_text, '').trim();
 
     return (
-        <section className={backgroundColor} id={sectionId} >
+        <section className='bg-background-secondary' id={sectionId} >
             <div className='py-24 pb-0 px-8 max-w-5xl mx-auto'>
                 <div className='flex flex-col text-center w-full mb-20'>
                 <Label text="Pricing" />
-                <h2 className="font-bold text-3xl lg:text-5xl tracking-tight mt-3 mb-8 max-w-2xl mx-auto">{header.heading}</h2>
+                <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mt-3 mb-8 max-w-2xl mx-auto">{header.heading}</h2>
                 <p className='text-sm md:text-base flex justify-center items-center gap-2 '>
                 <span>
-                <span className="text-accent">{highlighted_text}</span> {normalText}
+                <span className="text-lime-500">{highlighted_text}</span> {normalText}
                 </span>
                 </p>
                 </div>
@@ -28,27 +28,21 @@ const Pricing: React.FC = () => {
                 {plans.map((plan:Plan, index) => (
                 <div key={index} 
                     className={`relative  w-full rounded-xl border
-                        ${plan.popular ? 'border-yellow-500 bg-gradient-to-r from-yellow-400 to-yellow-600' : 'border-gray-800 bg-gray-950'}
-                        ${plan.popular ? 'hover:shadow-lg hover:shadow-yellow-500/20' : ''}`}
+                        ${plan.popular ? 'border-2 border-primary-color bg-cards-bg/55' : 'border-elements-secondary bg-cards-bg/20'}
+                        ${plan.popular ? 'hover:shadow-lg hover:shadow-primary-color/20' : ''}`}
 
                     >
                     {plan.badge && (
-                        <div className="absolute  px-3 rounded-xl top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-yellow-500 hover:bg-yellow-800">
-                            <span className="badge text-xs text-primary-content font-semibold text-black border-0 ">
+                        <div className="absolute  px-3 rounded-xl top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-primary-color hover:bg-primary-color/90">
+                            <span className="badge text-xs text-primary-content font-semibold text-foreground-hsl border-0 ">
                                 {plan.badge.text}
                             </span>
                         </div>
                     )}
-                    {plan.badge && <div className="absolute -inset-[1px] rounded-[8px] bg-primary z-10"></div>}
-                    <div className='relative flex flex-col gap-5 lg:gap-8 z-10 bg-base-100 p-8 rounded-lg'>
+                    {plan.badge && <div className="absolute -inset-[1px] rounded-[8px]  z-10"></div>}
+                    <div className='relative flex flex-col gap-5 lg:gap-8 z-10  p-8 rounded-lg'>
                         <div className='flex flex-col items-center gap-4'>
-                            {/* <motion.div
-                                whileHover={{ scale: 1.05, rotate:90 }}
-                                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                                className='text-2xl'
-                            >
-                                🥰
-                            </motion.div> */}
+                           
                             <div><p className="text-lg lg:text-xl font-bold  ">{plan.name}</p></div>
                         </div>
                         <div className="flex gap-2 mb-2">
@@ -77,10 +71,10 @@ const Pricing: React.FC = () => {
                                 ) : (
                                     <Check size={24} />
                                 )}
-                                <span className={`${feature.overall_highlighted ? 'font-bold text-yellow-500' : ''}`}>
+                                <span className={`${feature.overall_highlighted ? 'font-bold text-primary-color' : ''}`}>
                                     {feature.text.split(' ').map((word, index) => (
                                     feature.highlighted_text.includes(word) ? (
-                                        <span key={index} className="text-yellow-500">{word} </span>
+                                        <span key={index} className="font-bold text-primary-color">{word} </span>
                                     ) : (
                                         <span key={index}>{word} </span>
                                     )

@@ -40,31 +40,31 @@ const FeaturesListicle: React.FC = () => {
     return (
         <section className='py-24' >
             <div className='max-w-3xl mx-auto'>
-                <div className='bg-base-100 max-md:px-8 max-w-3xl'>
-                    <p className='text-accent font-medium text-sm font-mono mb-3'>
+                <div className=' max-md:px-8 max-w-3xl'>
+                    {/* <p className='text-accent font-medium text-sm font-mono mb-3'>
                     {quote}
-                    </p>
+                    </p> */}
                     <h2 className="font-bold text-3xl lg:text-5xl tracking-tight mb-8">{heading}</h2>
-                    <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
+                    <div className="font-normal leading-relaxed mb-8 lg:text-lg">
                     {description}
                     </div>
                 </div>
                 <div>
-                    <div className='grid grid-cols-4 md:flex justify-start max-md:px-8 max-w-3xl mx-auto mb-8'>
+                    <div className='grid grid-cols-4 md:flex justify-start max-md:px-8 max-w-3xl mx-auto '>
 
                     {features.map((feature, index) => (
                             <span
                             key={index}
-                            className={`flex flex-col items-center justify-center gap-3 w-full sm:w-80 md:w-64 lg:w-80 xl:w-96 px-7 py-4 select-none cursor-pointer p-2 duration-100 text-primary ${
-                                activeIndex === index ? 'border-b-2 border-yellow-300' : 'border-b-2 border-b-gray-600'
+                            className={`flex flex-col items-center justify-center gap-3 w-full sm:w-80 md:w-64 lg:w-80 xl:w-96 px-7 py-4 select-none cursor-pointer p-2 duration-100 ${
+                                activeIndex === index ? 'text-primary-color border-b-2 border-primary-color' : 'text-foreground-hsl border-b-2 border-b-elements-secondary'
                             }`}
                             onClick={() => toggleAccordion(index)}
                             >
-                                <span>
-                                    <At size={24} color={activeIndex === index? '#FDE047': 'white'} />
+                                <span >
+                                    <At size={24} />
                                     {/* {activeIndex === index ?} */}
                                 </span>
-                                <span className={`${activeIndex === index? 'text-yellow-300': 'text-white'}`}>
+                                <span>
                                     {feature.title}
                                 </span>
                             </span>
@@ -73,7 +73,7 @@ const FeaturesListicle: React.FC = () => {
                 </div>
 
             </div>
-            <div className='w-full bg-gray-700'>
+            <div className='w-full bg-background-secondary'>
                 <Features
                     features={features}
                     activeIndex={activeIndex}

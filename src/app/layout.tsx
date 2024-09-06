@@ -7,7 +7,7 @@ import Footer from "@components/Footer";
 import { ThemeProvider } from "next-themes";
 
 const Bricolage = Bricolage_Grotesque({
-    weight: ['400', '700'],
+    weight: ['200', '300', '400', '500', '600', '700', '800'],
     subsets: ['latin'],
     display: 'swap',
     variable: '--font-bricolage',

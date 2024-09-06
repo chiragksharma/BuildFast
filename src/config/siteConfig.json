@@ -21,6 +21,7 @@
           { "text": "Reviews", "href": "#" },
           { "text": "FAQ", "href": "#" },
           { "text": "Contact", "href": "#" }
+
         ],
         "cta": {
           "text": "Get Started",
@@ -411,7 +412,7 @@
       },
       "testimonialsGrid": [
       {
-        "tweetLink": "https://twitter.com/example/status/1234567890",
+        "tweetLink": "https://x.com/chirags93395286/status/1827068558276489388",
         "profileName": "Jack F.",
         "description": "I shipped in 6 days as a noob coder... This is awesome",
         "image": "/avatars/jack.png",
@@ -429,7 +430,7 @@
         "platform": "LinkedIn"
       },
       {
-        "tweetLink": "https://twitter.com/example/status/1234567890",
+        "tweetLink": "https://x.com/chirags93395286/status/1827068558276489388",
         "profileName": "Jack F.",
         "description": "I shipped in 6 days as a noob coder... This is awesome",
         "image": "/avatars/jack.png",
@@ -456,7 +457,7 @@
         "platform": "LinkedIn"
       },
       {
-        "tweetLink": "https://twitter.com/example/status/1234567890",
+        "tweetLink": "https://x.com/chirags93395286/status/1827068558276489388",
         "profileName": "Jack F.",
         "description": "I shipped in 6 days as a noob coder... This is awesome",
         "image": "/avatars/jack.png",

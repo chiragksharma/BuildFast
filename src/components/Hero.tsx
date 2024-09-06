@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import siteConfig from '@config/siteConfig.json';
+import { RocketLaunch } from 'phosphor-react';
 
 const Hero: React.FC = () => {
     const { hero } = siteConfig.content;
@@ -51,28 +52,27 @@ const Hero: React.FC = () => {
                             {thirdLastWord}
                             </span>
                             <span className='relative whitespace-nowrap ml-4'>
-                            <span className={'absolute -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1'}
-                            style={{backgroundColor:theme.colors.primary}}
+                            <span className={'bg-cta-color absolute -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1'}
                             ></span>
-                            <span className={'relative'}
-                            style={{color:theme.text.highlight}}
+                            <span className={'relative text-foreground-opposite'}
                             >{lastTwoWords}</span>
                             </span>
                         </span>
 
                         
                 </h1>
-                <p className="text-lg opacity-80 leading-relaxed">{description}</p>
-                <div className='space-y-4'>
-                    <button className='btn btn-primary group btn-wide text-xl font-extrabold plausible-event-name=Checkout' title='Go to BuildFast Chekout'>
-                        <img src="/brand_logo_black.svg" alt="brand_logo_black" className='w-7 h-7 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' />
+                <p className="text-lg font-medium leading-relaxed">{description}</p>
+                <div className='space-y-4 w-3/4'>
+                    <button className='btn btn-primary w-full bg-cta-color text-foreground-opposite group text-xl font-extrabold' title='Go to BuildFast Chekout'>
+                        {/* <img src="/brand_logo_black.svg" alt="brand_logo_black" className='w-7 h-7 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' /> */}
+                        <RocketLaunch size={30} weight='fill' className='fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' />
                         {ctaText}
                     </button>
                     <p className='text-sm flex justify-center items-center gap-2 md:text-sm'>
                         {/* <Gift color="#55cc00"/> */}
                         <img src="/icons/gift-icon.svg" alt="gift icon" />
                         <span>
-                            <span className='text-accent text-sm'>
+                            <span className='text-lime-500 text-sm'>
                                 {highlightedSmallText} 
                             </span>
                         </span>
@@ -111,8 +111,8 @@ const Hero: React.FC = () => {
                                 transition={{ type: 'spring', stiffness: 300 }}
                             />
                         </div>
-                        <div className='text-base '>
-                            <span className='font-semibold text-base'>{bold_avatar_text} </span>
+                        <div>
+                            <span className='font-semibold'>{bold_avatar_text} </span>
                             {avatar_text}
                         </div>
                     </div>

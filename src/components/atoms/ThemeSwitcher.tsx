@@ -18,7 +18,8 @@ const ThemeSwitcher: React.FC = () => {
     ruby: 'Ruby',
     sapphire: 'Sapphire',
     emerald: 'Emerald',
-    daylight: 'Daylight'
+    daylight: 'Daylight',
+    funblue: 'Funblue'
   }
 
 

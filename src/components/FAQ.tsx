@@ -15,28 +15,27 @@ const FAQ: React.FC = () => {
 
     
     return (
-        <section className='bg-base mt-7' >
-          <div className=' flex flex-col overflow-hidden align-middle items-center max-w-sm py-11 px-10 md:py-24 md:px-24 md:max-w-5xl mx-auto rounded-3xl border border-gray-800'>
+        <section className='bg-background-secondary' >
+          <div className=' flex flex-col overflow-hidden align-middle items-center max-w-sm py-11 px-10 md:py-24 md:px-24 md:max-w-5xl mx-auto rounded-3xl border border-elements-secondary'>
             <div className='flex flex-col text-center basis-1/2'>
             <p className='sm:text-4xl text-3xl font-extrabold mb-8'>
                 Frequently Asked Questions
             </p>
-            <div className='text-base-content/80'>
+            <div className='font-normal'>
                 Have another question? Contact me on <a href="">Twitter</a> or by <a href="">email</a>
             </div>
             </div>
-            <ul className='basis-1/2 mt-9'>
+            <ul className=' mt-9'>
             {siteConfig.content.FAQ.questions.map((item, index) => (
                         <li key={index}>
                             <button
-                                className='relative flex gap-2 items-center w-full py-5 px-4 text-base font-semibold text-left border-t  border-t-gray-700 md:text-lg border-base-content/10'
+                                className='relative flex gap-2 items-center w-full py-5 px-4 text-base font-semibold text-left border-t  border-t-elements-secondary md:text-lg '
                                 onClick={() => toggleExpand(index)}
                             >
                                 <span className="flex-1 text-base-content">{item.question}</span>
                                 <CaretDown
                                     size={20}
                                     weight="bold"
-                                    color='white'
                                     className={`transition-transform duration-200 ${expanded === index ? 'rotate-180' : ''}`}
                                 />
                             </button>

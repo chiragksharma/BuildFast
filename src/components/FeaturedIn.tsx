@@ -10,7 +10,7 @@ const FeaturedIn: React.FC = () => {
 
     return (
         <section className='p-8 md:p-10 flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-8'>
-            <span className="text-base opacity-50 mb-4 md:mb-0">Featured on</span>
+            <span className="opacity-80 mb-4 md:mb-0">Featured on</span>
             <div className='flex flex-row gap-4 md:gap-5 h-10 md:h-40 items-center align-middle'>
             {logos.map((logo, index) => (
                 <motion.a
@@ -31,7 +31,7 @@ const FeaturedIn: React.FC = () => {
                 />
                 {/* <span className="logo-title text-xs font-thin">{logo.title}</span> */}
                 <div className="logo-title-wrapper overflow-hidden h-0 group-hover:h-auto transition-all duration-500">
-                        <span className="logo-title text-xs font-thin">{logo.title}</span>
+                        <span className="logo-title text-xs font-normal">{logo.title}</span>
                 </div>
                 </motion.a>
             ))}

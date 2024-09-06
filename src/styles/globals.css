@@ -4,6 +4,36 @@
 
 @layer base {
   :root {
+    --primary-color: 213 92% 62%;
+    --background-primary: 225 20% 95%;
+    --background-secondary: 0 0% 100%;
+    --elements-secondary: 228 27% 83%;
+    --cards-bg: 231 25% 89%;
+    --cta-color: 213 92% 62%;
+    --cards-bg-secondary: 228 27% 83%;
+    --text-color-headlines: 228 41% 21%;
+    --text-color-secondary: 234 15% 47%;
+    --text-color-tertiary: 229 18% 67%;
+    --text-color-buttons: 215 42% 36%;
+    --icons-primary: 215 42% 36%;
+
+    --btn-color-primary: 215 42% 36%;
+    --btn-color-secondary: 234 15% 47%;
+    --btn-color-disabled: 234 15% 47%;
+    --pop-colors-primary: 0 100% 50%;
+
+    --navbar-bg: 0 0% 0% 0%;
+    --logo-text-color: 231 18% 51%;
+    --logo-icon-color: 228 41% 21%;
+    --nav-links-color: 215 42% 36%;
+    --nav-cta-btn-bg: 213 92% 62%;
+    --nav-cta-btn-text: 0 0% 100%;
+    --nav-cta-btn-border: 0 0% 0% 0%;
+    --nav-normal-btn-text: 215 85% 23%;
+    --nav-normal-btn-border: 228 27% 83%;
+
+    --hero-headline-text-color: 227 44% 21%;
+    
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
@@ -36,6 +66,51 @@
     --primary-text-color: 180 7% 8%;
     --button-border-color: 0 0% 6%;
     --button-text-color: 145 0% 81%;
+  }
+  html[data-theme="funblue"] {
+    --primary-color: 213 92% 62%;
+    --background-primary: 231 17% 95%;
+    --background-secondary: 0 0% 100%;
+    --elements-secondary: 228 27% 83%;
+    --foreground-hsl: 227 44% 21%;
+    --foreground-opposite: 0 0% 100%;
+    --cta-color: 213 92% 62%;
+    --btn-bg-primary: 213 92% 62%;
+    --cards-bg: 231 27% 89%;
+    --cards-bg-secondary: 228 27% 83%;
+    --text-color-headlines: 228 41% 21%;
+    --text-color-secondary: 234 15% 47%;
+    --text-color-tertiary: 229 18% 67%;
+    --text-color-buttons: 215 42% 36%;
+    --icons-primary: 215 42% 36%;
+
+    --btn-color-primary: 215 42% 36%;
+    --btn-color-secondary: 234 15% 47%;
+    --btn-color-disabled: 234 15% 47%;
+    --pop-colors-primary: 0 100% 50%;
+
+    --navbar-bg: 0 0% 0% 0%;
+    --logo-text-color: 234 14% 47%;
+    --logo-icon-color: 228 41% 21%;
+    --nav-links-color: 215 85% 23%;
+    --nav-cta-btn-bg: 213 92% 62%;
+    --nav-cta-btn-text: 0 0% 100%;
+    --nav-cta-btn-border: 0 0% 0% 0%;
+    --nav-normal-btn-text: 215 85% 23%;
+    --nav-normal-btn-border: 228 27% 73%;
+
+    --hero-headline-text-color: 227 44% 21%;
+
+
+
+
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --primary-text-color: 180 7% 8%;
+    --button-border-color: 0 0% 6%;
+    --button-text-color: 145 0% 81%;
+
+   
   }
   
   html[data-theme="ruby"] {
@@ -81,13 +156,9 @@
 } */
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: hsl(var(--foreground-hsl));
   font-family: 'Bricolage Grotesque', sans-serif;
-  background: linear-gradient(
-    to bottom,
-    rgb(var(--background-start-rgb)),
-    rgb(var(--background-end-rgb))
-  );
+  background: hsl(var(--background-primary));
 }
 
 @layer utilities {
@@ -96,65 +167,53 @@ body {
   }
 }
 
-.bg-gradient-theme {
+/* .bg-gradient-theme {
   @apply bg-gradient-to-b from-[rgb(var(--background-start-rgb))] to-[rgb(var(--background-end-rgb))];
-}
-
+} */
 .btn-primary {
-    --tw-border-opacity: 1;
-    border-color: hsl(var(--p) / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: hsl(var(--p) / var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: hsl(var(--pc) / var(--tw-text-opacity));
-    outline-color: hsl(var(--p) / 1);
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  border-color: hsl(var(--cta-color) / var(--tw-border-opacity));
+  background-color: hsl(var(--cta-color) / var(--tw-bg-opacity));
+  color: hsl(var(--foreground-opposite) / var(--tw-text-opacity));
+  outline-color: hsl(var(--cta-color) / 1);
 }
 
-.btn{
-    display: inline-flex;
-    flex-shrink: 0;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    /* border-color: transparent;
-    border-color: hsl(var(--b2) / var(--tw-border-opacity)); */
-    text-align: center;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-timing-function: cubic-bezier(0,0,.2,1);
-    transition-duration: .2s;
-    border-radius: var(--rounded-btn, .5rem);
-    height: 3.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    line-height: 1.25rem;
-    line-height: 1em;
-    min-height: 3rem;
-    gap: .5rem;
-    text-decoration-line: none;
-    border-width: var(--border-btn, 1px);
-    animation: button-pop var(--animation-btn, .25s) ease-out;
-    text-transform: var(--btn-text-case, uppercase);
-    --tw-border-opacity: 1;
-    --tw-bg-opacity: 1;
-    /* background-color: hsl(var(--b2) / var(--tw-bg-opacity)); */
-    --tw-text-opacity: 1;
-    /* color: hsl(var(--bc) / var(--tw-text-opacity)); */
-    /* outline-color: hsl(var(--bc) / 1); */
-    text-transform: capitalize !important;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              text-decoration-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              filter 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              backdrop-filter 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--rounded-btn, 0.5rem);
+  height: 3.5rem;
+  padding: 0 1rem;
+  line-height: 1.25rem;
+  min-height: 3rem;
+  gap: 0.5rem;
+  text-decoration: none;
+  border-width: var(--border-btn, 1px);
+  animation: button-pop var(--animation-btn, 0.25s) ease-out;
+  text-transform: var(--btn-text-case, uppercase);
 }
+
 .btn:hover {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--p) / calc(var(--tw-bg-opacity) - 0.1));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--p) / calc(var(--tw-bg-opacity) - 0.1)); /* Slightly darker */
-  outline-color: hsl(var(--bc) / 1);
+  border-color: hsl(var(--cta-color) / calc(var(--tw-bg-opacity) - 0.1));
+  background-color: hsl(var(--cta-color) / calc(var(--tw-bg-opacity) - 0.1)); /* Slightly darker */
+  outline-color: hsl(var(--foreground-hsl) / 1);
 }
 
 
