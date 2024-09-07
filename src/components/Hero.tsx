@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import siteConfig from '@config/siteConfig.json';
 import { RocketLaunch } from 'phosphor-react';
+import HeroAnimation from './atoms/HeroAnimation';
 
 const Hero: React.FC = () => {
     const { hero } = siteConfig.content;
@@ -21,7 +22,7 @@ const Hero: React.FC = () => {
 
 
     return (
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-16">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-16 h-auto">
                 <div className="flex flex-col gap-10 items-center justify-center text-center lg:text-left lg:items-start">
                 <h1 className="text-4xl font-extrabold lg:text-6xl tracking-tight md:mb-1 flex flex-col gap-3 items-center lg:items-start">
                         {/* Build your Landing page in <span className="relative inline-block">
@@ -120,8 +121,11 @@ const Hero: React.FC = () => {
 
                 </div>
                 
-                <div className="relative max-md:-m-4 lg:w-full -mt-24">
-                    <img src={heroImage} alt="Hero Image" className="w-full h-auto " style={{color:'transparent'}} />
+                <div className="flex justify-center items-center max-md:-m-4 lg:w-full h-full ">
+                    {/* <img src={heroImage} alt="Hero Image" className="w-full h-auto " style={{color:'transparent'}} /> */}
+                    <div className="w-full h-full flex justify-center items-center">
+                        <HeroAnimation />
+                    </div>
                 </div>
         </div>
     );
