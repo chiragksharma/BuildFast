@@ -122,8 +122,8 @@ const Hero: React.FC = () => {
                 </div>
                 
                 <div className="flex justify-center items-center max-md:-m-4 lg:w-full h-full ">
-                    {/* <img src={heroImage} alt="Hero Image" className="w-full h-auto " style={{color:'transparent'}} /> */}
-                    <div className="w-full h-full flex justify-center items-center">
+                    {/* <img src={heroImage} alt="Hero Image" className=" md:-mt-9 w-full h-auto " style={{color:'transparent'}} /> */}
+                    <div className="md:mt-9 w-full h-full flex justify-center items-center">
                         <HeroAnimation />
                     </div>
                 </div>

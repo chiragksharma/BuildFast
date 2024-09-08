@@ -1,0 +1,23 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128" class="absolute size-10 grayscale transition-opacity group-hover/link:opacity-0 md:size-14 lg:size-[4.5rem]" width="54" height="54">
+    <path fill="url(&quot;#supabase_svg__a&quot;)" d="M74.518 125.872c-3.267 4.117-9.904 1.862-9.977-3.397l-1.156-76.906H115.1c9.365 0 14.587 10.817 8.763 18.149z"></path>
+    <path fill="url(&quot;#supabase_svg__b&quot;)" fill-opacity="0.2" d="M74.518 125.872c-3.267 4.117-9.904 1.862-9.977-3.397l-1.156-76.906H115.1c9.365 0 14.587 10.817 8.763 18.149z"></path>
+    <path fill="#3ECF8E" d="M53.484 2.128c3.267-4.117 9.905-1.862 9.977 3.396l.508 76.907H12.902c-9.365 0-14.587-10.817-8.764-18.149z"></path>
+    <defs>
+        <linearGradient id="supabase_svg__a" x1="63.39" x2="109.35" y1="62.626" y2="81.902" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#249361"></stop>
+            <stop offset="1" stop-color="#3ECF8E"></stop>
+        </linearGradient>
+        <linearGradient id="supabase_svg__b" x1="43.013" x2="63.973" y1="34.727" y2="74.185" gradientUnits="userSpaceOnUse">
+            <stop></stop>
+            <stop offset="1" stop-opacity="0"></stop>
+        </linearGradient>
+        <linearGradient id="supabase_svg__a" x1="63.39" x2="109.35" y1="62.626" y2="81.902" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#249361"></stop>
+            <stop offset="1" stop-color="#3ECF8E"></stop>
+        </linearGradient>
+        <linearGradient id="supabase_svg__b" x1="43.013" x2="63.973" y1="34.727" y2="74.185" gradientUnits="userSpaceOnUse">
+            <stop></stop>
+            <stop offset="1" stop-opacity="0"></stop>
+        </linearGradient>
+    </defs>
+</svg>
