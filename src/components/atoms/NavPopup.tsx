@@ -1,6 +1,7 @@
 // src/components/atoms/NavPopup.tsx
 import React, { useEffect,useState, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
 
 interface NavPopupProps {
   isOpen: boolean;
@@ -10,7 +11,13 @@ interface NavPopupProps {
 
 const NavPopup: React.FC<NavPopupProps> = ({ isOpen, onClose, anchorRef }) => {
   const popupRef = useRef<HTMLDivElement>(null);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const [selectedTheme, setSelectedTheme] = useState<string | null>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -40,7 +47,17 @@ const NavPopup: React.FC<NavPopupProps> = ({ isOpen, onClose, anchorRef }) => {
       }
     : {};
 
-  const themes = ['FunBlue', 'Black', 'White'];
+    const themes = ['funblue', 'ruby', 'sapphire', 'daylight', 'emerald'];
+    
+    const themeColors = [
+      'bg-primary-color',
+      'bg-background-primary',
+      'bg-foreground-hsl',
+      'bg-background-secondary',
+      'bg-cards-bg',
+      'bg-hero-headline-text-color',
+      'bg-foreground-opposite',
+    ];
 
   return (
     <motion.div
@@ -51,26 +68,36 @@ const NavPopup: React.FC<NavPopupProps> = ({ isOpen, onClose, anchorRef }) => {
       <div className="text-lg font-semibold mb-2">Themes</div>
       <hr className="border-gray-300 mb-4" />
       <div className="grid grid-cols-1 gap-4">
-        {themes.map((theme) => (
+        {themes.map((themeKey) => (
           <motion.div
-            key={theme}
-            className={`cursor-pointer p-4 border rounded-lg shadow-sm ${selectedTheme === theme ? 'border-primary-color/80 bg-primary-color/10' : 'border-elementary-secondary'}`}
-            onClick={() => setSelectedTheme(theme)}
+            key={themeKey}
+            className={`cursor-pointer p-4 border rounded-lg shadow-sm ${mounted && theme === themeKey ? 'border-primary-color/80 bg-primary-color/10' : 'border-elementary-secondary'}`}
+            onClick={() => setTheme(themeKey)}
             whileTap={{ scale: 0.95 }}
           >
             <div className="flex flex-row justify-between items-center">
-              <div className="font-medium">{theme}</div>
+              <div className="font-medium">{themeKey}</div>
               <div className="relative flex items-center justify-center">
                 <div className="rounded-full border border-elements-secondary p-1 flex items-center justify-center pointer-events-none">
                   <input
                     type="radio"
-                    checked={selectedTheme === theme}
-                    onChange={() => setSelectedTheme(theme)}
+                    checked={mounted && theme === themeKey}
+                    onChange={() => setTheme(themeKey)}
                     className="custom-radio"
                   />
                 </div>
               </div>
             </div>
+            {mounted && theme === themeKey ? 
+            <div className='flex w-full mt-2'>
+              <div className='flex w-full h-2'>
+                {themeColors.map((colorClass, index) => (
+                  <div key={index} className={`flex-1 ${colorClass}`}></div>
+                ))}
+               </div>
+            </div>
+            :
+            null}
           </motion.div>
         ))}
       </div>
