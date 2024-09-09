@@ -1,14 +1,21 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight,List,X,PaintBucket,RocketLaunch } from 'phosphor-react';
 import siteConfig from '@config/siteConfig.json';
+import NavPopup from './atoms/NavPopup';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const themeLinkRef = useRef<HTMLAnchorElement>(null);
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
   };
  
   const { logo, brand, content } = siteConfig;
@@ -39,7 +46,15 @@ const Header: React.FC = () => {
           ))}
         </div>
           <div className="hidden md:flex items-center md:flex-row md:gap-3 ">
-          <a href={cta.href} className="bg-transparent border font-brico text-nav-normal-btn-text border-nav-normal-btn-border shadow-sm hover:border-nav-links-color px-4 py-2 rounded-lg flex flex-row items-center gap-2 transition delay-75 group">
+          <a 
+          href={cta.href} 
+          ref={themeLinkRef}
+          className="bg-transparent border font-brico text-nav-normal-btn-text border-nav-normal-btn-border shadow-sm hover:border-nav-links-color px-4 py-2 rounded-lg flex flex-row items-center gap-2 transition delay-75 group"
+          onClick={(e) => {
+            e.preventDefault();
+            togglePopup();
+          }}
+          >
                 Themes
                 <PaintBucket size={20} weight='bold' />
             </a>
@@ -111,7 +126,11 @@ const Header: React.FC = () => {
           </motion.a>
         </motion.div>
       )}
+      {isPopupOpen && (
+          <NavPopup isOpen={isPopupOpen} onClose={togglePopup} anchorRef={themeLinkRef} />
+        )}
     </AnimatePresence>
+
         </header>
       );
     };

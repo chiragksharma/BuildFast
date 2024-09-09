@@ -229,7 +229,22 @@ body {
   color:hsl(var(--highlight-text) / var(--tw-text-opacity));
 }
 
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--elements-secondary);
+  outline: none;
+  cursor: pointer;
+}
 
+.custom-radio:checked {
+  background-color: hsl(var(--primary-color));
+  border-color: hsl(var(--primary-color));
+}
 .avatar-group{
   display: flex;
   overflow: hidden;
