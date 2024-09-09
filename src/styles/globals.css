@@ -13,8 +13,6 @@
     --cards-bg-secondary: 228 27% 83%;
     --text-color-headlines: 228 41% 21%;
     --text-color-secondary: 234 15% 47%;
-    --text-color-tertiary: 229 18% 67%;
-    --text-color-buttons: 215 42% 36%;
     --icons-primary: 215 42% 36%;
 
     --btn-color-primary: 215 42% 36%;
@@ -35,8 +33,6 @@
     --hero-headline-text-color: 227 44% 21%;
     
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
     --primary-color: 43 100% 55%;
     --primary-text-color: 180 7% 8%;
     --button-border-color: 0 0% 6%;
@@ -58,15 +54,44 @@
     --btn-text-case: uppercase; /* Button text transform */
   }
   
-  html[data-theme="dark"] {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    --primary-color: 43 100% 55%;
-    --primary-text-color: 180 7% 8%;
-    --button-border-color: 0 0% 6%;
-    --button-text-color: 145 0% 81%;
-  }
+  html[data-theme="MidNight"] {
+    --primary-color: 330 85% 50%; /* #EC2791 in HSL */
+    --background-primary: 0 0% 10%; /* Dark background */
+    --background-secondary: 0 0% 15%; /* Slightly lighter dark background */
+    --elements-secondary: 0 0% 20%; /* Darker elements */
+    --foreground-hsl: 0 0% 90%; /* Light foreground for contrast */
+    --foreground-opposite: 0 0% 10%; /* Dark foreground opposite */
+    --cta-color: 330 85% 50%; /* Same as primary color */
+
+    --cards-bg: 0 0% 12%; /* Dark card background */
+    --cards-bg-secondary: 0 0% 18%; /* Slightly lighter card background */
+    
+    --text-color-headlines: 0 0% 90%; /* Light text for headlines */
+    --text-color-secondary: 0 0% 70%; /* Slightly darker light text */
+    --icons-primary: 0 0% 80%; /* Light icons */
+
+    --btn-color-primary: 330 85% 50%; /* Primary button color */
+    --btn-color-secondary: 0 0% 70%; /* Secondary button color */
+    --btn-color-disabled: 0 0% 50%; /* Disabled button color */
+    --pop-colors-primary: 330 85% 50%; /* Same as primary color */
+
+    --navbar-bg: 0 0% 10%; /* Dark navbar background */
+    --logo-text-color: 0 0% 90%; /* Light logo text */
+    --logo-icon-color: 0 0% 80%; /* Light logo icon */
+    --nav-links-color: 330 85% 50%; /* Primary color for nav links */
+    --nav-cta-btn-bg: 330 85% 50%; /* Primary color for CTA button background */
+    --nav-cta-btn-text: 0 0% 100%; /* White text for CTA button */
+    --nav-cta-btn-border: 0 0% 10%; /* Dark border for CTA button */
+    --nav-normal-btn-text: 0 0% 90%; /* Light text for normal buttons */
+    --nav-normal-btn-border: 0 0% 20%; /* Dark border for normal buttons */
+
+    --hero-headline-text-color: 0 0% 90%; /* Light text for hero headline */
+
+    --primary-text-color: 0 0% 90%; /* Light primary text */
+    --button-border-color: 0 0% 20%; /* Dark button border */
+    --button-text-color: 0 0% 100%; /* White button text */
+}
+
   html[data-theme="funblue"] {
     --primary-color: 213 92% 62%;
     --background-primary: 231 17% 95%;
@@ -75,15 +100,12 @@
     --foreground-hsl: 227 44% 21%;
     --foreground-opposite: 0 0% 100%;
     --cta-color: 213 92% 62%;
-    --btn-bg-primary: 213 92% 62%;
 
     --cards-bg: 231 27% 89%;
     --cards-bg-secondary: 228 27% 83%;
     
     --text-color-headlines: 228 41% 21%;
     --text-color-secondary: 234 15% 47%;
-    --text-color-tertiary: 229 18% 67%;
-    --text-color-buttons: 215 42% 36%;
     --icons-primary: 215 42% 36%;
 
     --btn-color-primary: 215 42% 36%;
@@ -103,46 +125,64 @@
 
     --hero-headline-text-color: 227 44% 21%;
 
-
-
-
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
     --primary-text-color: 180 7% 8%;
     --button-border-color: 0 0% 6%;
     --button-text-color: 145 0% 81%;
-
-   
+  
   }
   
-  html[data-theme="ruby"] {
-    --foreground-rgb: 255, 0, 0;
-    --background-start-rgb: 255, 192, 203;
-    --background-end-rgb: 255, 105, 180;
-    --primary-color: 0 100% 50%;
-    --primary-text-color: 0 0% 100%;
-  }
+  html[data-theme="Banana"] {
+    --primary-color: 45 100% 60%; /* #FFBE1A in HSL */
+    --background-primary: 0 0% 13%; /* #212121 in HSL */
+    --background-secondary: 0 0% 6%; /* #0F0F0F in HSL */
+    --elements-secondary: 0 0% 20%; /* Darker elements */
+    --foreground-hsl: 0 0% 90%; /* Light foreground for contrast */
+    --foreground-opposite: 0 0% 10%; /* Dark foreground opposite */
+    --cta-color: 45 100% 60%; /* Same as primary color */
+
+    --cards-bg: 0 0% 12%; /* Dark card background */
+    --cards-bg-secondary: 0 0% 18%; /* Slightly lighter card background */
+    
+    --text-color-headlines: 0 0% 90%; /* Light text for headlines */
+    --text-color-secondary: 0 0% 70%; /* Slightly darker light text */
+    --icons-primary: 0 0% 80%; /* Light icons */
+
+    --btn-color-primary: 45 100% 60%; /* Primary button color */
+    --btn-color-secondary: 0 0% 70%; /* Secondary button color */
+    --btn-color-disabled: 0 0% 50%; /* Disabled button color */
+    --pop-colors-primary: 45 100% 60%; /* Same as primary color */
+
+    --navbar-bg: 0 0% 13%; /* Dark navbar background */
+    --logo-text-color: 0 0% 90%; /* Light logo text */
+    --logo-icon-color: 0 0% 80%; /* Light logo icon */
+    --nav-links-color: 45 100% 60%; /* Primary color for nav links */
+    --nav-cta-btn-bg: 45 100% 60%; /* Primary color for CTA button background */
+    --nav-cta-btn-text: 0 0% 100%; /* White text for CTA button */
+    --nav-cta-btn-border: 0 0% 10%; /* Dark border for CTA button */
+    --nav-normal-btn-text: 0 0% 90%; /* Light text for normal buttons */
+    --nav-normal-btn-border: 0 0% 20%; /* Dark border for normal buttons */
+
+    --hero-headline-text-color: 0 0% 90%; /* Light text for hero headline */
+
+    --primary-text-color: 0 0% 90%; /* Light primary text */
+    --button-border-color: 0 0% 20%; /* Dark button border */
+    --button-text-color: 0 0% 100%; /* White button text */
+}
   
   html[data-theme="sapphire"] {
     --foreground-rgb: 0, 0, 255;
-    --background-start-rgb: 173, 216, 230;
-    --background-end-rgb: 0, 191, 255;
     --primary-color: 240 100% 50%;
     --primary-text-color: 240 100% 100%;
   }
   
   html[data-theme="daylight"] {
     --foreground-rgb: 255, 255, 0;
-    --background-start-rgb: 255, 255, 224;
-    --background-end-rgb: 255, 255, 0;
     --primary-color: 60 100% 50%;
     --primary-text-color: 60 100% 100%;
   }
   
   html[data-theme="emerald"] {
     --foreground-rgb: 0, 128, 0;
-    --background-start-rgb: 144, 238, 144;
-    --background-end-rgb: 0, 255, 127;
     --primary-color: 120 100% 50%;
     --primary-text-color: 120 100% 100%;
   }

@@ -47,7 +47,7 @@ const NavPopup: React.FC<NavPopupProps> = ({ isOpen, onClose, anchorRef }) => {
       }
     : {};
 
-    const themes = ['funblue', 'ruby', 'sapphire', 'daylight', 'emerald'];
+    const themes = ['funblue', 'MidNight', 'Banana', 'daylight', 'emerald'];
     
     const themeColors = [
       'bg-primary-color',
