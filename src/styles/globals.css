@@ -20,6 +20,9 @@
     --btn-color-disabled: 234 15% 47%;
     --pop-colors-primary: 0 100% 50%;
 
+    --border-color-primary: 145 0% 81%;
+
+
     --navbar-bg: 0 0% 0% 0%;
     --logo-text-color: 231 18% 51%;
     --logo-icon-color: 228 41% 21%;
@@ -66,6 +69,8 @@
     --cards-bg: 0 0% 12%; /* Dark card background */
     --cards-bg-secondary: 0 0% 18%; /* Slightly lighter card background */
     
+    --border-color-primary: 145 0% 81%; /* Dark border color */
+
     --text-color-headlines: 0 0% 90%; /* Light text for headlines */
     --text-color-secondary: 0 0% 70%; /* Slightly darker light text */
     --icons-primary: 0 0% 80%; /* Light icons */
@@ -104,6 +109,8 @@
     --cards-bg: 231 27% 89%;
     --cards-bg-secondary: 228 27% 83%;
     
+    --border-color-primary: 228 27% 73%;
+
     --text-color-headlines: 228 41% 21%;
     --text-color-secondary: 234 15% 47%;
     --icons-primary: 215 42% 36%;
@@ -143,6 +150,8 @@
     --cards-bg: 0 0% 12%; /* Dark card background */
     --cards-bg-secondary: 0 0% 18%; /* Slightly lighter card background */
     
+    --border-color-primary: 145 0% 81%;
+
     --text-color-headlines: 0 0% 90%; /* Light text for headlines */
     --text-color-secondary: 0 0% 70%; /* Slightly darker light text */
     --icons-primary: 0 0% 80%; /* Light icons */

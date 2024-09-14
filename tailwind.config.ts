@@ -30,6 +30,7 @@ const config: Config = {
         'text-color-headlines': 'hsl(var(--text-color-headlines))',
         'text-color-secondary': 'hsl(var(--text-color-secondary))',
         'icons-primary': 'hsl(var(--icons-primary))',
+        'border-color-primary': 'hsl(var(--border-color-primary))',
         'btn-color-primary': 'hsl(var(--btn-color-primary))',
         'btn-color-secondary': 'hsl(var(--btn-color-secondary))',
         'btn-color-disabled': 'hsl(var(--btn-color-disabled))',
