@@ -27,7 +27,7 @@
         "components/*"
       ],
       "@api/*": [
-        "api/*"
+        "pages/api/*"
       ],
       "@styles/*": [
         "styles/*"

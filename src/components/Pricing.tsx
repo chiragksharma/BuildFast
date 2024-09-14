@@ -5,12 +5,15 @@ import {motion} from 'framer-motion';
 import Label from './atoms/Label';
 import { Plan,PricingFeature,PricingProps } from '@customTypes/events';
 import { Check,X } from 'phosphor-react';
-
+import useStripeCheckout from '@hooks/useStripeCheckout';
 
 const Pricing: React.FC = () => {
     const { sectionId, backgroundColor, header, plans, testimonial } = siteConfig.content.pricing;
+    const {prices} = siteConfig.stripe;
     const { text, textClass, highlighted_text } = header.offer;
     const normalText = text.replace(highlighted_text, '').trim();
+    const handleCheckout = useStripeCheckout();
+
 
     return (
         <section className='bg-background-secondary' id={sectionId} >
@@ -31,10 +34,10 @@ const Pricing: React.FC = () => {
                         ${plan.popular ? 'border-2 border-primary-color bg-cards-bg/55' : 'border-elements-secondary bg-cards-bg/20'}
                         ${plan.popular ? 'hover:shadow-lg hover:shadow-primary-color/20' : ''}`}
 
-                    >
+                    > 
                     {plan.badge && (
-                        <div className="absolute  px-3 rounded-xl top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-primary-color hover:bg-primary-color/90">
-                            <span className="badge text-xs text-primary-content font-semibold text-foreground-hsl border-0 ">
+                        <div className="absolute cursor-default px-3 rounded-xl top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-primary-color hover:bg-primary-color/90">
+                            <span className="badge text-xs text-foreground-opposite font-semibold  border-0 ">
                                 {plan.badge.text}
                             </span>
                         </div>
@@ -93,7 +96,9 @@ const Pricing: React.FC = () => {
                             })}
                         </ul>
                         <div className='space-y-2'>
-                        <button className='btn btn-primary group w-full text-lg font-extrabold' title='Go to BuildFast Chekout'>
+                        <button className='btn btn-primary group w-full text-lg font-extrabold' title='Go to BuildFast Chekout'
+                        onClick={() => handleCheckout(prices.premium)}
+                        >
                             <img src="/brand_logo_black.svg" alt="brand_logo_black" className='w-6 h-6 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' />
                             {plan.buttonText}
                         </button>

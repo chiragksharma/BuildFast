@@ -58,7 +58,7 @@ const Header: React.FC = () => {
                 Themes
                 <PaintBucket size={20} weight='bold' />
             </a>
-            <a href={cta.href} className="bg-nav-cta-btn-bg border border-nav-cta-btn-border font-brico text-nav-cta-btn-text px-4 py-2 rounded-lg flex flex-row items-center gap-1 transition delay-75 group">
+            <a href={cta.href} className="bg-nav-cta-btn-bg border border-nav-cta-btn-border font-brico text-foreground-opposite px-4 py-2 rounded-lg flex flex-row items-center gap-1 transition delay-75 group">
                 {cta.text} 
                 <ArrowRight className="transform transition-transform duration-300 group-hover:translate-x-1"/>
             </a>
