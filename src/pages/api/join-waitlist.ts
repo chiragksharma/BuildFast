@@ -6,7 +6,9 @@ import siteConfig from '@config/siteConfig.json';
 const resend = new Resend(process.env.RESEND_API_KEY as string);
 
 const joinWaitlist = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method !== 'POST') {
+  const {from ,subject,text}= siteConfig.resend;
+
+    if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
     return res.status(405).end('Method Not Allowed');
   }
@@ -19,10 +21,10 @@ const joinWaitlist = async (req: NextApiRequest, res: NextApiResponse) => {
 
   try {
     await resend.emails.send({
-      from: 'no-reply@yourdomain.com',
+      from: from,
       to: email,
-      subject: 'Welcome to the Waitlist',
-      text: 'Thank you for joining our waitlist. We will notify you once we launch.',
+      subject: subject,
+      text: text,
       react: EmailTemplate({ firstName: 'John' }),
     });
 

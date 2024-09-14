@@ -94,7 +94,7 @@ const Header: React.FC = () => {
         <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="md:hidden mt-7 flex flex-col gap-2 z-40 absolute top-16 left-0 w-full bg-black items-center justify-center p-5"
+          className="md:hidden mt-7 flex flex-col gap-2 z-40 absolute top-16 left-0 w-full bg-background-primary items-center justify-center p-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -104,7 +104,7 @@ const Header: React.FC = () => {
             <motion.a
                 key={item.text}
                 href={item.href}
-                className="block font-brico text-gray-300 hover:text-white px-3 py-2 bg-black items-center text-center"
+                className="block font-brico text-foreground-hsl  px-3 py-2 bg-background-primary items-center text-center"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
@@ -115,7 +115,7 @@ const Header: React.FC = () => {
             ))}
           <motion.a
             href={cta.href}
-            className="bg-black font-brico border border-gray-500 text-gray-300 px-4 py-2 rounded-lg flex flex-row items-center gap-1  group"
+            className="bg-primary-color font-brico border border-border-color-primary text-foreground-opposite px-4 py-2 rounded-lg flex flex-row items-center gap-1  group"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}

@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import ButtonPrimary from '@atoms/Buttons/ButtonPrimary';
+import ButtonLead from '@atoms/Buttons/ButtonLead';
 
 const CTA: React.FC = () => {
     const targetRef = useRef<HTMLDivElement>(null);
@@ -20,8 +20,8 @@ const CTA: React.FC = () => {
                 <h2 className="relative font-bold text-3xl md:text-5xl tracking-tight mt-4 mb-4 md:mb-8 ">Boost your app, launch, earn</h2>
                 <p className="relative text-lg text-base-content/80">Don't waste time on Stripe subscriptions or designing a pricing section...</p>
                 </div>
-               <div className='w-1/3 flex items-center'>
-                <ButtonPrimary text='Get BuildFast' toolTipText="Go build something"/>
+               <div className='w-3/4 md:w-1/3 flex items-center'>
+                <ButtonLead text='Join Waitlist' toolTipText="Go build something"/>
                </div>
                 
             </div>

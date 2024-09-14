@@ -197,6 +197,12 @@
   }
 }
 
+/* Global selection styles */
+::selection {
+  background-color: hsl(var(--primary-color)); /* Background color for selected text */
+  color: hsl(var(--foreground-opposite) / 1); /* Text color for selected text */
+}
+
 
 /* @media (prefers-color-scheme: dark) {
   :root {

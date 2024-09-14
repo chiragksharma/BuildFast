@@ -542,5 +542,10 @@
   "razorpay": {
       "keyId": "your-razorpay-key-id",
       "keySecret": "your-razorpay-key-secret"
+  },
+  "resend":{
+    "from": "chiragksharma15@easeai.site",
+    "subject": "Welcome to the Waitlist",
+    "text": "Thank you for joining our waitlist. We will notify you once we launch."
   }
   }
