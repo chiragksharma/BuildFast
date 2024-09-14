@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import siteConfig from '@config/siteConfig.json';
 import { RocketLaunch } from 'phosphor-react';
 import HeroAnimation from './atoms/HeroAnimation';
+import ButtonPrimary from './atoms/Buttons/ButtonPrimary';
 
 const Hero: React.FC = () => {
     const { hero } = siteConfig.content;
@@ -64,11 +65,8 @@ const Hero: React.FC = () => {
                 </h1>
                 <p className="text-lg font-medium leading-relaxed">{description}</p>
                 <div className='space-y-4 w-3/4'>
-                    <button className='btn btn-primary w-full bg-cta-color text-foreground-opposite group text-xl font-extrabold' title='Go to BuildFast Chekout'>
-                        {/* <img src="/brand_logo_black.svg" alt="brand_logo_black" className='w-7 h-7 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' /> */}
-                        <RocketLaunch size={30} weight='fill' className='fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' />
-                        {ctaText}
-                    </button>
+                    
+                    <ButtonPrimary text={ctaText} redirect={ctaLink} toolTipText="Go build something"/>
                     <p className='text-sm flex justify-center items-center gap-2 md:text-sm'>
                         {/* <Gift color="#55cc00"/> */}
                         <img src="/icons/gift-icon.svg" alt="gift icon" />

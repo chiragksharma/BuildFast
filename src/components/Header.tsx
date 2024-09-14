@@ -40,7 +40,7 @@ const Header: React.FC = () => {
         <nav className="flex items-center pl-12 md:pl-20 gap-4 md:gap-4">
         <div className="hidden md:flex items-center space-x-4">
           {links.map((link, index) => (
-            <a key={index} href={link.href} className="text-nav-links-color font-brico hover:text-nav-links-color/75  px-3 py-2">
+            <a key={index} href={link.href} className="text-foreground-hsl/95 font-brico hover:text-foreground-hsl/75 hover:underline  px-3 py-2">
               {link.text}
             </a>
           ))}

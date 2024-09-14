@@ -261,12 +261,22 @@ body {
   text-transform: var(--btn-text-case, uppercase);
 }
 
-.btn:hover {
+.btn-primary:hover {
   border-color: hsl(var(--cta-color) / calc(var(--tw-bg-opacity) - 0.1));
   background-color: hsl(var(--cta-color) / calc(var(--tw-bg-opacity) - 0.1)); /* Slightly darker */
   outline-color: hsl(var(--foreground-hsl) / 1);
 }
 
+.btn-loading {
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  border-color: hsl(var(--primary-color) / 0.7);
+  background-color: hsl(var(--primary-color) / 0.7);
+  color: hsl(var(--foreground-opposite) / var(--tw-text-opacity));
+  outline-color: hsl(var(--primary-color) / 1);
+  transition: background-color 0.3s ease-in-out;
+}
 
 .btn-wide{
   width: 18rem;

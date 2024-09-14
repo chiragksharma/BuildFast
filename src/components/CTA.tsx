@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import { motion, useScroll, useTransform } from 'framer-motion';
-
+import ButtonPrimary from './atoms/Buttons/ButtonPrimary';
 
 const CTA: React.FC = () => {
     const targetRef = useRef<HTMLDivElement>(null);
@@ -20,10 +20,9 @@ const CTA: React.FC = () => {
                 <h2 className="relative font-bold text-3xl md:text-5xl tracking-tight mt-4 mb-4 md:mb-8 ">Boost your app, launch, earn</h2>
                 <p className="relative text-lg text-base-content/80">Don't waste time on Stripe subscriptions or designing a pricing section...</p>
                 </div>
-                <button className='btn btn-primary group btn-wide text-black font-bold plausible-event-name=Checkout' title='Go to BuildFast Chekout'>
-                        <img src="/brand_logo_black.svg" alt="brand_logo_black" className='w-6 h-6 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' />
-                        Get BuildFast
-                </button>
+               <div className='w-1/3 flex items-center'>
+                <ButtonPrimary text='Get BuildFast' toolTipText="Go build something"/>
+               </div>
                 
             </div>
         </motion.section>

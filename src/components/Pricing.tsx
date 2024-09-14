@@ -7,6 +7,7 @@ import { Plan,PricingFeature,PricingProps } from '@customTypes/events';
 import { Check,X } from 'phosphor-react';
 import useStripeCheckout from '@hooks/useStripeCheckout';
 import useRazorpayCheckout from '@hooks/useRazorpayCheckout';
+import ButtonPrimary from './atoms/Buttons/ButtonPrimary';
 
 const Pricing: React.FC = () => {
     const { sectionId, backgroundColor, header, plans, testimonial } = siteConfig.content.pricing;
@@ -97,12 +98,9 @@ const Pricing: React.FC = () => {
                             })}
                         </ul>
                         <div className='space-y-2'>
-                        <button className='btn btn-primary group w-full text-lg font-extrabold' title='Go to BuildFast Chekout'
+                        <ButtonPrimary text={plan.buttonText} toolTipText="Go build something"
                         onClick={() => handleCheckout(prices.premium)}
-                        >
-                            <img src="/brand_logo_black.svg" alt="brand_logo_black" className='w-6 h-6 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200 ease-in-out' />
-                            {plan.buttonText}
-                        </button>
+                        />
                             <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">
                                 {plan.note}
                             </p>
