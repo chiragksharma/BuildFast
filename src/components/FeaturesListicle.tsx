@@ -7,7 +7,7 @@ import { At } from 'phosphor-react';
 const FeaturesListicle: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
     const [toggleClicked, setToggleClicked] = useState<boolean>(false);
-    const { quote, heading, description, features,automatic_timer } = siteConfig.content.featuresListicle;
+    const {  heading, description, features,automatic_timer } = siteConfig.content.featuresListicle;
 
     // Iterate over all the features and call the after every 5 seconds which means it should be a carousel of features changing after every 5 seconds
     useEffect(() => {

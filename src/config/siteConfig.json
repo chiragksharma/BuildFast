@@ -107,11 +107,32 @@
         "heading": "Get in Touch",
         "description": "We'd love to hear from you."
       },
+      "problems":{
+        "heading": "Stop Wasting Time, Start Building Faster",
+        "label": "Problems",
+        "problemsList": [
+        {
+          "description": "Building a landing page from scratch is time-consuming.",
+          "icon": "/icons/timer.svg"
+        },
+        {
+          "description": "You have a crazy idea but don't know where to start?",
+          "icon": "/icons/lightbulb-filament.svg"
+        },
+        {
+          "description": "Your product is awesome, but your landing page doesn't do it justice?",
+          "icon": "/icons/smiley-nervous.svg"
+        },
+        {
+          "description": "Complex and Expensive boilerplates are hard to customize.",
+          "icon": "/icons/money-wavy.svg"
+        }
+      ]
+      },
       
       "featuresListicle": {
-        "quote": "const lunch time = '12:30 PM';",
-        "heading": "Supercharge your app instantly, launch faster, make $",
-        "description": "Login users, process payments and send emails at lightspeed. Spend your time building your startup, not integrating APIs. ShipFast provides you with the boilerplate code you need to launch, FAST.",
+        "heading": "Build Stunning Landing Pages Effortlessly",
+        "description": "Everything you need to build a SaaS product landing page. Super easy to customize. Spend less time on setup and more time on innovation with BuildFast.",
         "automatic_timer": true,
         "features": [
         {
@@ -120,19 +141,14 @@
           "details": {
             "title": "Email Integration",
             "items": [
-              "Setup SMTP",
-              "Transactional emails",
-              "Email templates",
-              "Time saved: 3 hours"
+              "Just add your Resend API key and get started",
+              "Effortlessly build your waitlist",
+              "Personalize your email templates"
             ],
             "links": [
               {
-                "text": "SendGrid",
-                "href": "https://sendgrid.com/"
-              },
-              {
-                "text": "Mailgun",
-                "href": "https://www.mailgun.com/"
+                "text": "Resend",
+                "href": "https://resend.com/"
               }
             ]
           }
@@ -144,9 +160,8 @@
             "title": "Payment Processing",
             "items": [
               "Stripe integration",
-              "Recurring billing",
-              "Refund handling",
-              "Time saved: 5 hours"
+              "Subscription or Single time billing",
+              "Razorpay and lemonsqueezy integration also available"
             ],
             "links": [
               {
@@ -154,7 +169,11 @@
                 "href": "https://stripe.com/"
               },
               {
-                "text": "PayPal",
+                "text": "Razorpay",
+                "href": "https://www.paypal.com/"
+              },
+              {
+                "text": "LemonSqueezy",
                 "href": "https://www.paypal.com/"
               }
             ]
@@ -166,11 +185,10 @@
           "details": {
             "title": "User authentication",
             "items": [
-              "Magic links setup",
-              "Login with Google walkthrough",
-              "Save user in MongoDB/Supabase",
-              "Private/protected pages & API calls",
-              "Time saved: 4 hours"
+              "Magic links",
+              "Cookies and sessions",
+              "Save user in Supabase",
+              "2-factor authentication"
             ],
             "links": [
               {
@@ -185,15 +203,14 @@
           }
         },
         {
-          "title": "Database",
+          "title": "Blogs",
           "icon" : "",
           "details": {
-            "title": "Database Management",
+            "title": "Blogs and Articles",
             "items": [
-              "Setup MongoDB",
-              "Database schema design",
-              "Data migration",
-              "Time saved: 6 hours"
+              "Inform your users about your product with blogs",
+              "simple and readble blogs",
+              "Changelog and updates"
             ],
             "links": [
               {
@@ -213,10 +230,9 @@
           "details": {
             "title": "Search Engine Optimization",
             "items": [
-              "Meta tags setup",
-              "Sitemap generation",
-              "Analytics integration",
-              "Time saved: 2 hours"
+              "Meta tags",
+              "Social Media Images",
+              "Store Listing"
             ],
             "links": [
               {
@@ -234,12 +250,11 @@
           "title": "Style",
           "icon" : "",
           "details": {
-            "title": "Styling and Theming",
+            "title": "Latest UI components",
             "items": [
-              "CSS framework setup",
-              "Custom themes",
-              "Responsive design",
-              "Time saved: 4 hours"
+              "10+ inbuilt different themes",
+              "Very easy to customize components",
+              "Responsive design"
             ],
             "links": [
               {
@@ -259,10 +274,9 @@
           "details": {
             "title": "Additional Features",
             "items": [
-              "Feature toggles",
-              "A/B testing",
-              "User feedback",
-              "Time saved: 3 hours"
+              "Multi-language templates for privacy policy and terms of service.",
+              "Dark Mode",
+              "AI integration"
             ],
             "links": [
               {

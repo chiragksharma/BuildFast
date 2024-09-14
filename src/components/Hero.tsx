@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
 
                         
                 </h1>
-                <p className="text-lg font-medium leading-relaxed">{description}</p>
+                <p className="text-lg text-foreground-hsl/85 font-medium leading-relaxed">{description}</p>
                 <div className='space-y-4 w-3/4'>
                     
                     <ButtonPrimary text={ctaText} redirect={ctaLink} toolTipText="Go build something"/>
