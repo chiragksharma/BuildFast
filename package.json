@@ -15,10 +15,12 @@
     "next": "14.2.6",
     "next-themes": "^0.3.0",
     "phosphor-react": "^1.4.1",
+    "razorpay": "^2.9.4",
     "react": "^18",
     "react-dom": "^18",
     "react-player": "^2.16.0",
     "react-tweet": "^3.2.1",
+    "resend": "^4.0.0",
     "stripe": "^16.11.0"
   },
   "devDependencies": {

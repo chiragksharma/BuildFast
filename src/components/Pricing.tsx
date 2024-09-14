@@ -6,6 +6,7 @@ import Label from './atoms/Label';
 import { Plan,PricingFeature,PricingProps } from '@customTypes/events';
 import { Check,X } from 'phosphor-react';
 import useStripeCheckout from '@hooks/useStripeCheckout';
+import useRazorpayCheckout from '@hooks/useRazorpayCheckout';
 
 const Pricing: React.FC = () => {
     const { sectionId, backgroundColor, header, plans, testimonial } = siteConfig.content.pricing;
