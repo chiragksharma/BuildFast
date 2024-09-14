@@ -3,8 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import siteConfig from '@config/siteConfig.json';
 import { RocketLaunch } from 'phosphor-react';
-import HeroAnimation from './atoms/HeroAnimation';
-import ButtonPrimary from './atoms/Buttons/ButtonPrimary';
+import HeroAnimation from '@atoms/HeroAnimation';
+import ButtonPrimary from '@atoms/Buttons/ButtonPrimary';
 
 const Hero: React.FC = () => {
     const { hero } = siteConfig.content;

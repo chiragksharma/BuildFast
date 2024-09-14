@@ -2,12 +2,12 @@
 import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import {motion} from 'framer-motion';
-import Label from './atoms/Label';
+import Label from '@atoms/Label';
 import { Plan,PricingFeature,PricingProps } from '@customTypes/events';
 import { Check,X } from 'phosphor-react';
 import useStripeCheckout from '@hooks/useStripeCheckout';
 import useRazorpayCheckout from '@hooks/useRazorpayCheckout';
-import ButtonPrimary from './atoms/Buttons/ButtonPrimary';
+import ButtonPrimary from '@atoms/Buttons/ButtonPrimary';
 
 const Pricing: React.FC = () => {
     const { sectionId, backgroundColor, header, plans, testimonial } = siteConfig.content.pricing;

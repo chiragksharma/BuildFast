@@ -2,7 +2,7 @@
 import React from 'react';
 import { Leaf } from 'phosphor-react';
 import {motion} from 'framer-motion';
-import Label from './atoms/Label';
+import Label from '@atoms/Label';
 
 const ProblemsComponents: React.FC = () => {
     return (

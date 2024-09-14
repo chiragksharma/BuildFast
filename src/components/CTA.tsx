@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import ButtonPrimary from './atoms/Buttons/ButtonPrimary';
+import ButtonPrimary from '@atoms/Buttons/ButtonPrimary';
 
 const CTA: React.FC = () => {
     const targetRef = useRef<HTMLDivElement>(null);

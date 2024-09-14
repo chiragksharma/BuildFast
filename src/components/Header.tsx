@@ -3,7 +3,7 @@ import React, { useState,useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight,List,X,PaintBucket,RocketLaunch } from 'phosphor-react';
 import siteConfig from '@config/siteConfig.json';
-import NavPopup from './atoms/NavPopup';
+import NavPopup from '@atoms/NavPopup';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
