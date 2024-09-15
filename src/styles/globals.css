@@ -5,12 +5,18 @@
 @layer base {
   :root {
     --primary-color: 213 92% 62%;
-    --background-primary: 225 20% 95%;
+    --background-primary: 231 17% 95%;
     --background-secondary: 0 0% 100%;
     --elements-secondary: 228 27% 83%;
-    --cards-bg: 231 25% 89%;
+    --foreground-hsl: 227 44% 21%;
+    --foreground-opposite: 0 0% 100%;
     --cta-color: 213 92% 62%;
+
+    --cards-bg: 231 27% 89%;
     --cards-bg-secondary: 228 27% 83%;
+    
+    --border-color-primary: 228 27% 73%;
+
     --text-color-headlines: 228 41% 21%;
     --text-color-secondary: 234 15% 47%;
     --icons-primary: 215 42% 36%;
@@ -20,41 +26,22 @@
     --btn-color-disabled: 234 15% 47%;
     --pop-colors-primary: 0 100% 50%;
 
-    --border-color-primary: 145 0% 81%;
-
-
     --navbar-bg: 0 0% 0% 0%;
-    --logo-text-color: 231 18% 51%;
+    --logo-text-color: 234 14% 47%;
     --logo-icon-color: 228 41% 21%;
-    --nav-links-color: 215 42% 36%;
+    --nav-links-color: 215 85% 23%;
     --nav-cta-btn-bg: 213 92% 62%;
     --nav-cta-btn-text: 0 0% 100%;
     --nav-cta-btn-border: 0 0% 0% 0%;
     --nav-normal-btn-text: 215 85% 23%;
-    --nav-normal-btn-border: 228 27% 83%;
+    --nav-normal-btn-border: 228 27% 73%;
 
     --hero-headline-text-color: 227 44% 21%;
-    
-    --foreground-rgb: 255, 255, 255;
-    --primary-color: 43 100% 55%;
+
     --primary-text-color: 180 7% 8%;
     --button-border-color: 0 0% 6%;
     --button-text-color: 145 0% 81%;
   
-    --b1: 0 0% 13%;
-  
-    /* Text variables */
-    --highlight-text: 91 100% 33%; /* Highlight text color */
-  
-     /* Button variables */
-    --p: 43 100% 55%; /* Primary color */
-    --pc: 180 7% 8%; /* Primary text color */
-    --b2: 0 0% 6%; /* Border color */
-    --bc: 145 0% 81%; /* Button text color */
-    --rounded-btn: 0.5rem; /* Button border radius */
-    --border-btn: 1px; /* Button border width */
-    --animation-btn: 0.25s; /* Button animation duration */
-    --btn-text-case: uppercase; /* Button text transform */
   }
   
   html[data-theme="MidNight"] {
@@ -204,13 +191,13 @@
 }
 
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: funblue) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-} */
+}
 
 body {
   color: hsl(var(--foreground-hsl));
