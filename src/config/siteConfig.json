@@ -87,26 +87,6 @@
           }
         ]
       },
-      "features": [
-        {
-          "title": "Feature One",
-          "description": "Description of feature one."
-        },
-        {
-          "title": "Feature Two",
-          "description": "Description of feature two."
-        }
-      ],
-      "testimonials": [
-        {
-          "quote": "This product changed my life!",
-          "author": "Happy Customer"
-        }
-      ],
-      "contact": {
-        "heading": "Get in Touch",
-        "description": "We'd love to hear from you."
-      },
       "problems":{
         "heading": "Stop Wasting Time, Start Building Faster",
         "label": "Problems",
@@ -137,7 +117,7 @@
         "features": [
         {
           "title": "Emails",
-          "icon" : "",
+          "icon" : "At",
           "details": {
             "title": "Email Integration",
             "items": [
@@ -155,7 +135,7 @@
         },
         {
           "title": "Payments",
-          "icon" : "",
+          "icon" : "CreditCard",
           "details": {
             "title": "Payment Processing",
             "items": [
@@ -170,18 +150,18 @@
               },
               {
                 "text": "Razorpay",
-                "href": "https://www.paypal.com/"
+                "href": "https://razorpay.com"
               },
               {
                 "text": "LemonSqueezy",
-                "href": "https://www.paypal.com/"
+                "href": "https://www.lemonsqueezy.com"
               }
             ]
           }
         },
         {
           "title": "Login",
-          "icon" : "",
+          "icon" : "ShieldPlus",
           "details": {
             "title": "User authentication",
             "items": [
@@ -204,7 +184,7 @@
         },
         {
           "title": "Blogs",
-          "icon" : "",
+          "icon" : "Article",
           "details": {
             "title": "Blogs and Articles",
             "items": [
@@ -226,7 +206,7 @@
         },
         {
           "title": "SEO",
-          "icon" : "",
+          "icon" : "CaretCircleDoubleUp",
           "details": {
             "title": "Search Engine Optimization",
             "items": [
@@ -248,7 +228,7 @@
         },
         {
           "title": "Style",
-          "icon" : "",
+          "icon" : "Layout",
           "details": {
             "title": "Latest UI components",
             "items": [
@@ -270,7 +250,7 @@
         },
         {
           "title": "More",
-          "icon"  : "",
+          "icon"  : "DotsThreeCircle",
           "details": {
             "title": "Additional Features",
             "items": [
@@ -295,23 +275,23 @@
       "about": {
         "profilePhoto": "/avatars/chirag_portfolio_image.jpeg",
         "tagline": "Hey, I am Chirag 👋🏻",
-        "description": "A 22 yr old Full Stack Developer.I Quit my job to build something really cool. Rather then making something for someone else why not make somthing of your own.",
+        "description": "A 22 yr old Full Stack Developer. I Quit my job to build something really cool. Rather then making something for someone else why not make somthing of your own. \n I have gone through the same process of creating a landing page every time I start a new project. So I decided to build a boilerplate that will help me and others to build a landing page in hours not days. \n Now I can validate my ideas first by building a landing page and then start working on the product. You can take advantage too. Get started now!",
         "pointers": [
         {
-          "text": "Super easy to customize",
-          "highlight": ["Super easy"]
+              "text": "Super easy to customize",
+              "highlight": ["Super easy"]
               },
               {
-                "text": "Saves a ton of time",
-                "highlight": []
+                "text": "Saving hours of repetitive code",
+                "highlight": ["Saving hours"]
               },
               {
                 "text": "Latest design components and features",
-                "highlight": []
+                "highlight": ["Latest design components"]
               }
           ],
         "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "shortText": "The code in 3 minutes"
+        "shortText": "Created a landing page in 5 minutes"
       },
 
       "pricing":{
@@ -337,10 +317,10 @@
             "popular": false,
             "features": {
                 "feature1": {
-                  "text": "NextJS boilerplate",
+                  "text": "NextJS & Typescript boilerplate",
                   "disabled": false,
-                  "highlighted_text": "NextJS",
-                  "overall_highlighted": true,
+                  "highlighted_text": "NextJS & Typescript",
+                  "overall_highlighted": false,
                   "links": [
                     {
                       "text": "NextJS",
@@ -351,9 +331,9 @@
                   "hover_text": "This is a NextJS boilerplate"
                 },
                 "feature2": {
-                  "text": "Another feature",
-                  "disabled": true,
-                  "highlighted_text": "Another",
+                  "text": "Email Integration",
+                  "disabled": false,
+                  "highlighted_text": "Email",
                   "overall_highlighted": false,
                   "links": [
                     {
@@ -363,22 +343,151 @@
                   ],
                   "tags": ["example", "feature"],
                   "hover_text": "This is another feature"
+                },
+                "feature3": {
+                  "text": "Create Wishlists easily",
+                  "disabled": false,
+                  "highlighted_text": "Email",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Another",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature4": {
+                  "text": "Stripe Payment Integration",
+                  "disabled": false,
+                  "highlighted_text": "Stripe",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Stripe",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature5": {
+                  "text": "Chatgpt Agent for creating JSON",
+                  "disabled": false,
+                  "highlighted_text": "Chatgpt Agent",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Chatgpt Agent",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature6": {
+                  "text": "Founders Club Access",
+                  "disabled": true,
+                  "highlighted_text": "Founders Club Access",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "Founders Club Access",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature7": {
+                  "text": "Life time updates",
+                  "disabled": true,
+                  "highlighted_text": "Life time updates",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "Founders Club Access",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature8": {
+                  "text": "SEO & Blogs",
+                  "disabled": true,
+                  "highlighted_text": "",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "",
+                      "url": ""
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature9": {
+                  "text": "Dashboard & User Authentication",
+                  "disabled": true,
+                  "highlighted_text": "",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "",
+                      "url": ""
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+              "feature10": {
+                  "text": "Backend (Supabase)",
+                  "disabled": true,
+                  "highlighted_text": "Backend",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Backend",
+                      "url": ""
+                    }
+                  ],
+                
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+              "feature11": {
+                  "text": "GoogleAuth & 2FA",
+                  "disabled": true,
+                  "highlighted_text": "",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Founders Club Access",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": [""],
+                  "hover_text": "This is another feature"
                 }
+
               },
-            "buttonText": "Get BuildFast",
+            "buttonText": "Start Free",
+            "btnLink": "https://github.com/chiragksharma/BuildFast",
             "buttonClass": "btn btn-primary group btn-block",
-            "note": "Pay once. Build unlimited projects!",
+            "note": "STAR the repo on Github",
             "noteClass": "flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative"
           },
           {
             "name": "Pro Plan",
-            "originalPrice": "$269",
-            "discountedPrice": "$169",
+            "originalPrice": "$129",
+            "discountedPrice": "$80",
             "currency": "USD",
             "popular": true,
             "features": {
                 "feature1": {
-                  "text": "Access to community",
+                  "text": "Founders Club Access",
                   "disabled": false,
                   "highlighted_text": "",
                   "overall_highlighted": true,
@@ -392,21 +501,149 @@
                   "hover_text": "You will get access to big community"
                 },
                 "feature2": {
-                  "text": "Latest UI components",
+                  "text": "20+ Latest UI components",
                   "disabled": false,
-                  "highlighted_text": "Latest",
+                  "highlighted_text": "20+ Latest",
                   "overall_highlighted": false,
                   "links": [
                     {
-                      "text": "Another",
+                      "text": "20+ Latest UI",
                       "url": "https://example.com"
                     }
                   ],
                   "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature3": {
+                  "text": "30+ Useful React hooks ",
+                  "disabled": false,
+                  "highlighted_text": "",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "30+ Useful React hooks",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "These are functions you can use in any page"
+                },
+                "feature4": {
+                  "text": "Razorpay/Stripe/LemonSqueezy Integration",
+                  "disabled": false,
+                  "highlighted_text": "Razorpay/Stripe/LemonSqueezy",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Razorpay/Stripe/LemonSqueezy",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature5": {
+                  "text": "SEO & Blogs",
+                  "disabled": false,
+                  "highlighted_text": "",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "",
+                      "url": ""
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature6": {
+                  "text": "Dashboard & User Authentication",
+                  "disabled": false,
+                  "highlighted_text": "",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "",
+                      "url": ""
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature7": {
+                  "text": "Backend (Supabase)",
+                  "disabled": false,
+                  "highlighted_text": "Backend",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Backend",
+                      "url": ""
+                    }
+                  ],
+                
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature8": {
+                  "text": "GoogleAuth & 2FA",
+                  "disabled": false,
+                  "highlighted_text": "",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Founders Club Access",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": [""],
+                  "hover_text": "This is another feature"
+                },
+                "feature9": {
+                  "text": "AI integration (OpenAI, Claude) ",
+                  "disabled": false,
+                  "highlighted_text": "AI integration",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "AI integration",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": [""],
+                  "hover_text": "This is another feature"
+                },
+                "feature10": {
+                  "text": "Excel sheet for Waitisted users",
+                  "disabled": false,
+                  "highlighted_text": "Excel sheet",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Excel sheet",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": [""],
+                  "hover_text": "Detailed Excel sheet of your waitlisted users"
+                },
+                "feature11": {
+                  "text": "Life time updates",
+                  "disabled": false,
+                  "highlighted_text": "Life time updates",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "Founders Club Access",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["Updated a day ago"],
                   "hover_text": "This is another feature"
                 }
               },
             "buttonText": "Get BuildFast",
+            "btnLink": "",
             "buttonClass": "btn btn-primary group btn-block",
             "note": "Pay once. Build unlimited projects!",
             "noteClass": "flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative",
@@ -524,6 +761,12 @@
           }
         ]
       },
+      "cta": {
+        "heading": "Validate Your Idea, Launch It, and Earn",
+        "description": "Don't waste time on designing and developing your landing page. Use BuildFast and get started in hours.",
+        "buttonText": "Join Waitlist",
+        "buttonToolTip": "Go build something"
+      },
       "footer": {
       "description": "Build your Landing Page in hours, not days",
       "sections": [
@@ -558,7 +801,7 @@
       "keySecret": "your-razorpay-key-secret"
   },
   "resend":{
-    "from": "chiragksharma15@easeai.site",
+    "from": "chiragksharma15@gmail.com",
     "subject": "Welcome to the Waitlist",
     "text": "Thank you for joining our waitlist. We will notify you once we launch."
   }

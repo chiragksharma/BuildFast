@@ -20,15 +20,25 @@ const joinWaitlist = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   try {
-    await resend.emails.send({
-      from: from,
+    const email1 = resend.emails.send({
+      from: 'chirag@buildfasts.com',
       to: email,
       subject: subject,
       text: text,
       react: EmailTemplate({ firstName: 'John' }),
     });
+    
+    const email2 = resend.emails.send({
+      from: 'chirag@buildfasts.com',
+      to: from, 
+      subject: subject, 
+      text: text, 
+      react: EmailTemplate({ firstName: 'Jane' }), // Replace with the second recipient's first name
+    });
 
-    return res.status(200).json({ message: 'Email sent successfully' });
+    await Promise.all([email1, email2]);
+
+    return res.status(200).json({ message: 'Emails sent successfully' });
   } catch (error) {
     console.error('Error sending email:', error);
     return res.status(500).json({ error: 'Internal Server Error' });

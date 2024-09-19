@@ -6,22 +6,21 @@ import ButtonLead from '@atoms/Buttons/ButtonLead';
 
 const CTA: React.FC = () => {
     const targetRef = useRef<HTMLDivElement>(null);
-    
-
+    const { heading, description, buttonText, buttonToolTip } = siteConfig.content.cta;
 
     return (
         <motion.section
             ref = {targetRef}
-            className='bg-background-secondary pt-7 pb-5'
+            className='bg-background-secondary pt-7'
         >
             <div 
-                className='bg-cards-bg-secondary pb-24 pt-16 px-8 max-w-sm md:max-w-5xl mx-auto flex flex-col items-center gap-8 md:gap-12 border border-gray-400 rounded-3xl'>
+                className='bg-background-secondary pb-24 pt-24 px-8 w-full mx-auto flex flex-col items-center gap-8 md:gap-12'>
                 <div className='text-center'>
-                <h2 className="relative font-bold text-3xl md:text-5xl tracking-tight mt-4 mb-4 md:mb-8 ">Boost your app, launch, earn</h2>
-                <p className="relative text-lg text-base-content/80">Don't waste time on Stripe subscriptions or designing a pricing section...</p>
+                <h2 className="relative font-bold text-3xl md:text-5xl tracking-tight mt-4 mb-4 md:mb-8 ">{heading}</h2>
+                <p className="relative text-lg text-base-content/80">{description}</p>
                 </div>
-               <div className='w-3/4 md:w-1/3 flex items-center'>
-                <ButtonLead text='Join Waitlist' toolTipText="Go build something"/>
+               <div className='w-3/4 md:w-1/4 flex items-center'>
+                <ButtonLead text={buttonText} toolTipText={buttonToolTip}/>
                </div>
                 
             </div>

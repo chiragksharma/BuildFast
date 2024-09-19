@@ -8,7 +8,6 @@ import ButtonPrimary from '@atoms/Buttons/ButtonPrimary';
 
 const Hero: React.FC = () => {
     const { hero } = siteConfig.content;
-    const { theme } = siteConfig;
     const { heading, description, ctaText, ctaLink,highlightedText,smallText,highlightedSmallText,avatar_text,bold_avatar_text } = hero;
     const {heroImage,avatars} = hero.images;
 

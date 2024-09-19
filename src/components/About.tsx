@@ -26,6 +26,9 @@ const About: React.FC = () => {
         );
     };
 
+    const paragraphs = description.split('\n');
+
+
     return (
         <section >
            <div className='py-24 max-md:px-8 max-w-3xl mx-auto'>
@@ -35,8 +38,10 @@ const About: React.FC = () => {
                     <h1 className={`font-bold mb-4 ${getTaglineFontSize(tagline)}`}>{tagline}</h1>
                 </div>
                 <div className='flex flex-col items-start text-start'>
-                    <p className='text-start mb-4'>{description}</p>
-                    <ul className='list-disc list-inside mb-4'>
+                    {paragraphs.map((paragraph, index) => (
+                        <p key={index} className='text-start mb-4'>{paragraph}</p>
+                    ))}                    
+                    <ul className='list-disc list-inside mb-4 mt-3'>
                         {pointers.map((pointer, index) => (
                             <li key={index}>{highlightText(pointer.text, pointer.highlight)}</li>
                         ))}

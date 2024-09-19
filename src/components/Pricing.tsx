@@ -99,7 +99,13 @@ const Pricing: React.FC = () => {
                         </ul>
                         <div className='space-y-2'>
                         <ButtonPrimary text={plan.buttonText} toolTipText="Go build something"
-                        onClick={() => handleCheckout(prices.premium)}
+                            onClick={() => {
+                                if (plan.btnLink) {
+                                    window.open(plan.btnLink, '_blank', 'noopener noreferrer');
+                                } else {
+                                    handleCheckout(prices.premium);
+                                }
+                            }}                        
                         />
                             <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">
                                 {plan.note}

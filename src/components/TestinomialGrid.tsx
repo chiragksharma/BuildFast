@@ -53,9 +53,9 @@ const Testimonials11: React.FC = () => {
                         </li>
                     ))}
                     <li onClick={AddYourTweet} className='break-inside-avoid max-md:flex cursor-pointer select-none w-full h-full rounded-b-xl leading-tight relative z-20  text-lg font-medium flex flex-col'>
-                    <div className='p-4 bg-white/5 backdrop-blur-lg border border-white/20 rounded-lg flex flex-col hover:bg-white/10 hover:border-white/30 hover:shadow-md'>
-                        <div className='flex flex-col items-center gap-6 relative z-20 text-white text-lg font-thin p-4 leading-tight select-none rounded-b-xl flex-grow'>
-                            <Plus size={35} color='white'/>
+                    <div className='p-4 bg-cards-bg/20 backdrop-blur-lg border border-border-color-primary rounded-lg flex flex-col hover:bg-cards-bg/45 hover:border-border-color-primary/90 hover:shadow-md'>
+                        <div className='flex flex-col items-center gap-6 relative z-20 text-foreground-hsl text-lg font-thin p-4 leading-tight select-none rounded-b-xl flex-grow'>
+                            <Plus size={35} />
                             <div className='text-center'>
                                 Add yours
                             </div>

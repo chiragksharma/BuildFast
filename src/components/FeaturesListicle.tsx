@@ -2,7 +2,19 @@
 import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import Features from '@components/atoms/FeatureDetails';
-import { At } from 'phosphor-react';
+import { At,CreditCard,ShieldPlus,Article,CaretCircleDoubleUp,Layout,DotsThreeCircle,IconProps } from 'phosphor-react';
+
+
+const iconMapping: Record<string, React.ComponentType<IconProps>> = {
+    At: At,
+    CreditCard: CreditCard,
+    ShieldPlus: ShieldPlus,
+    Article: Article,
+    CaretCircleDoubleUp: CaretCircleDoubleUp,
+    Layout: Layout,
+    DotsThreeCircle: DotsThreeCircle
+  };
+
 
 const FeaturesListicle: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
@@ -50,25 +62,26 @@ const FeaturesListicle: React.FC = () => {
                     </div>
                 </div>
                 <div>
-                    <div className='grid grid-cols-4 md:flex justify-start max-md:px-8 max-w-3xl mx-auto '>
-
-                    {features.map((feature, index) => (
-                            <span
-                            key={index}
-                            className={`flex flex-col items-center justify-center gap-3 w-full sm:w-80 md:w-64 lg:w-80 xl:w-96 px-7 py-4 select-none cursor-pointer p-2 duration-100 ${
-                                activeIndex === index ? 'text-primary-color border-b-2 border-primary-color' : 'text-foreground-hsl border-b-2 border-b-elements-secondary'
-                            }`}
-                            onClick={() => toggleAccordion(index)}
-                            >
-                                <span >
-                                    <At size={24} />
-                                    {/* {activeIndex === index ?} */}
+                <div className='grid grid-cols-4 md:flex justify-start max-md:px-8 max-w-3xl mx-auto'>
+                        {features.map((feature, index) => {
+                            const IconComponent = iconMapping[feature.icon];
+                            return (
+                                <span
+                                    key={index}
+                                    className={`flex flex-col items-center justify-center gap-3 w-full sm:w-80 md:w-64 lg:w-80 xl:w-96 px-7 py-4 select-none cursor-pointer p-2 duration-100 ${
+                                        activeIndex === index ? 'text-primary-color border-b-2 border-primary-color' : 'text-foreground-hsl border-b-2 border-b-elements-secondary'
+                                    }`}
+                                    onClick={() => toggleAccordion(index)}
+                                >
+                                    <span>
+                                        {IconComponent && <IconComponent size={24} />}
+                                    </span>
+                                    <span>
+                                        {feature.title}
+                                    </span>
                                 </span>
-                                <span>
-                                    {feature.title}
-                                </span>
-                            </span>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
 

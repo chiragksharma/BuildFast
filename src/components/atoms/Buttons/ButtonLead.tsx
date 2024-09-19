@@ -37,7 +37,7 @@ const ButtonLead: React.FC<ButtonProps> = ({ onClick, text,toolTipText,redirect 
                 value={email} 
                 onChange={handleEmailChange} 
                 placeholder="Enter your email" 
-                className=" w-full max-w-xs p-4 bg-transparent border border-border-color-primary/55 rounded-xl"
+                className=" w-full  p-4 bg-transparent border border-border-color-primary/55 rounded-xl"
              />
         <button 
         className={`flex flex-row gap-1 items-center justify-center py-3 rounded-lg w-full text-foreground-opposite group text-xl font-extrabold ${loading ? 'btn-loading' : 'bg-primary-color hover:bg-primary-color/90'}`} 

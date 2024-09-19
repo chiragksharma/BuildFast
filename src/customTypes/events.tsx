@@ -45,6 +45,7 @@ export interface PricingFeature {
       [key: string]: PricingFeature;
     };
     buttonText: string;
+    btnLink: string;
     buttonClass: string;
     note: string;
     noteClass: string;
