@@ -2,11 +2,17 @@
 import { useCallback } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import siteConfig from '@config/siteConfig.json';
+import { CheckoutParams } from '@customTypes/events';
+
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY as string);
 
 const useStripeCheckout = () => {
-  const handleCheckout = useCallback(async (priceId: string) => {
+  const handleCheckout = useCallback(async ({ priceId }: CheckoutParams) => {
+    if (!priceId) {
+      console.error('Price ID is required for Stripe checkout');
+      return;
+    }
     const stripe = await stripePromise;
 
     const response = await fetch('/api/create-checkout-session', {

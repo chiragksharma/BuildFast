@@ -1,14 +1,17 @@
 // src/hooks/useRazorpayCheckout.ts
 import { useCallback } from 'react';
 import siteConfig from '@config/siteConfig.json';
-
-interface UseRazorpayCheckoutProps {
-  amount: number;
-  currency: string;
-}
+import { CheckoutParams } from '@customTypes/events';
 
 const useRazorpayCheckout = () => {
-  const initiateRazorpayCheckout = useCallback(async ({ amount, currency }: UseRazorpayCheckoutProps) => {
+  const handleCheckout = useCallback(async ({ amount }: CheckoutParams) => {
+    if (!amount) {
+      console.error('Amount is required for Razorpay checkout');
+      return;
+    }
+
+    const currency = 'INR'; // Define currency here
+
     const response = await fetch('/api/create-razorpay-order', {
       method: 'POST',
       headers: {
@@ -21,7 +24,7 @@ const useRazorpayCheckout = () => {
 
     const options = {
       key: siteConfig.razorpay.keyId,
-      amount: amount * 100,
+      amount: parseInt(amount) * 100,
       currency,
       name: 'Your Company Name',
       description: 'Test Transaction',
@@ -46,7 +49,7 @@ const useRazorpayCheckout = () => {
     razorpay.open();
   }, []);
 
-  return { initiateRazorpayCheckout };
+  return handleCheckout;
 };
 
 export default useRazorpayCheckout;

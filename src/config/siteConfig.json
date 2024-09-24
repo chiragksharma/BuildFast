@@ -93,19 +93,19 @@
         "problemsList": [
         {
           "description": "Building a landing page from scratch is time-consuming.",
-          "icon": "/icons/timer.svg"
+          "icon": "Timer"
         },
         {
           "description": "You have a crazy idea but don't know where to start?",
-          "icon": "/icons/lightbulb-filament.svg"
+          "icon": "LightbulbFilament"
         },
         {
           "description": "Your product is awesome, but your landing page doesn't do it justice?",
-          "icon": "/icons/smiley-nervous.svg"
+          "icon": "SmileyNervous"
         },
         {
           "description": "Complex and Expensive boilerplates are hard to customize.",
-          "icon": "/icons/money-wavy.svg"
+          "icon": "Money"
         }
       ]
       },

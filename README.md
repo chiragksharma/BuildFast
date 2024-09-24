@@ -1,8 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BuildFast
+
+Build your Landing page in hours, not days. The NextJS boilerplate with all you need to build your SaaS product Landing page. Super easy to customize.
+
+## Table of Contents
+- About BuildFast
+- Getting Started
+- Project Structure
+- Customization
+- API Routes
+- Environment Variables
+- Learn More
+- Deploy on Vercel
+
+## About BuildFast
+
+BuildFast is a Next.js boilerplate designed to help you build your SaaS product landing page quickly and efficiently. It comes with all the essential features and is super easy to customize.
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository:
+```bash
+git clone https://github.com/chiragksharma/BuildFast.git
+cd BuildFast
+```
+Install the dependencies:
+```bash
+npm i
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+Run the development server:
 
 ```bash
 npm run dev
@@ -16,18 +47,21 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
+The project structure is as follows:
+- `src/app/`: Contains the main application components.
+- `src/components/`: Contains reusable UI components.
+- `src/config/`: Contains configuration files, including siteConfig.json.
+- `src/context/`: Contains React context providers.
+- `src/customTypes/`: Contains custom TypeScript types.
+- `src/hooks/`: Contains custom React hooks.
+- `src/pages/`: Contains Next.js pages and API routes.
+- `src/styles/`: Contains global styles and Tailwind CSS configuration.
+- `src/utils/`: Contains utility functions.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Customization
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can easily customize the entire landing page using the `siteConfig.json` file located in the `src/config/` directory. This file contains all the customizable content and settings for the landing page.
 
 ## Deploy on Vercel
 

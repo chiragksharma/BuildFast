@@ -9,12 +9,15 @@ import useStripeCheckout from '@hooks/useStripeCheckout';
 import useRazorpayCheckout from '@hooks/useRazorpayCheckout';
 import ButtonPrimary from '@atoms/Buttons/ButtonPrimary';
 
+
 const Pricing: React.FC = () => {
     const { sectionId, backgroundColor, header, plans, testimonial } = siteConfig.content.pricing;
     const {prices} = siteConfig.stripe;
+
     const { text, textClass, highlighted_text } = header.offer;
     const normalText = text.replace(highlighted_text, '').trim();
-    const handleCheckout = useStripeCheckout();
+    const handleCheckout = useStripeCheckout(); // For Stripe
+    // const handleCheckout = useRazorpayCheckout();  // For Razorpay
 
 
     return (
@@ -103,7 +106,9 @@ const Pricing: React.FC = () => {
                                 if (plan.btnLink) {
                                     window.open(plan.btnLink, '_blank', 'noopener noreferrer');
                                 } else {
-                                    handleCheckout(prices.premium);
+                                    // handleCheckout({ amount: prices.discountedPrice }); // For Razorpay
+                                    //or
+                                    handleCheckout({ priceId: prices.premium }); // For Stripe
                                 }
                             }}                        
                         />

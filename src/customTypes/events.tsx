@@ -55,3 +55,8 @@ export interface PricingFeature {
 export interface PricingProps {
     plan: Plan[];
   }
+
+export interface CheckoutParams {
+    amount?: string;
+    priceId?: string;
+}
