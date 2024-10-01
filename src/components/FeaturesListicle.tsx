@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import Features from '@components/atoms/FeatureDetails';
 import { At,CreditCard,ShieldPlus,Article,CaretCircleDoubleUp,Layout,DotsThreeCircle,IconProps } from 'phosphor-react';
-
+import FeaturesListicleConfig from '@config/features/featuresListicle.json';
 
 const iconMapping: Record<string, React.ComponentType<IconProps>> = {
     At: At,
@@ -19,7 +19,7 @@ const iconMapping: Record<string, React.ComponentType<IconProps>> = {
 const FeaturesListicle: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
     const [toggleClicked, setToggleClicked] = useState<boolean>(false);
-    const {  heading, description, features,automatic_timer } = siteConfig.content.featuresListicle;
+    const { heading, description, features, automatic_timer } = FeaturesListicleConfig;
 
     // Iterate over all the features and call the after every 5 seconds which means it should be a carousel of features changing after every 5 seconds
     useEffect(() => {

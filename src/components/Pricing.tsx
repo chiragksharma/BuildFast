@@ -8,11 +8,13 @@ import { Check,X } from 'phosphor-react';
 import useStripeCheckout from '@hooks/useStripeCheckout';
 import useRazorpayCheckout from '@hooks/useRazorpayCheckout';
 import ButtonPrimary from '@atoms/Buttons/ButtonPrimary';
+import PricingConfig from '@config/pricing/pricing.json';
+import StripeConfig from '@config/paymentsConfig/stripe.json';
 
 
 const Pricing: React.FC = () => {
-    const { sectionId, backgroundColor, header, plans, testimonial } = siteConfig.content.pricing;
-    const {prices} = siteConfig.stripe;
+    const { sectionId, backgroundColor, header, plans, testimonial } = PricingConfig;
+    const { prices } = StripeConfig;
 
     const { text, textClass, highlighted_text } = header.offer;
     const normalText = text.replace(highlighted_text, '').trim();

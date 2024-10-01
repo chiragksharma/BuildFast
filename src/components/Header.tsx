@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight,List,X,PaintBucket,RocketLaunch } from 'phosphor-react';
 import siteConfig from '@config/siteConfig.json';
 import NavPopup from '@atoms/NavPopup';
+import navbarConfig from '@config/navbar/navbar.json';
+
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +20,8 @@ const Header: React.FC = () => {
     setIsPopupOpen(!isPopupOpen);
   };
  
-  const { logo, brand, content } = siteConfig;
-  const { links, cta, mobileMenu } = content.navbar;
+  const { logo, brand } = siteConfig;
+  const { links, cta, mobileMenu } = navbarConfig;
 
   return (
     <header className="max-w-7xl bg-navbar-bg mx-auto px-8 py-5 flex items-center justify-between md:py-10">

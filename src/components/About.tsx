@@ -2,11 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import ReactPlayer from 'react-player';
-
+import AboutConfig from '@config/about/about.json';
 
 const About: React.FC = () => {
 
-    const { profilePhoto, tagline, description, pointers, videoUrl, shortText } = siteConfig.content.about;
+    const { profilePhoto, tagline, description, pointers, videoUrl, shortText } = AboutConfig;
 
     const getTaglineFontSize = (tagline: string):string => {
         const wordCount = tagline.split(' ').length;

@@ -3,9 +3,11 @@ import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import { CaretUp,CaretDown } from 'phosphor-react';
 import { motion } from 'framer-motion';
-
+import FaqConfig from '@config/FAQ/faq.json';
 
 const FAQ: React.FC = () => {
+
+    const { questions } = FaqConfig;
 
     const [expanded, setExpanded] = useState<number | null>(null);
 
@@ -15,52 +17,44 @@ const FAQ: React.FC = () => {
 
     
     return (
-        <section className='bg-background-secondary' >
-          <div className=' flex flex-col overflow-hidden align-middle items-center max-w-sm py-11 px-10 md:py-24 md:px-24 md:max-w-5xl mx-auto rounded-3xl border border-elements-secondary'>
+        <section className='bg-background-secondary'>
+        <div className='flex flex-col overflow-hidden align-middle items-center max-w-sm py-11 px-10 md:py-24 md:px-24 md:max-w-5xl mx-auto rounded-3xl border border-elements-secondary'>
             <div className='flex flex-col text-center basis-1/2'>
-            <p className='sm:text-4xl text-3xl font-extrabold mb-8'>
-                Frequently Asked Questions
-            </p>
-            <div className='font-normal'>
-                Have another question? Contact me on <a href="">Twitter</a> or by <a href="">email</a>
+                <p className='sm:text-4xl text-3xl font-extrabold mb-8'>
+                    Frequently Asked Questions
+                </p>
+                <div className='font-normal'>
+                    Have another question? Contact me on <a href="">Twitter</a> or by <a href="">email</a>
+                </div>
             </div>
-            </div>
-            <ul className=' mt-9'>
-            {siteConfig.content.FAQ.questions.map((item, index) => (
-                        <li key={index}>
-                            <button
-                                className='relative flex gap-2 items-center w-full py-5 px-4 text-base font-semibold text-left border-t  border-t-elements-secondary md:text-lg '
-                                onClick={() => toggleExpand(index)}
-                            >
-                                <span className="flex-1 text-base-content">{item.question}</span>
-                                <CaretDown
-                                    size={20}
-                                    weight="bold"
-                                    className={`transition-transform duration-200 ${expanded === index ? 'rotate-180' : ''}`}
-                                />
-                            </button>
+            <div className='w-full'>
+            <ul className='mt-9'>
+                {questions.map((item, index) => (
+                    <li key={index} className='w-full'>
+                        <button
+                            className='relative flex gap-2 justify-between items-center w-full py-5 px-4 text-base font-semibold text-left border-t border-t-elements-secondary md:text-lg'
+                            onClick={() => toggleExpand(index)}
+                        >
+                            {item.question}
+                            {expanded === index ? <CaretUp /> : <CaretDown />}
+                        </button>
+                        {expanded === index && (
                             <motion.div
-                                initial={{ maxHeight: 0, opacity: 0 }}
-                                animate={{ maxHeight: expanded === index ? '100vh' : 0, opacity: expanded === index ? 1 : 0 }}
-                                exit={{ maxHeight: 0, opacity: 0 }}
-                                transition={{
-                                    animate: { duration: 0.7, ease: [0.42, 0, 0.58, 1] },
-                                    exit: { duration: 0.1, ease: 'easeOut' } 
-                                }}
+                                initial={{ height: 0 }}
+                                animate={{ height: 'auto' }}
                                 className='overflow-hidden'
                             >
-                                <div className="pb-5 leading-relaxed py-5 px-4">
-                                    <div className="space-y-4 leading-relaxed">
-                                        {item.answer}
-                                    </div>
-                                </div>
+                                <p className='py-2 px-4'>{item.answer}</p>
                             </motion.div>
-                        </li>
-                    ))}
+                        )}
+                    </li>
+                ))}
             </ul>
-          </div>
-        </section>
-    );
+            </div>
+            
+        </div>
+    </section>
+);
 };
 
 export default FAQ;

@@ -3,10 +3,12 @@ import React from 'react';
 import { Tweet } from 'react-tweet';
 import siteConfig from '@config/siteConfig.json';
 import { Plus } from 'phosphor-react';
+import testinomialGridConfig from '@config/testinomialsGrid/testinomialGrid1.json';
+
 
 const Testimonials11: React.FC = () => {
-    const { testimonialsGrid } = siteConfig.content;
-    const { brand } = siteConfig;
+    const testimonialsGrid  = testinomialGridConfig;
+    const brand = siteConfig.brand;
 
     const AddYourTweet = () => {
         const currentUrl = window.location.href;

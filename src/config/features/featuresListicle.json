@@ -1,0 +1,162 @@
+{
+    "heading": "Build Stunning Landing Pages Effortlessly",
+    "description": "Everything you need to build a SaaS product landing page. Super easy to customize. Spend less time on setup and more time on innovation with BuildFast.",
+    "automatic_timer": true,
+    "features": [
+      {
+        "title": "Emails",
+        "icon": "At",
+        "details": {
+          "title": "Email Integration",
+          "items": [
+            "Just add your Resend API key and get started",
+            "Effortlessly build your waitlist",
+            "Personalize your email templates"
+          ],
+          "links": [
+            {
+              "text": "Resend",
+              "href": "https://resend.com/"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Payments",
+        "icon": "CreditCard",
+        "details": {
+          "title": "Payment Processing",
+          "items": [
+            "Stripe integration",
+            "Subscription or Single time billing",
+            "Razorpay and lemonsqueezy integration also available"
+          ],
+          "links": [
+            {
+              "text": "Stripe",
+              "href": "https://stripe.com/"
+            },
+            {
+              "text": "Razorpay",
+              "href": "https://razorpay.com"
+            },
+            {
+              "text": "LemonSqueezy",
+              "href": "https://www.lemonsqueezy.com"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Login",
+        "icon": "ShieldPlus",
+        "details": {
+          "title": "User authentication",
+          "items": [
+            "Magic links",
+            "Cookies and sessions",
+            "Save user in Supabase",
+            "2-factor authentication"
+          ],
+          "links": [
+            {
+              "text": "NextAuth",
+              "href": "https://next-auth.js.org/"
+            },
+            {
+              "text": "Supabase",
+              "href": "https://supabase.com/"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Blogs",
+        "icon": "Article",
+        "details": {
+          "title": "Blogs and Articles",
+          "items": [
+            "Inform your users about your product with blogs",
+            "simple and readble blogs",
+            "Changelog and updates"
+          ],
+          "links": [
+            {
+              "text": "MongoDB",
+              "href": "https://www.mongodb.com/"
+            },
+            {
+              "text": "PostgreSQL",
+              "href": "https://www.postgresql.org/"
+            }
+          ]
+        }
+      },
+      {
+        "title": "SEO",
+        "icon": "CaretCircleDoubleUp",
+        "details": {
+          "title": "Search Engine Optimization",
+          "items": [
+            "Meta tags",
+            "Social Media Images",
+            "Store Listing"
+          ],
+          "links": [
+            {
+              "text": "Google Analytics",
+              "href": "https://analytics.google.com/"
+            },
+            {
+              "text": "Yoast SEO",
+              "href": "https://yoast.com/"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Style",
+        "icon": "Layout",
+        "details": {
+          "title": "Latest UI components",
+          "items": [
+            "10+ inbuilt different themes",
+            "Very easy to customize components",
+            "Responsive design"
+          ],
+          "links": [
+            {
+              "text": "Tailwind CSS",
+              "href": "https://tailwindcss.com/"
+            },
+            {
+              "text": "Bootstrap",
+              "href": "https://getbootstrap.com/"
+            }
+          ]
+        }
+      },
+      {
+        "title": "More",
+        "icon": "DotsThreeCircle",
+        "details": {
+          "title": "Additional Features",
+          "items": [
+            "Multi-language templates for privacy policy and terms of service.",
+            "Dark Mode",
+            "AI integration"
+          ],
+          "links": [
+            {
+              "text": "LaunchDarkly",
+              "href": "https://launchdarkly.com/"
+            },
+            {
+              "text": "Optimizely",
+              "href": "https://www.optimizely.com/"
+            }
+          ]
+        }
+      }
+    ]
+  }

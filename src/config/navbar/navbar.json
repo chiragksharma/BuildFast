@@ -1,0 +1,19 @@
+ {
+    "links": [
+      { "text": "Pricing", "href": "#" },
+      { "text": "Reviews", "href": "#" },
+      { "text": "FAQ", "href": "#" },
+      { "text": "Contact", "href": "#" }
+
+    ],
+    "cta": {
+      "text": "Get Started",
+      "href": "#"
+    },
+    "mobileMenu": [
+        { "text": "Pricing", "href": "#" },
+        { "text": "Reviews", "href": "#" },
+        { "text": "FAQ", "href": "#" },
+        { "text": "Contact", "href": "#" }
+    ]
+}

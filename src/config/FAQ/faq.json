@@ -1,0 +1,17 @@
+{
+        "heading": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "What is BuildFast?",
+            "answer": "BuildFast is a NextJS boilerplate with all you need to build your SaaS product Landing page. Super easy to customize.This is app is super cool as a user if you are planning to build a SaaS product. It has all the features you need to get started. It is a great starting point for your next project."  
+          },
+          {
+            "question": "How do I get started?",
+            "answer": "You can get started by clicking the Get Started button on the top right corner of the page."
+          },
+          {
+            "question": "What is the price?",
+            "answer": "BuildFast is free for the first 1000 customers."
+          }
+        ]
+      }

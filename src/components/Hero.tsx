@@ -5,11 +5,10 @@ import siteConfig from '@config/siteConfig.json';
 import { RocketLaunch } from 'phosphor-react';
 import HeroAnimation from '@atoms/HeroAnimation';
 import ButtonPrimary from '@atoms/Buttons/ButtonPrimary';
+import HeroConfig from '@config/Hero/hero.json';
 
 const Hero: React.FC = () => {
-    const { hero } = siteConfig.content;
-    const { heading, description, ctaText, ctaLink,highlightedText,smallText,highlightedSmallText,avatar_text,bold_avatar_text } = hero;
-    const {heroImage,avatars} = hero.images;
+    const { heading, description, ctaText, ctaLink, highlightedText, smallText, highlightedSmallText, avatar_text, bold_avatar_text, images: { heroImage, avatars } } = HeroConfig;
 
     // const parts = heading.split(new RegExp(`(${highlightedText})`, 'gi'));
 

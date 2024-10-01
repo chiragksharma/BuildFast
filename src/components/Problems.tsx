@@ -5,6 +5,7 @@ import {motion} from 'framer-motion';
 import Label from '@atoms/Label';
 import siteConfig from '@config/siteConfig.json';
 import { Timer, LightbulbFilament, SmileyNervous, Money, IconProps } from 'phosphor-react';
+import ProblemsConfig from '@config/problems/problems.json';
 
 const iconMapping: Record<string, React.ComponentType<IconProps>> = {
     Timer: Timer,
@@ -14,7 +15,7 @@ const iconMapping: Record<string, React.ComponentType<IconProps>> = {
 };
 
 const ProblemsComponents: React.FC = () => {
-    const { label, heading, problemsList } = siteConfig.content.problems;
+    const { label, heading, problemsList } = ProblemsConfig;
 
     return (
         <section className='relative bg-cards-bg text-neutral-content rounded-xl p-8 md:p-12  max-w-xs md:max-w-3xl mx-auto text-center text-lg'>

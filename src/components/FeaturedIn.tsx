@@ -2,11 +2,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import siteConfig from '@config/siteConfig.json';
-
+import featuredInConfig from '@config/Featured/featured.json';
 
 
 const FeaturedIn: React.FC = () => {
-    const { logos } = siteConfig.content.featured;
+    const { logos } = featuredInConfig;
 
     return (
         <section className='p-8 md:p-10 flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-8'>

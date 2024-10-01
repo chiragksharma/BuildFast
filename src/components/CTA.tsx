@@ -3,10 +3,11 @@ import React, { useRef, useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import ButtonLead from '@atoms/Buttons/ButtonLead';
+import ctaConfig from '@config/CTA/cta.json';
 
 const CTA: React.FC = () => {
     const targetRef = useRef<HTMLDivElement>(null);
-    const { heading, description, buttonText, buttonToolTip } = siteConfig.content.cta;
+    const { heading, description, buttonText, buttonToolTip } = ctaConfig;
 
     return (
         <motion.section

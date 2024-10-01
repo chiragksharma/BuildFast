@@ -1,0 +1,29 @@
+{
+    "title": "Featured on",
+    "logos": [
+      {
+        "src": "/logos/HackerNews.png",
+        "alt": "HackerNews",
+        "title": "HackerNews",
+        "link": "#"
+      },
+      {
+        "src": "/logos/indieHackerLogo.png",
+        "alt": "IndieHacker",
+        "title": "IndieHacker",
+        "link": "#"
+      },
+      {
+        "src": "/logos/reddit_logo.png",
+        "alt": "Reddit",
+        "title": "Reddit",
+        "link": "#"
+      },
+      {
+        "src": "/logos/product_hunt_logo.png",
+        "alt": "Product Hunt",
+        "title": "Product Hunt",
+        "link": "#"
+      }
+    ]
+  }

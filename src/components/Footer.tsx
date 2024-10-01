@@ -2,10 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import { RocketLaunch } from 'phosphor-react';
+import FooterConfig from '@config/footer/footer.json';
 
 const Footer: React.FC = () => {
-    const { brand, logo, content } = siteConfig;
-    const { navbar, footer } = content;
+    const { description, sections } = FooterConfig;
+    const { brand, logo } = siteConfig;
 
     return (
     <footer className='bg-background-primary border-t border-border-color-primary/65'>
@@ -17,7 +18,7 @@ const Footer: React.FC = () => {
                             <h1 className='text-foreground-hsl text-xl font-bold'>{brand}</h1>
                         </a>
                         <p className="mt-3 text-sm text-foreground-hsl/70 leading-relaxed">
-                            {footer.description}<br />Copyright ©2024 All rights reserved
+                            {description}<br />Copyright ©2024 All rights reserved
                         </p>
                         <a href="/" className='inline-block mt-4 text-sm border border-border-color-primary hover:border-border-color-primary/40 hover:text-foreground-hsl/90 hover:bg-background-primary/35 duration-200 cursor-pointer rounded text-foreground-hsl/80 px-2 py-1'>
                             <div className='flex gap-1 items-center'>
@@ -30,7 +31,7 @@ const Footer: React.FC = () => {
                         </a>
                     </div>
                     <div className='flex-grow flex flex-wrap md:pl-24 -mb-10 md:mt-0 mt-10 text-center md:text-left'>
-                        {footer.sections.map((section, index) => (
+                        {sections.map((section, index) => (
                             <div key={index} className='lg:w-1/3 md:w-1/2 w-full px-4'>
                                 <div className="font-semibold text-foreground-hsl/65 tracking-widest text-sm md:text-left mb-3">{section.title}</div>
                                 <div className='flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm'>

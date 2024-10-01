@@ -1,0 +1,24 @@
+{
+    "heading": "Build your Landing page in hours, not days",
+    "highlightedText": "not days",
+    "description": "The NextJS boilerplate with all you need to build your SaaS product Landing page. Super easy to customize.",
+    "ctaText": "Get Started",
+    "ctaLink": "/get-started",
+    "highlightedSmallText": "FREE",
+    "smallText": "for first 1000 customers",
+    "highlightTagColor": "#ffed4a",
+    "highlightTextColor": "#ffed4a",
+    "images": {
+      "heroImage": "/Hero_image.png",
+      "avatars": [
+        "/avatars/avatar_1.png",
+        "/avatars/avatar_2.png",
+        "/avatars/avatar_3.png",
+        "/avatars/avatar_4.png",
+        "/avatars/avatar_5.png",
+        "/avatars/avatar_6.png"
+      ]
+    },
+    "bold_avatar_text": "100",
+    "avatar_text": "maker's build faster"
+  }

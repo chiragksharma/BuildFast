@@ -1,0 +1,367 @@
+{
+        "sectionId": "pricing",
+        "backgroundColor": "bg-base-200",
+        "header": {
+          "title": "Pricing",
+          "titleClass": "font-medium text-primary mb-8",
+          "heading": "Save hours of repetitive code, ship fast, get profitable!",
+          "headingClass": "font-bold text-3xl lg:text-5xl tracking-tight mb-8 max-w-2xl mx-auto",
+          "offer": {
+            "text": "$100 off for the first 4440 customers",
+            "textClass": "text-sm md:text-base flex justify-center items-center gap-2",
+            "highlighted_text": "$100 off"
+          }
+        },
+        "plans": [
+          {
+            "name": "Starter",
+            "originalPrice": "$77",
+            "discountedPrice": "$0",
+            "currency": "USD",
+            "popular": false,
+            "features": {
+                "feature1": {
+                  "text": "NextJS & Typescript boilerplate",
+                  "disabled": false,
+                  "highlighted_text": "NextJS & Typescript",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "NextJS",
+                      "url": "https://nextjs.org"
+                    }
+                  ],
+                  "tags": ["boilerplate", "NextJS"],
+                  "hover_text": "This is a NextJS boilerplate"
+                },
+                "feature2": {
+                  "text": "Email Integration",
+                  "disabled": false,
+                  "highlighted_text": "Email",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Another",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature3": {
+                  "text": "Create Wishlists easily",
+                  "disabled": false,
+                  "highlighted_text": "Email",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Another",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature4": {
+                  "text": "Stripe Payment Integration",
+                  "disabled": false,
+                  "highlighted_text": "Stripe",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Stripe",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature5": {
+                  "text": "Chatgpt Agent for creating JSON",
+                  "disabled": false,
+                  "highlighted_text": "Chatgpt Agent",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Chatgpt Agent",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature6": {
+                  "text": "Founders Club Access",
+                  "disabled": true,
+                  "highlighted_text": "Founders Club Access",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "Founders Club Access",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature7": {
+                  "text": "Life time updates",
+                  "disabled": true,
+                  "highlighted_text": "Life time updates",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "Founders Club Access",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "This is another feature"
+                },
+                "feature8": {
+                  "text": "SEO & Blogs",
+                  "disabled": true,
+                  "highlighted_text": "",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "",
+                      "url": ""
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature9": {
+                  "text": "Dashboard & User Authentication",
+                  "disabled": true,
+                  "highlighted_text": "",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "",
+                      "url": ""
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+              "feature10": {
+                  "text": "Backend (Supabase)",
+                  "disabled": true,
+                  "highlighted_text": "Backend",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Backend",
+                      "url": ""
+                    }
+                  ],
+                
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+              "feature11": {
+                  "text": "GoogleAuth & 2FA",
+                  "disabled": true,
+                  "highlighted_text": "",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Founders Club Access",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": [""],
+                  "hover_text": "This is another feature"
+                }
+
+              },
+            "buttonText": "Start Free",
+            "btnLink": "https://github.com/chiragksharma/BuildFast",
+            "buttonClass": "btn btn-primary group btn-block",
+            "note": "STAR the repo on Github",
+            "noteClass": "flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative"
+          },
+          {
+            "name": "Pro Plan",
+            "originalPrice": "$129",
+            "discountedPrice": "$80",
+            "currency": "USD",
+            "popular": true,
+            "features": {
+                "feature1": {
+                  "text": "Founders Club Access",
+                  "disabled": false,
+                  "highlighted_text": "",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "",
+                      "url": ""
+                    }
+                  ],
+                  "tags": [],
+                  "hover_text": "You will get access to big community"
+                },
+                "feature2": {
+                  "text": "20+ Latest UI components",
+                  "disabled": false,
+                  "highlighted_text": "20+ Latest",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "20+ Latest UI",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature3": {
+                  "text": "30+ Useful React hooks ",
+                  "disabled": false,
+                  "highlighted_text": "",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "30+ Useful React hooks",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "These are functions you can use in any page"
+                },
+                "feature4": {
+                  "text": "Razorpay/Stripe/LemonSqueezy Integration",
+                  "disabled": false,
+                  "highlighted_text": "Razorpay/Stripe/LemonSqueezy",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Razorpay/Stripe/LemonSqueezy",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature5": {
+                  "text": "SEO & Blogs",
+                  "disabled": false,
+                  "highlighted_text": "",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "",
+                      "url": ""
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature6": {
+                  "text": "Dashboard & User Authentication",
+                  "disabled": false,
+                  "highlighted_text": "",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "",
+                      "url": ""
+                    }
+                  ],
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature7": {
+                  "text": "Backend (Supabase)",
+                  "disabled": false,
+                  "highlighted_text": "Backend",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Backend",
+                      "url": ""
+                    }
+                  ],
+                
+                  "tags": ["example", "feature"],
+                  "hover_text": "See the List of all the UI components"
+                },
+                "feature8": {
+                  "text": "GoogleAuth & 2FA",
+                  "disabled": false,
+                  "highlighted_text": "",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Founders Club Access",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": [""],
+                  "hover_text": "This is another feature"
+                },
+                "feature9": {
+                  "text": "AI integration (OpenAI, Claude) ",
+                  "disabled": false,
+                  "highlighted_text": "AI integration",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "AI integration",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": [""],
+                  "hover_text": "This is another feature"
+                },
+                "feature10": {
+                  "text": "Excel sheet for Waitisted users",
+                  "disabled": false,
+                  "highlighted_text": "Excel sheet",
+                  "overall_highlighted": false,
+                  "links": [
+                    {
+                      "text": "Excel sheet",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": [""],
+                  "hover_text": "Detailed Excel sheet of your waitlisted users"
+                },
+                "feature11": {
+                  "text": "Life time updates",
+                  "disabled": false,
+                  "highlighted_text": "Life time updates",
+                  "overall_highlighted": true,
+                  "links": [
+                    {
+                      "text": "Founders Club Access",
+                      "url": "https://example.com"
+                    }
+                  ],
+                  "tags": ["Updated a day ago"],
+                  "hover_text": "This is another feature"
+                }
+              },
+            "buttonText": "Get BuildFast",
+            "btnLink": "",
+            "buttonClass": "btn btn-primary group btn-block",
+            "note": "Pay once. Build unlimited projects!",
+            "noteClass": "flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative",
+            "badge": {
+              "text": "POPULAR",
+              "badgeClass": "badge text-xs text-primary-content font-semibold border-0 bg-primary"
+            }
+          }
+        ],
+        "testimonial": {
+          "text": "I was able to launch my project in just one day! I made 170$ already.",
+          "author": "Mateus De Nardo",
+          "badge": "Built a SaaS",
+          "badgeClass": "badge badge-accent badge-outline",
+          "containerClass": "space-y-4 mx-auto max-w-md mt-24"
+        }
+}
