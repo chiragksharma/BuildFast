@@ -1,14 +1,13 @@
 // src/pages/api/create-checkout-session.ts
 import { NextApiRequest, NextApiResponse } from 'next';
 import Stripe from 'stripe';
-import siteConfig from '@config/siteConfig.json';
-
+import StripeConfig from '@config/paymentsConfig/stripe.json'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
     apiVersion: '2024-06-20', // Update to the correct API version
 });
 
-const { type } = siteConfig.stripe as { type: 'payment' | 'subscription' };
+const { type } = StripeConfig as { type: 'payment' | 'subscription' };
 
 const createCheckoutSession = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== 'POST') {

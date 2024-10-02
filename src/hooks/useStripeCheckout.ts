@@ -1,7 +1,6 @@
 // src/hooks/useStripeCheckout.ts
 import { useCallback } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
-import siteConfig from '@config/siteConfig.json';
 import { CheckoutParams } from '@customTypes/events';
 
 

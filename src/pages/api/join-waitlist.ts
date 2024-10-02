@@ -1,12 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { Resend } from 'resend';
 import { EmailTemplate } from '@components/EmailTemplate';
-import siteConfig from '@config/siteConfig.json';
-
+import ResendConfig from '@config/emailConfig/resend.json';
 const resend = new Resend(process.env.RESEND_API_KEY as string);
 
 const joinWaitlist = async (req: NextApiRequest, res: NextApiResponse) => {
-  const {from ,subject,text}= siteConfig.resend;
+  const {from ,subject,text}= ResendConfig;
 
     if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');

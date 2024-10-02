@@ -1,6 +1,6 @@
 // src/hooks/useRazorpayCheckout.ts
 import { useCallback } from 'react';
-import siteConfig from '@config/siteConfig.json';
+import RazorPayConfig from '@config/paymentsConfig/razorpay.json';
 import { CheckoutParams } from '@customTypes/events';
 
 const useRazorpayCheckout = () => {
@@ -23,7 +23,7 @@ const useRazorpayCheckout = () => {
     const { orderId } = await response.json();
 
     const options = {
-      key: siteConfig.razorpay.keyId,
+      key: RazorPayConfig.keyId,
       amount: parseInt(amount) * 100,
       currency,
       name: 'Your Company Name',

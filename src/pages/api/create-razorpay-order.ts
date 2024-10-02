@@ -1,7 +1,6 @@
 // src/pages/api/create-razorpay-order.ts
 import { NextApiRequest, NextApiResponse } from 'next';
 import Razorpay from 'razorpay';
-import siteConfig from '@config/siteConfig.json';
 
 const razorpay = new Razorpay({
   key_id: process.env.RAZORPAY_KEY_ID as string,
