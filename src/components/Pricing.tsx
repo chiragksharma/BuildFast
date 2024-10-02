@@ -13,7 +13,7 @@ import StripeConfig from '@config/paymentsConfig/stripe.json';
 
 
 const Pricing: React.FC = () => {
-    const { sectionId, backgroundColor, header, plans, testimonial } = PricingConfig;
+    const { backgroundColor, header, plans, testimonial } = PricingConfig;
     const { prices } = StripeConfig;
 
     const { text, textClass, highlighted_text } = header.offer;
@@ -23,7 +23,7 @@ const Pricing: React.FC = () => {
 
 
     return (
-        <section className='bg-background-secondary' id={sectionId} >
+        <section className='bg-background-secondary' id="pricing" >
             <div className='py-24 pb-0 px-8 max-w-5xl mx-auto'>
                 <div className='flex flex-col text-center w-full mb-20'>
                 <Label text="Pricing" />

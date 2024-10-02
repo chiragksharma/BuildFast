@@ -20,7 +20,7 @@ const ButtonPrimary: React.FC<ButtonProps> = ({ onClick, text,toolTipText,redire
                 await onClick();
             }
             else if (redirect){
-
+                window.open(redirect, '_blank', 'noopener,noreferrer');
             }
 
         } finally {

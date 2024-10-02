@@ -3,7 +3,7 @@
     "highlightedText": "not days",
     "description": "The NextJS boilerplate with all you need to build your SaaS product Landing page. Super easy to customize.",
     "ctaText": "Get Started",
-    "ctaLink": "/get-started",
+    "ctaLink": "https://github.com/chiragksharma/BuildFast",
     "highlightedSmallText": "FREE",
     "smallText": "for first 1000 customers",
     "highlightTagColor": "#ffed4a",

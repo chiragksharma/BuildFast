@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
 
 
     return (
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-16 h-auto">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-16 h-auto" id='hero'>
                 <div className="flex flex-col gap-10 items-center justify-center text-center lg:text-left lg:items-start">
                 <h1 className="text-4xl font-extrabold lg:text-6xl tracking-tight md:mb-1 flex flex-col gap-3 items-center lg:items-start">
                         {/* Build your Landing page in <span className="relative inline-block">

@@ -17,7 +17,7 @@ const FAQ: React.FC = () => {
 
     
     return (
-        <section className='bg-background-secondary'>
+        <section className='bg-background-secondary' id='faq'>
         <div className='flex flex-col overflow-hidden align-middle items-center max-w-sm py-11 px-10 md:py-24 md:px-24 md:max-w-5xl mx-auto rounded-3xl border border-elements-secondary'>
             <div className='flex flex-col text-center basis-1/2'>
                 <p className='sm:text-4xl text-3xl font-extrabold mb-8'>

@@ -3,15 +3,27 @@
         "questions": [
           {
             "question": "What is BuildFast?",
-            "answer": "BuildFast is a NextJS boilerplate with all you need to build your SaaS product Landing page. Super easy to customize.This is app is super cool as a user if you are planning to build a SaaS product. It has all the features you need to get started. It is a great starting point for your next project."  
+            "answer": "BuildFast is a NextJS boilerplate to build your SaaS product Landing page. Super easy to customize. If you are planning to build a SaaS product or you have already have one, you can use BuildFast to build your landing pages easily."  
           },
           {
             "question": "How do I get started?",
-            "answer": "You can get started by clicking the Get Started button on the top right corner of the page."
+            "answer": "1. Clone the repository. 2. Install the dependencies. 3. Customize the content using BuildFasts GPT agent. 4. Deploy your site on vercel."
           },
           {
             "question": "What is the price?",
-            "answer": "BuildFast is free for the first 1000 customers."
+            "answer": "BuildFast is free for the first 1000 customers. For more features like Google auth, Dashboard, access to amazing founders community and much more you can purchase Buildfast pro"
+          },
+          {
+            "question": "Are there more UI components apart from what I can see in this page?",
+            "answer": "Yes we have more than 20+ UI components that you can use to build your landing page. We are regularly adding more components to the boilerplate so that you can create your faviourite Landing page with more customization."
+          },
+          {
+            "question": "How can I validate my idea using BuildFast?",
+            "answer": "You are dreaming of an awesome idea for a product, but you want some validation? \n But creating a landing page from scratch is too time consuming that you loose interest by overthinking on it? \n Don't worry, with BuildFast you can create a landing page in hours and validate your idea first. \n If you get good response, you can start working on the product.🥳"
+          },
+          {
+            "question": "How is Buildfast different from other boilerplates?",
+            "answer": "Other boilerplates are complex and hard to customize. They are expensive and not beginner friendly. \n BuildFast is super easy to customize, beginner friendly and free for first 1000 customers. \n You can build your landing page in hours not days."
           }
         ]
       }

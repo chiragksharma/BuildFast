@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
     const { brand, logo } = siteConfig;
 
     return (
-    <footer className='bg-background-primary border-t border-border-color-primary/65'>
+    <footer className='bg-background-primary border-t border-border-color-primary/65' id='footer'>
             <div className='max-w-7xl mx-auto px-8 py-24'>
                 <div className='flex lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col'>
                     <div className='w-80 max-w-full flex-shrink-0 md:mx-0 mx-auto text-center md:text-left'>

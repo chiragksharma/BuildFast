@@ -18,7 +18,7 @@ const ProblemsComponents: React.FC = () => {
     const { label, heading, problemsList } = ProblemsConfig;
 
     return (
-        <section className='relative bg-cards-bg text-neutral-content rounded-xl p-8 md:p-12  max-w-xs md:max-w-3xl mx-auto text-center text-lg'>
+        <section className='relative bg-cards-bg text-neutral-content rounded-xl p-8 md:p-12  max-w-xs md:max-w-3xl mx-auto text-center text-lg' id='problems'>
             <div className='flex flex-col text-center w-full mb-10'>
                 <Label text={label} />
                     <h2 className="font-bold text-3xl lg:text-5xl tracking-tight mb-2 max-w-2xl mx-auto">{heading}</h2>

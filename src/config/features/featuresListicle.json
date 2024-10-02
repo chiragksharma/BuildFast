@@ -71,23 +71,19 @@
         }
       },
       {
-        "title": "Blogs",
-        "icon": "Article",
+        "title": "ChatGpt",
+        "icon": "Robot",
         "details": {
-          "title": "Blogs and Articles",
+          "title": "ChatGpt Agent",
           "items": [
-            "Inform your users about your product with blogs",
-            "simple and readble blogs",
-            "Changelog and updates"
+            "Build Landing Page in minutes using ChatGpt",
+            "Our agent will help you to build your custom landing page",
+            "Just tell your product idea and see the magic ✨"
           ],
           "links": [
             {
-              "text": "MongoDB",
-              "href": "https://www.mongodb.com/"
-            },
-            {
-              "text": "PostgreSQL",
-              "href": "https://www.postgresql.org/"
+              "text": "ChatGpt Agent",
+              "href": "https://chatgpt.com/g/g-9mJXEHce4-buildfast-build-your-landing-page-in-5-minutes"
             }
           ]
         }

@@ -9,7 +9,7 @@ const FeaturedIn: React.FC = () => {
     const { logos } = featuredInConfig;
 
     return (
-        <section className='p-8 md:p-10 flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-8'>
+        <section className='p-8 md:p-10 flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-8' id='featuredIn'>
             <span className="opacity-80 mb-4 md:mb-0">Featured on</span>
             <div className='flex flex-row gap-4 md:gap-5 h-10 md:h-40 items-center align-middle'>
             {logos.map((logo, index) => (

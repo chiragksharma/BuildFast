@@ -13,6 +13,7 @@ const CTA: React.FC = () => {
         <motion.section
             ref = {targetRef}
             className='bg-background-secondary pt-7'
+            id='cta'
         >
             <div 
                 className='bg-background-secondary pb-24 pt-24 px-8 w-full mx-auto flex flex-col items-center gap-8 md:gap-12'>

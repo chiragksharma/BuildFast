@@ -24,8 +24,8 @@ const Header: React.FC = () => {
   const { links, cta, mobileMenu } = navbarConfig;
 
   return (
-    <header className="max-w-7xl bg-navbar-bg mx-auto px-8 py-5 flex items-center justify-between md:py-10">
-        <div className="flex flex-row items-center align-middle gap-1 md:w-40 pl-8">
+    <header className="max-w-7xl bg-navbar-bg mx-auto px-8 py-5 flex items-center justify-between md:py-10" id='Navbar'>
+        <div className="flex flex-row items-center align-middle gap-1 md:w-40 ">
             {/* <motion.img src={logo} alt={`${brand} Logo`} fetchPriority='high' className='w-8 h-8 text-logo-text-color'
             whileHover={{ scale: 1.1 }}
             transition={{ type: 'spring', stiffness: 200 }}
@@ -49,7 +49,6 @@ const Header: React.FC = () => {
         </div>
           <div className="hidden md:flex items-center md:flex-row md:gap-3 ">
           <a 
-          href={cta.href} 
           ref={themeLinkRef}
           className="bg-transparent border font-brico text-nav-normal-btn-text border-nav-normal-btn-border shadow-sm hover:border-nav-links-color px-4 py-2 rounded-lg flex flex-row items-center gap-2 transition delay-75 group"
           onClick={(e) => {
@@ -60,7 +59,13 @@ const Header: React.FC = () => {
                 Themes
                 <PaintBucket size={20} weight='bold' />
             </a>
-            <a href={cta.href} className="bg-nav-cta-btn-bg border border-nav-cta-btn-border font-brico text-foreground-opposite px-4 py-2 rounded-lg flex flex-row items-center gap-1 transition delay-75 group">
+            <a href={cta.href} 
+            className="bg-nav-cta-btn-bg border border-nav-cta-btn-border font-brico text-foreground-opposite px-4 py-2 rounded-lg flex flex-row items-center gap-1 transition delay-75 group"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(cta.href, '_blank', 'noopener,noreferrer');
+            }}
+            >
                 {cta.text} 
                 <ArrowRight className="transform transition-transform duration-300 group-hover:translate-x-1"/>
             </a>

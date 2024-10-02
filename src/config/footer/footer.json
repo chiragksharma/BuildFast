@@ -4,7 +4,7 @@
         {
           "title": "LINKS",
           "links": [
-            { "text": "Pricing", "href": "/index#pricing" },
+            { "text": "Pricing", "href": "#pricing" },
             { "text": "Affiliates — Earn up to $99 per sale", "href": "/affiliates" }
           ]
         },

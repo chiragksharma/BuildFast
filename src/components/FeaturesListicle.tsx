@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import Features from '@components/atoms/FeatureDetails';
-import { At,CreditCard,ShieldPlus,Article,CaretCircleDoubleUp,Layout,DotsThreeCircle,IconProps } from 'phosphor-react';
+import { Robot,At,CreditCard,ShieldPlus,Article,CaretCircleDoubleUp,Layout,DotsThreeCircle,IconProps } from 'phosphor-react';
 import FeaturesListicleConfig from '@config/features/featuresListicle.json';
 
 const iconMapping: Record<string, React.ComponentType<IconProps>> = {
@@ -12,7 +12,8 @@ const iconMapping: Record<string, React.ComponentType<IconProps>> = {
     Article: Article,
     CaretCircleDoubleUp: CaretCircleDoubleUp,
     Layout: Layout,
-    DotsThreeCircle: DotsThreeCircle
+    DotsThreeCircle: DotsThreeCircle,
+    Robot:Robot,
   };
 
 
@@ -50,7 +51,7 @@ const FeaturesListicle: React.FC = () => {
     };
 
     return (
-        <section className='py-24' >
+        <section className='py-24' id='features' >
             <div className='max-w-3xl mx-auto'>
                 <div className=' max-md:px-8 max-w-3xl'>
                     {/* <p className='text-accent font-medium text-sm font-mono mb-3'>
