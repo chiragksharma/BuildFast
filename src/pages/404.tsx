@@ -16,14 +16,14 @@ const Custom404: React.FC = () => {
         404
       </motion.h1>
       <motion.p 
-        className="mt-4 text-xl text-gray-600"
+        className="mt-7 text-xl text-gray-600"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
         Page Not Found
       </motion.p>
-      <Link href="/">
+      <Link href="/" className='mt-7 '>
         <ButtonPrimary text='Go Back home'/>
       </Link>
     </div>

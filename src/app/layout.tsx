@@ -22,7 +22,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BuildFast",
     description: "Create Landing Page in an hour ⌚",
+    images: [
+      {
+        url: "/openGraph_BuildFast.png",
+        width: 800,
+        height: 600,
+        alt: "BuildFast Landing Page",
+      },
+    ],
   },
+
 };
 
 export default function RootLayout({
