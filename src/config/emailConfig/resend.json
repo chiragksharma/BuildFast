@@ -1,5 +1,20 @@
 {
     "from": "chiragksharma15@gmail.com",
     "subject": "Welcome to the Waitlist",
-    "text": "Thank you for joining our waitlist. We will notify you once we launch."
-  }
+    "text": "Thank you for joining our waitlist. We will notify you once we launch.",
+    "CompanyName": "BuildFast",
+    "primaryColor" : "#2196F3",
+    "textColor" : "#1A2B3C",
+    "Website": "https://buildfasts.com",
+    "backgroundColor": "#f9f9f9",
+    "Font": "Helvetica",
+    "GreetingMessage": "Welcome",
+    "ClosingMessage": "Thank you for joining our waitlist. We will notify you once we launch.",
+    "supportEmail": "support@buildfasts.com",
+    "Button": {
+        "ctaText": "Join Waitlist",
+        "ctaLink": "https://buildfasts.com",
+        "ButtonColor": "#2196F3",
+        "ButtonTextColor": "#ffffff"
+    } 
+}
