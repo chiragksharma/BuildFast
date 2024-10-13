@@ -67,4 +67,45 @@ You can easily customize the entire landing page using the `siteConfig.json` fil
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Steps to Easily Deploy to Vercel 🚀🚀
+
+1. **Login to Vercel**
+   Run the following command to log in to Vercel:
+
+    ```sh
+    npx vercel login
+    ```
+
+    This will prompt you to authenticate using a variety of methods:
+    ```
+    ? Log in to Vercel (Use arrow keys)
+    ❯ Continue with GitHub
+    Continue with GitLab
+    Continue with Bitbucket
+    Continue with Email
+    Continue with SAML Single Sign-On
+    ─────────────────────────────────
+    Cancel
+    ```
+
+    After you’ve successfully authenticated, you should see a message like the following in your terminal:
+
+    ```
+    ? Log in to Vercel Continue with GitHub
+    > Success! GitHub authentication complete for hello@example.com
+    ```
+    Congratulations! You are now logged in. In order to deploy something, run vercel.
+
+ 2. **Create and Deploy Vercel Project**
+
+    Run the following command to create and deploy your Vercel project:
+    ```
+    npx vercel
+    ```
+    This will initiate a prompt to set up a Vercel project. Once you get to the step where it asks you if you want to link to an existing project, enter `y/n` accordingly if you want to create a new project or link to an exsisting project.
+    Then, select your project and deploy it to the project. Follow the prompts to complete the deployment process. 
+   
+    Wohoo !! Congratulations you successfully deployed your landing page 🥳
+    
+
+
