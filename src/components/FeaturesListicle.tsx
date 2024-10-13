@@ -1,20 +1,10 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import siteConfig from '@config/siteConfig.json';
 import Features from '@components/atoms/FeatureDetails';
-import { Robot,At,CreditCard,ShieldPlus,Article,CaretCircleDoubleUp,Layout,DotsThreeCircle,IconProps } from 'phosphor-react';
 import FeaturesListicleConfig from '@config/features/featuresListicle.json';
+import { getIconByName } from '@utils/getIconFromName';
 
-const iconMapping: Record<string, React.ComponentType<IconProps>> = {
-    At: At,
-    CreditCard: CreditCard,
-    ShieldPlus: ShieldPlus,
-    Article: Article,
-    CaretCircleDoubleUp: CaretCircleDoubleUp,
-    Layout: Layout,
-    DotsThreeCircle: DotsThreeCircle,
-    Robot:Robot,
-  };
+
 
 
 const FeaturesListicle: React.FC = () => {
@@ -65,7 +55,7 @@ const FeaturesListicle: React.FC = () => {
                 <div>
                 <div className='grid grid-cols-4 md:flex justify-start max-md:px-8 max-w-3xl mx-auto'>
                         {features.map((feature, index) => {
-                            const IconComponent = iconMapping[feature.icon];
+                            const IconOrPath = getIconByName(feature.icon);
                             return (
                                 <span
                                     key={index}
@@ -75,7 +65,11 @@ const FeaturesListicle: React.FC = () => {
                                     onClick={() => toggleAccordion(index)}
                                 >
                                     <span>
-                                        {IconComponent && <IconComponent size={24} />}
+                                    {typeof IconOrPath === 'string' ? (
+                                        <img src={IconOrPath} alt={feature.title} width={24} height={24} />
+                                        ) : (
+                                        <IconOrPath size={24} />
+                                    )}                                   
                                     </span>
                                     <span>
                                         {feature.title}

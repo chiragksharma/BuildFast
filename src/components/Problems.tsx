@@ -6,13 +6,7 @@ import Label from '@atoms/Label';
 import siteConfig from '@config/siteConfig.json';
 import { Timer, LightbulbFilament, SmileyNervous, Money, IconProps } from 'phosphor-react';
 import ProblemsConfig from '@config/problems/problems.json';
-
-const iconMapping: Record<string, React.ComponentType<IconProps>> = {
-    Timer: Timer,
-    LightbulbFilament: LightbulbFilament,
-    SmileyNervous: SmileyNervous,
-    Money: Money,
-};
+import { getIconByName } from '@utils/getIconFromName';
 
 const ProblemsComponents: React.FC = () => {
     const { label, heading, problemsList } = ProblemsConfig;
@@ -27,7 +21,7 @@ const ProblemsComponents: React.FC = () => {
                 <div className="text-neutral-content/80 space-y-1">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {problemsList.map((problem: { description: string, icon: string }, index: number) => {
-                            const IconComponent = iconMapping[problem.icon];
+                            const IconComponent = getIconByName(problem.icon) as React.ComponentType<IconProps>;
                             return (
                                 <motion.div
                                     key={index}

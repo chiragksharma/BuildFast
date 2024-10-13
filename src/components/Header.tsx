@@ -1,8 +1,8 @@
 "use client";
 import React, { useState,useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getIconByName } from '@utils/getIconFromName';
 import { ArrowRight,List,X,PaintBucket,RocketLaunch } from 'phosphor-react';
-import siteConfig from '@config/siteConfig.json';
 import NavPopup from '@atoms/NavPopup';
 import navbarConfig from '@config/navbar/navbar.json';
 
@@ -20,8 +20,11 @@ const Header: React.FC = () => {
     setIsPopupOpen(!isPopupOpen);
   };
  
-  const { logo, brand } = siteConfig;
-  const { links, cta, mobileMenu } = navbarConfig;
+  // const { logo, brand } = siteConfig;
+  const { brand,logo,links, cta, mobileMenu } = navbarConfig;
+  
+  const IconOrPath = getIconByName(logo);
+
 
   return (
     <header className="max-w-7xl bg-navbar-bg mx-auto px-8 py-5 flex items-center justify-between md:py-10" id='Navbar'>
@@ -35,7 +38,11 @@ const Header: React.FC = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ type: 'spring', stiffness: 200 }}
             >
-              <RocketLaunch size={30} weight='fill'/>
+              {typeof IconOrPath === 'string' ? (
+                <img src={IconOrPath} alt={brand} />
+              ) : (
+                <IconOrPath size={30} weight="fill" />
+              )}
             </motion.div>
             <h1 className="text-logo-text-color text-xl font-semibold">{brand}</h1>
         </div>

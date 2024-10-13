@@ -1,4 +1,5 @@
- {
+ {  "brand": "BuildFast",
+    "logo": "RocketLaunch",
     "links": [
       { "text": "Pricing", "href": "#pricing" },
       { "text": "Reviews", "href": "#testinomials" },

@@ -3,19 +3,20 @@ import React, { useEffect, useState } from 'react';
 import siteConfig from '@config/siteConfig.json';
 import { RocketLaunch } from 'phosphor-react';
 import FooterConfig from '@config/footer/footer.json';
+import { getIconByName } from '@utils/getIconFromName';
 
 const Footer: React.FC = () => {
-    const { description, sections } = FooterConfig;
-    const { brand, logo } = siteConfig;
-
+    const { brand, logo, description, sections } = FooterConfig;
+    const IconComponent = getIconByName(logo) as React.ComponentType<any>;
+    
     return (
     <footer className='bg-background-primary border-t border-border-color-primary/65' id='footer'>
             <div className='max-w-7xl mx-auto px-8 py-24'>
                 <div className='flex lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col'>
                     <div className='w-80 max-w-full flex-shrink-0 md:mx-0 mx-auto text-center md:text-left'>
                         <a href="/" className='flex gap-2 justify-center md:justify-start items-center text-primary-color'>
-                            <RocketLaunch size={30} weight='fill' />
-                            <h1 className='text-foreground-hsl text-xl font-bold'>{brand}</h1>
+                        {IconComponent && <IconComponent size={30} weight="fill" />}
+                        <h1 className='text-foreground-hsl text-xl font-bold'>{brand}</h1>
                         </a>
                         <p className="mt-3 text-sm text-foreground-hsl/70 leading-relaxed">
                             {description}<br />Copyright ©2024 All rights reserved

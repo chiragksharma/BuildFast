@@ -1,5 +1,5 @@
 {
-  "logo": "/brand_logo.svg",
+  "logo": "RocketLaunch",
   "brand": "BuildFast",
   "navbar": "navbar/navbar.json",
   "hero": "hero/hero.json",

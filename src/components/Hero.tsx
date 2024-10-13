@@ -2,7 +2,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import siteConfig from '@config/siteConfig.json';
-import { RocketLaunch } from 'phosphor-react';
 import HeroAnimation from '@atoms/HeroAnimation';
 import ButtonPrimary from '@atoms/Buttons/ButtonPrimary';
 import HeroConfig from '@config/hero/hero.json';
@@ -118,7 +117,7 @@ const Hero: React.FC = () => {
                 </div>
                 
                 <div className="flex justify-center items-center max-md:-m-4 lg:w-full h-full ">
-                    {/* <img src={heroImage} alt="Hero Image" className=" md:-mt-9 w-full h-auto " style={{color:'transparent'}} /> */}
+                    {/* <img src={heroImage} alt="Hero Image" className=" md:-mt-4  w-full h-auto " style={{color:'transparent'}} /> */}
                     <div className="md:mt-9 w-full h-full flex justify-center items-center">
                         <HeroAnimation />
                     </div>
