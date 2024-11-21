@@ -7,7 +7,7 @@ import testinomialGridConfig from '@config/testinomialsGrid/testinomialGrid1.jso
 
 
 const Testimonials11: React.FC = () => {
-    const testimonialsGrid  = testinomialGridConfig;
+    const { heading, description, testimonials }  = testinomialGridConfig;
     const brand = siteConfig.brand;
 
     const AddYourTweet = () => {
@@ -22,12 +22,12 @@ const Testimonials11: React.FC = () => {
             <div className="py-24 px-4 max-w-7xl mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
                     <div className='mb-8'>
-                        <h2 className="sm:text-5xl text-4xl font-extrabold">4461 makers built AI tools, SaaS, and more</h2>
+                        <h2 className="sm:text-5xl text-4xl font-extrabold">{heading}</h2>
                     </div>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed font-normal">They made their first $ online, and some even quit their 9-5!</p>
+                    <p className="lg:w-2/3 mx-auto leading-relaxed font-normal">{description}</p>
                 </div>
                 <ul role='' className='max-w-7xl mx-auto md:columns-2 lg:columns-3 xl:columns-4 space-y-4 md:space-y-6 md:gap-6 '>
-                    {testimonialsGrid.map((testimonial, index) => (
+                    {testimonials.map((testimonial, index) => (
                         <li key={index} className={`break-inside-avoid max-md:flex  ${testimonial.tweetLink ? 'h-full justify-center' : ''}`}>
                             {testimonial.tweetLink ? (
                                 <Tweet 

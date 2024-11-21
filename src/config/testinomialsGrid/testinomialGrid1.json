@@ -1,4 +1,7 @@
-[
+{
+  "heading": "4461 makers built AI tools, SaaS, and more",
+  "description": "They made their first $ online, and some even quit their 9-5!",
+  "testimonials":[
       {
         "tweetLink": "https://x.com/chirags93395286/status/1827068558276489388",
         "profileName": "Jack F.",
@@ -80,4 +83,4 @@
         "link": "https://example.com",
         "platform": "LinkedIn"
       }
-]
+]}
