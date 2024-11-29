@@ -20,5 +20,10 @@
       ]
     },
     "bold_avatar_text": "100",
-    "avatar_text": "maker's build faster"
+    "avatar_text": "maker's build faster",
+    "tag": {
+      "text": "Build with ChatGPT agent",
+      "icon": "/icons/brand/open-ai-logo.svg",
+      "link": "https://chatgpt.com/g/g-9mJXEHce4-buildfast-build-your-landing-page-in-5-minutes"
+    }
   }

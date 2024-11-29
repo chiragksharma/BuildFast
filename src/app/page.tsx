@@ -11,13 +11,15 @@ import Pricing from "@components/Pricing";
 import FAQ from "@components/FAQ";
 import CTA from "@components/CTA";
 import Testimonials11 from "@components/TestinomialGrid";
+import HeroCenter from "@components/Hero/HeroCenter";
 
 export default function Home() {
  
 
   return (
     <main className=" min-h-screen">
-        <Hero />
+        {/* <Hero /> */}
+        <HeroCenter/>
         <FeaturedIn />
         <ProblemsComponents />
         <FeaturesListicle />
