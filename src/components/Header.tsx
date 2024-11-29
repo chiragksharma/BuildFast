@@ -2,7 +2,7 @@
 import React, { useState,useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getIconByName } from '@utils/getIconFromName';
-import { ArrowRight,List,X,PaintBucket,RocketLaunch } from 'phosphor-react';
+import { ArrowRight,List,X,PaintBucket } from 'phosphor-react';
 import NavPopup from '@atoms/NavPopup';
 import navbarConfig from '@config/navbar/navbar.json';
 

@@ -12,9 +12,9 @@
       "href": "https://chatgpt.com/g/g-9mJXEHce4-buildfast-build-your-landing-page-in-5-minutes"
     },
     "mobileMenu": [
+        { "text": "Github", "href": "https://github.com/chiragksharma/BuildFast" } ,
         { "text": "Pricing", "href": "#pricing" },
-        { "text": "Reviews", "href": "#testinomials" },
-        { "text": "FAQ", "href": "#faq" },
-        { "text": "Github", "href": "https://github.com/chiragksharma/BuildFast" }  
+        { "text": "Reviews", "href": "#testinomials" }
+
      ]
 }

@@ -5,6 +5,7 @@ import "@styles/globals.css";
 import Head from "next/head";
 import Footer from "@components/Footer";
 import { ThemeProvider } from "next-themes";
+import NavbarCenter from "@components/Navbars/Navbar_center";
 
 const Bricolage = Bricolage_Grotesque({
     weight: ['200', '300', '400', '500', '600', '700', '800'],

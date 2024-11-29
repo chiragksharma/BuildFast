@@ -39,6 +39,7 @@ const config: Config = {
         'logo-text-color': 'hsl(var(--logo-text-color))',
         'logo-icon-color': 'hsl(var(--logo-icon-color))',
         'nav-links-color': 'hsl(var(--nav-links-color))',
+        'nav-center-bg' : 'hsl(var(--nav-center-bg))',
         'nav-cta-btn-bg': 'hsl(var(--nav-cta-btn-bg))',
         'nav-cta-btn-text': 'hsl(var(--nav-cta-btn-text))',
         'nav-cta-btn-border': 'hsla(var(--nav-cta-btn-border))',

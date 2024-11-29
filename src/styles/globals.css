@@ -29,6 +29,8 @@
     --navbar-bg: 0 0% 0% 0%;
     --logo-text-color: 234 14% 47%;
     --logo-icon-color: 228 41% 21%;
+    --nav-center-bg: 231 27% 89%;
+
     --nav-links-color: 215 85% 23%;
     --nav-cta-btn-bg: 213 92% 62%;
     --nav-cta-btn-text: 0 0% 100%;
@@ -71,6 +73,7 @@
     --logo-text-color: 0 0% 90%; /* Light logo text */
     --logo-icon-color: 0 0% 80%; /* Light logo icon */
     --nav-links-color: 330 85% 50%; /* Primary color for nav links */
+    --nav-center-bg: 231 27% 89%;
     --nav-cta-btn-bg: 330 85% 50%; /* Primary color for CTA button background */
     --nav-cta-btn-text: 0 0% 100%; /* White text for CTA button */
     --nav-cta-btn-border: 0 0% 10%; /* Dark border for CTA button */
@@ -108,6 +111,7 @@
     --pop-colors-primary: 0 100% 50%;
 
     --navbar-bg: 0 0% 0% 0%;
+    --nav-center-bg: 231 27% 89%;
     --logo-text-color: 234 14% 47%;
     --logo-icon-color: 228 41% 21%;
     --nav-links-color: 215 85% 23%;
@@ -151,6 +155,7 @@
     --navbar-bg: 0 0% 13%; /* Dark navbar background */
     --logo-text-color: 0 0% 90%; /* Light logo text */
     --logo-icon-color: 0 0% 80%; /* Light logo icon */
+    --nav-center-bg: 210 10% 25%; 
     --nav-links-color: 45 100% 60%; /* Primary color for nav links */
     --nav-cta-btn-bg: 45 100% 60%; /* Primary color for CTA button background */
     --nav-cta-btn-text: 0 0% 100%; /* White text for CTA button */
@@ -165,23 +170,6 @@
     --button-text-color: 0 0% 100%; /* White button text */
 }
   
-  html[data-theme="sapphire"] {
-    --foreground-rgb: 0, 0, 255;
-    --primary-color: 240 100% 50%;
-    --primary-text-color: 240 100% 100%;
-  }
-  
-  html[data-theme="daylight"] {
-    --foreground-rgb: 255, 255, 0;
-    --primary-color: 60 100% 50%;
-    --primary-text-color: 60 100% 100%;
-  }
-  
-  html[data-theme="emerald"] {
-    --foreground-rgb: 0, 128, 0;
-    --primary-color: 120 100% 50%;
-    --primary-text-color: 120 100% 100%;
-  }
 }
 
 /* Global selection styles */
