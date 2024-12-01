@@ -63,7 +63,7 @@ const HeroCenter: React.FC = () => {
             <span
                 className="absolute bg-cta-color -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1"
             ></span>
-            <span className="relative text-gray-900">{highlightedText}</span>
+            <span className="relative text-foreground-opposite">{highlightedText}</span>
             </span>
         </span>
         <span>{heading.split(highlightedText)[1]}</span>
@@ -71,7 +71,7 @@ const HeroCenter: React.FC = () => {
 
 
       {/* Subheading/Description */}
-      <p className="mt-5 text-base md:text-lg text-gray-600 max-w-xl mx-auto leading-relaxed">
+      <p className="mt-5 text-lg text-foreground-hsl/85 md:text-lg  font-medium leading-relaxed max-w-xl mx-auto">
         {description}
       </p>
 
@@ -104,7 +104,7 @@ const HeroCenter: React.FC = () => {
             </motion.div>
           ))}
         </div>
-        <p className="text-sm text-gray-600">
+        <p className="text-sm font-semibold">
           <strong>{bold_avatar_text}</strong> {avatar_text}
         </p>
       </div>

@@ -18,8 +18,8 @@ export default function Home() {
 
   return (
     <main className=" min-h-screen">
-        {/* <Hero /> */}
-        <HeroCenter/>
+        <Hero />
+        {/* <HeroCenter/> */}
         <FeaturedIn />
         <ProblemsComponents />
         <FeaturesListicle />

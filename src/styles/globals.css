@@ -26,17 +26,18 @@
     --btn-color-disabled: 234 15% 47%;
     --pop-colors-primary: 0 100% 50%;
 
-    --navbar-bg: 0 0% 0% 0%;
     --logo-text-color: 234 14% 47%;
     --logo-icon-color: 228 41% 21%;
     --nav-center-bg: 231 27% 89%;
 
-    --nav-links-color: 215 85% 23%;
+    --navbar-bg: 231 17% 95%;
+    --navbar-text-color: 227 44% 21%;
+    --navbar-icon-color: 228 41% 21%;
+    --navbar-hover-link-color: 213 92% 62%;
     --nav-cta-btn-bg: 213 92% 62%;
-    --nav-cta-btn-text: 0 0% 100%;
-    --nav-cta-btn-border: 0 0% 0% 0%;
-    --nav-normal-btn-text: 215 85% 23%;
-    --nav-normal-btn-border: 228 27% 73%;
+    --navbar-border-color: 228 27% 73%;
+    --mobile-menu-bg: 231 27% 89%;
+    --mobile-menu-text-color: 227 44% 21%;
 
     --hero-headline-text-color: 227 44% 21%;
 
@@ -72,13 +73,13 @@
     --navbar-bg: 0 0% 10%; /* Dark navbar background */
     --logo-text-color: 0 0% 90%; /* Light logo text */
     --logo-icon-color: 0 0% 80%; /* Light logo icon */
-    --nav-links-color: 330 85% 50%; /* Primary color for nav links */
-    --nav-center-bg: 231 27% 89%;
-    --nav-cta-btn-bg: 330 85% 50%; /* Primary color for CTA button background */
-    --nav-cta-btn-text: 0 0% 100%; /* White text for CTA button */
-    --nav-cta-btn-border: 0 0% 10%; /* Dark border for CTA button */
-    --nav-normal-btn-text: 0 0% 90%; /* Light text for normal buttons */
-    --nav-normal-btn-border: 0 0% 20%; /* Dark border for normal buttons */
+    --navbar-text-color: 0 0% 90%; /* Light text */
+    --navbar-icon-color: 0 0% 80%; /* Light icon */
+    --navbar-hover-link-color: 330 85% 50%; /* Primary theme color */
+    --navbar-border-color: 0 0% 20%; /* Dark border */
+    --nav-cta-btn-bg: 330 85% 50%;
+    --mobile-menu-bg: 0 0% 12%; /* Mobile menu dark background */
+    --mobile-menu-text-color: 0 0% 90%; /* Light text for mobile menu */
 
     --hero-headline-text-color: 0 0% 90%; /* Light text for hero headline */
 
@@ -110,16 +111,14 @@
     --btn-color-disabled: 234 15% 47%;
     --pop-colors-primary: 0 100% 50%;
 
-    --navbar-bg: 0 0% 0% 0%;
-    --nav-center-bg: 231 27% 89%;
-    --logo-text-color: 234 14% 47%;
-    --logo-icon-color: 228 41% 21%;
-    --nav-links-color: 215 85% 23%;
-    --nav-cta-btn-bg: 213 92% 62%;
-    --nav-cta-btn-text: 0 0% 100%;
-    --nav-cta-btn-border: 0 0% 0% 0%;
-    --nav-normal-btn-text: 215 85% 23%;
-    --nav-normal-btn-border: 228 27% 73%;
+    --navbar-bg: 231 17% 95%;
+    --navbar-text-color: 227 44% 21%;
+    --navbar-icon-color: 228 41% 21%;
+    --navbar-hover-link-color: 213 92% 62%;
+    --navbar-border-color: 228 27% 73%;
+    --nav-cta-btn-bg: 0 100% 50%;
+    --mobile-menu-bg: 231 27% 89%;
+    --mobile-menu-text-color: 227 44% 21%;
 
     --hero-headline-text-color: 227 44% 21%;
 
@@ -152,17 +151,16 @@
     --btn-color-disabled: 0 0% 50%; /* Disabled button color */
     --pop-colors-primary: 45 100% 60%; /* Same as primary color */
 
-    --navbar-bg: 0 0% 13%; /* Dark navbar background */
     --logo-text-color: 0 0% 90%; /* Light logo text */
     --logo-icon-color: 0 0% 80%; /* Light logo icon */
-    --nav-center-bg: 210 10% 25%; 
-    --nav-links-color: 45 100% 60%; /* Primary color for nav links */
-    --nav-cta-btn-bg: 45 100% 60%; /* Primary color for CTA button background */
-    --nav-cta-btn-text: 0 0% 100%; /* White text for CTA button */
-    --nav-cta-btn-border: 0 0% 10%; /* Dark border for CTA button */
-    --nav-normal-btn-text: 0 0% 90%; /* Light text for normal buttons */
-    --nav-normal-btn-border: 0 0% 20%; /* Dark border for normal buttons */
-
+    --navbar-bg: 210 10% 25%; /* Custom yellow background */
+    --navbar-text-color: 0 0% 90%; /* Light text */
+    --navbar-icon-color: 0 0% 80%; /* Light icon */
+    --navbar-hover-link-color: 45 100% 60%; /* Bright yellow */
+    --navbar-border-color: 0 0% 20%;
+    --nav-cta-btn-bg: 45 100% 60%;
+    --mobile-menu-bg: 0 0% 13%; /* Darker mobile menu */
+    --mobile-menu-text-color: 0 0% 90%;
     --hero-headline-text-color: 0 0% 90%; /* Light text for hero headline */
 
     --primary-text-color: 0 0% 90%; /* Light primary text */

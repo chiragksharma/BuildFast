@@ -33,11 +33,11 @@ const NavbarCenter: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center">
-      <nav className="bg-slate-200 border border-gray-200 rounded-xl backdrop-blur-md bg-opacity-80 mt-4 py-4 px-6 md:px-12 shadow-md max-w-4xl w-full flex items-center justify-between ring-4 ring-gray-300">
+      <nav className=" border rounded-xl backdrop-blur-md bg-opacity-80 mt-4 py-4 px-6 md:px-12 shadow-md max-w-4xl w-full flex items-center justify-between ring-4 ring-gray-300">
         {/* Brand and Logo */}
         <div className="flex items-center gap-2 md:absolute md:inset-x-0 md:justify-center pointer-events-auto z-10">
           <motion.div
-            className="text-logo-icon-color"
+            className="text-navbar-icon-color"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
@@ -47,13 +47,13 @@ const NavbarCenter: React.FC = () => {
               <IconOrPath size={30} weight="fill" />
             )}
           </motion.div>
-          <span className="font-bold text-lg text-foreground-hsl">{brand}</span>
+          <span className="font-bold text-lg ">{brand}</span>
         </div>
 
         {/* Hamburger Menu */}
         <button
           onClick={toggleMenu}
-          className="block md:hidden p-2 bg-slate-100 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="block md:hidden p-2  rounded-md focus:outline-none focus:ring-2 "
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <List size={24} />}
@@ -65,7 +65,7 @@ const NavbarCenter: React.FC = () => {
             <a
               key={index}
               href={link.href}
-              className="text-gray-700 hover:text-gray-500 transition"
+              className=" hover:text-navbar-hover-link-color transition"
             >
               {link.text}
             </a>
@@ -76,7 +76,7 @@ const NavbarCenter: React.FC = () => {
         <div className="hidden md:block z-20">
           {cta && (
             <button
-              className="bg-nav-cta-btn-bg border-nav-cta-btn-border font-brico text-foreground-opposite px-4 py-3 rounded-lg cursor-pointer flex flex-row items-center gap-1 transition delay-75 group"
+              className="bg-nav-cta-btn-bg  font-brico text-foreground-opposite px-4 py-3 rounded-lg cursor-pointer flex flex-row items-center gap-1 transition delay-75 group"
               onClick={() => window.open(cta.href, "_blank")}
             >
               {cta.text}
@@ -90,7 +90,7 @@ const NavbarCenter: React.FC = () => {
       <AnimatePresence mode="wait">
         {isOpen && (
           <motion.div
-            className="fixed bg-background-primary top-28 left-0 w-full z-40 flex flex-col items-center justify-center p-5 gap-4 rounded-b-xl shadow-md"
+            className="fixed bg-navbar-bg top-24 left-0 w-full z-40 flex flex-col items-center justify-center p-5 gap-4 rounded-b-xl shadow-md"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -100,7 +100,7 @@ const NavbarCenter: React.FC = () => {
               <motion.a
                 key={item.text}
                 href={item.href}
-                className="block font-brico text-foreground-hsl bg-background-primary font-medium items-center text-center w-full py-2"
+                className="block font-brico font-medium items-center text-center w-full py-2"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
@@ -113,7 +113,7 @@ const NavbarCenter: React.FC = () => {
             {cta && (
               <motion.a
                 href={cta.href}
-                className="bg-primary-color font-brico border border-border-color-primary text-foreground-opposite px-4 py-2 rounded-lg flex flex-row items-center gap-1 group"
+                className="bg-nav-cta-btn-bg font-brico  text-foreground-opposite px-4 py-2 rounded-lg flex flex-row items-center gap-1 group"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
