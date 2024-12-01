@@ -57,7 +57,7 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center md:flex-row md:gap-3 ">
           <a 
           ref={themeLinkRef}
-          className="cursor-pointer bg-transparent border font-brico text-nav-normal-btn-text border-nav-normal-btn-border shadow-sm hover:border-nav-links-color px-4 py-2 rounded-lg flex flex-row items-center gap-2 transition delay-75 group"
+          className="cursor-pointer bg-transparent border font-brico text-nav-normal-btn-text border-navbar-border-color shadow-sm hover:border-nav-links-color px-4 py-2 rounded-lg flex flex-row items-center gap-2 transition delay-75 group"
           onClick={(e) => {
             e.preventDefault();
             togglePopup();

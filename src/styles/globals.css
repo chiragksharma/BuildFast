@@ -116,7 +116,7 @@
     --navbar-icon-color: 228 41% 21%;
     --navbar-hover-link-color: 213 92% 62%;
     --navbar-border-color: 228 27% 73%;
-    --nav-cta-btn-bg: 0 100% 50%;
+    --nav-cta-btn-bg: 213 92% 62%;
     --mobile-menu-bg: 231 27% 89%;
     --mobile-menu-text-color: 227 44% 21%;
 
@@ -153,7 +153,7 @@
 
     --logo-text-color: 0 0% 90%; /* Light logo text */
     --logo-icon-color: 0 0% 80%; /* Light logo icon */
-    --navbar-bg: 210 10% 25%; /* Custom yellow background */
+    --navbar-bg: 0 0% 13%; /* Custom yellow background */
     --navbar-text-color: 0 0% 90%; /* Light text */
     --navbar-icon-color: 0 0% 80%; /* Light icon */
     --navbar-hover-link-color: 45 100% 60%; /* Bright yellow */

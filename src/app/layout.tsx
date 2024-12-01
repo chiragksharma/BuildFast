@@ -55,8 +55,8 @@ export default function RootLayout({
         enableColorScheme
         themes={['ruby', 'sapphire', 'daylight', 'emerald']}
         >
-          {/* <Header/> */}
-          <NavbarCenter/>
+          <Header/>
+          {/* <NavbarCenter/> */}
             {children}
           <Footer/>
           </ThemeProvider>
