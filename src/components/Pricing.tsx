@@ -123,14 +123,15 @@ const Pricing: React.FC = () => {
             ))}
                 </div>
 
-            <div className='space-y-4 mx-auto max-w-md mt-24'>
-                <p className="md:text-lg leading-relaxed">{testimonial.text}</p>
-                <div className='flex items-center gap-2'>
-                <p>{testimonial.author}</p>
-                <span className="badge badge-accent badge-outline">{testimonial.badge}</span>
-
-            </div>
-            </div>
+            {testimonial && (
+                <div className='space-y-4 mx-auto max-w-md mt-24'>
+                    <p className="md:text-lg leading-relaxed">{testimonial.text}</p>
+                    <div className='flex items-center gap-2'>
+                    <p>{testimonial.author}</p>
+                    <span className="badge badge-accent badge-outline">{testimonial.badge}</span>
+                    </div>
+                </div>
+            )}
             </div>
 
         </section>

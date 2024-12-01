@@ -12,6 +12,8 @@ import FAQ from "@components/FAQ";
 import CTA from "@components/CTA";
 import Testimonials11 from "@components/TestinomialGrid";
 import HeroCenter from "@components/Hero/HeroCenter";
+import MarqueeFeaturedIn from "@components/featuredIn/marqeeLogos";
+
 
 export default function Home() {
  
@@ -20,7 +22,8 @@ export default function Home() {
     <main className=" min-h-screen">
         <Hero />
         {/* <HeroCenter/> */}
-        <FeaturedIn />
+        {/* <FeaturedIn /> */}
+        <MarqueeFeaturedIn speed={15}/>
         <ProblemsComponents />
         <FeaturesListicle />
         <About />

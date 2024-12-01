@@ -3,28 +3,12 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, List, X } from "phosphor-react";
 import { getIconByName } from "@utils/getIconFromName";
+import navbarConfig from "@config/navbar/navbar.json";
 
 const NavbarCenter: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navbarConfig = {
-    brand: "BuildFast",
-    logo: "RocketLaunch",
-    links: [
-      { text: "Github", href: "https://github.com/chiragksharma/BuildFast" },
-      { text: "Pricing", href: "#pricing" },
-      { text: "Reviews", href: "#testimonials" },
-    ],
-    cta: {
-      text: "Get Started",
-      href: "https://chatgpt.com/g/g-9mJXEHce4-buildfast-build-your-landing-page-in-5-minutes",
-    },
-    mobileMenu: [
-      { text: "Github", href: "https://github.com/chiragksharma/BuildFast" },
-      { text: "Pricing", href: "#pricing" },
-      { text: "Reviews", href: "#testimonials" },
-    ],
-  };
+
 
   const { brand, logo, links, cta, mobileMenu } = navbarConfig;
   const IconOrPath = getIconByName(logo);

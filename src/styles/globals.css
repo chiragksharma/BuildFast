@@ -88,6 +88,47 @@
     --button-text-color: 0 0% 100%; /* White button text */
 }
 
+html[data-theme="GreenGlow"] {
+  --primary-color: 156 88% 38%; /* #0C7B48 in HSL */
+  --background-primary: 0 0% 98%; /* Light neutral white for main background */
+  --background-secondary: 0 0% 92%; /* Slightly darker grey background for sections */
+  --elements-secondary: 156 30% 90%; /* Soft pastel green for secondary elements */
+  --foreground-hsl: 0 0% 20%; /* Neutral dark gray (#333333) for general foreground elements like text */
+  --foreground-opposite: 0 0% 100%; /* White text for contrast */
+  --cta-color: 156 88% 38%; /* Same as primary green (#0C7B48) */
+
+  --cards-bg: 0 0% 100%; /* Pure white for cards background */
+  --cards-bg-secondary: 0 0% 96%; /* Light grey for card contrasts */
+  
+  --border-color-primary: 156 20% 70%; /* Subtle greenish border for depth */
+
+  --text-color-headlines: 156 88% 38%; /* Strong green for headlines */
+  --text-color-secondary: 156 20% 35%; /* Muted dark green for body text */
+  --icons-primary: 156 50% 38%; /* Medium green for icons */
+
+  --btn-color-primary: 156 88% 38%; /* Strong green for primary buttons */
+  --btn-color-secondary: 156 30% 70%; /* Softer green for secondary buttons */
+  --btn-color-disabled: 156 20% 85%; /* Muted light green for disabled buttons */
+  --pop-colors-primary: 0 80% 50%; /* Bright red (#FF4D4D) for error states or warnings */
+
+  --navbar-bg: 0 0% 100%; /* White navbar background */
+  --logo-text-color: 156 88% 38%; /* Primary green for logo text */
+  --logo-icon-color: 156 50% 38%; /* Medium green for logo icon */
+  --navbar-text-color: 156 20% 35%; /* Muted dark green for navbar text */
+  --navbar-icon-color: 156 88% 38%; /* Primary green for navbar icons */
+  --navbar-hover-link-color: 156 50% 45%; /* Medium green for hover states */
+  --navbar-border-color: 0 0% 90%; /* Light grey for navbar border */
+  --nav-cta-btn-bg: 156 88% 38%; /* Strong green for CTA buttons */
+  --mobile-menu-bg: 0 0% 98%; /* Same as background-primary */
+  --mobile-menu-text-color: 156 88% 38%; /* Primary green for mobile menu text */
+
+  --hero-headline-text-color: 156 20% 35%; /* Muted dark green for hero headlines */
+
+  --primary-text-color: 0 0% 13%; /* Neutral dark grey for normal text */
+  --button-border-color: 156 50% 38%; /* Medium green for button borders */
+  --button-text-color: 0 0% 100%; /* White text for buttons */
+}
+
   html[data-theme="funblue"] {
     --primary-color: 213 92% 62%;
     --background-primary: 231 17% 95%;
