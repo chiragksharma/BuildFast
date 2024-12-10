@@ -5,82 +5,116 @@
       {
         "tweetLink": "https://x.com/chirags93395286/status/1827068558276489388",
         "profileName": "Jack F.",
+        "profileDesc": "Founder",
         "description": "I shipped in 6 days as a noob coder... This is awesome",
-        "image": "/avatars/jack.png",
+        "image": "/avatars/avatar_1.png",
         "feedback": "This product changed my life!",
         "link": "https://example.com",
-        "platform": "Twitter"
+        "platform": "Twitter",
+        "showStars": false,
+        "starCount": 0
+
       },
       {
         "tweetLink": null,
         "profileName": "Jane D.",
+        "profileDesc": "Founder",
         "description": "I built my first SaaS product with BuildFast. THis is awesome and super easy to get started!",
-        "image": "/avatars/jane.png",
+        "image": "/avatars/avatar_2.png",
         "feedback": "BuildFast made it super easy to get started!",
         "link": "https://example.com",
-        "platform": "LinkedIn"
+        "platform": "LinkedIn",
+        "showStars": true,
+        "starCount": 4
+
       },
       {
         "tweetLink": "https://x.com/chirags93395286/status/1827068558276489388",
         "profileName": "Jack F.",
+        "profileDesc": "Founder",
         "description": "I shipped in 6 days as a noob coder... This is awesome",
-        "image": "/avatars/jack.png",
+        "image": "/avatars/avatar_3.png",
         "feedback": "This product changed my life!",
         "link": "https://example.com",
-        "platform": "Twitter"
+        "platform": "Twitter",
+        "showStars": false,
+        "starCount": 0
       },
       {
         "tweetLink": null,
         "profileName": "Jane D.",
+        "profileDesc": "Founder",
         "description": "I built my first SaaS product with BuildFast. THis is awesome and super easy to get started! pretty much everything you need to get started. I am so happy with the results.",
-        "image": "/avatars/jane.png",
+        "image": "/avatars/avatar_4.png",
         "feedback": "BuildFast made it super easy to get started! awesome to seethe results ",
         "link": "https://example.com",
-        "platform": "LinkedIn"
+        "platform": "LinkedIn",
+        "showStars": true,
+        "starCount": 4
+
       },
       {
         "tweetLink": null,
         "profileName": "Jane D.",
+        "profileDesc": "Founder",
         "description": "Pretty much awesome that actually converted viewers into customers. I am so happy with the results.",
-        "image": "/avatars/jane.png",
+        "image": "/avatars/avatar_5.png",
         "feedback": "Really happy with the results! Such a great tool to get started. awesome to seethe results",
         "link": "https://example.com",
-        "platform": "LinkedIn"
+        "platform": "LinkedIn",
+        "showStars": true,
+        "starCount": 4
+
       },
       {
         "tweetLink": "https://x.com/chirags93395286/status/1827068558276489388",
         "profileName": "Jack F.",
+        "profileDesc": "Founder",
         "description": "I shipped in 6 days as a noob coder... This is awesome",
-        "image": "/avatars/jack.png",
+        "image": "/avatars/avatar_6.png",
         "feedback": "This product changed my life!",
         "link": "https://example.com",
-        "platform": "Twitter"
+        "platform": "Twitter",
+        "showStars": false,
+        "starCount": 0
+
       },
       {
         "tweetLink": null,
         "profileName": "Jane D.",
+        "profileDesc": "Founder",
         "description": "Pretty much awesome that actually converted viewers into customers. I am so happy with the results.",
-        "image": "/avatars/jane.png",
+        "image": "/avatars/avatar_6.png",
         "feedback": "Really happy with the results! Such a great tool to get started. awesome to seethe results",
         "link": "https://example.com",
-        "platform": "LinkedIn"
+        "platform": "LinkedIn",
+        "showStars": false,
+        "starCount": 0
+
       },
       {
         "tweetLink": null,
         "profileName": "Jane D.",
+        "profileDesc": "Founder",
         "description": "Pretty much awesome that actually converted viewers into customers. I am so happy with the results.",
-        "image": "/avatars/jane.png",
+        "image": "/avatars/avatar_6.png",
         "feedback": "Really happy with the results! Such a great tool to get started. awesome to seethe results",
         "link": "https://example.com",
-        "platform": "LinkedIn"
+        "platform": "LinkedIn",
+        "showStars": false,
+        "starCount": 0
+
       },
       {
         "tweetLink": null,
         "profileName": "Jane D.",
+        "profileDesc": "Founder",
         "description": "Pretty much awesome that actually converted viewers into customers. I am so happy with the results.",
-        "image": "/avatars/jane.png",
+        "image": "/avatars/avatar_6.png",
         "feedback": "Really happy with the results! Such a great tool to get started. awesome to seethe results",
         "link": "https://example.com",
-        "platform": "LinkedIn"
+        "platform": "LinkedIn",
+        "showStars": true,
+        "starCount": 4
       }
 ]}

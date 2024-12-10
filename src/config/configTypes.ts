@@ -58,7 +58,7 @@ export interface FeaturedConfig {
 export interface ProblemsConfig {
   heading: string;
   label: string;
-  problemsList: { description: string; icon: string }[];
+  problemsList: { title?: string, description: string; icon: string }[];
 }
 
 export interface FeaturesListicleConfig {
@@ -128,11 +128,14 @@ export interface PricingConfig {
 export interface TestimonialsGridConfig {
   tweetLink: string | null;
   profileName: string;
+  profileDesc:string;
   description: string;
   image: string;
   feedback: string;
   link: string;
   platform: string;
+  showStars?: boolean;
+  starCount?: number
 }
 
 export interface FAQConfig {

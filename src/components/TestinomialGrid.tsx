@@ -4,7 +4,7 @@ import { Tweet } from 'react-tweet';
 import siteConfig from '@config/siteConfig.json';
 import { Plus } from 'phosphor-react';
 import testinomialGridConfig from '@config/testinomialsGrid/testinomialGrid1.json';
-
+import TestimonialCard from '@components/atoms/Cards/ContentCards/TestinomialCard';
 
 const Testimonials11: React.FC = () => {
     const { heading, description, testimonials }  = testinomialGridConfig;
@@ -27,7 +27,7 @@ const Testimonials11: React.FC = () => {
                     <p className="lg:w-2/3 mx-auto leading-relaxed font-normal">{description}</p>
                 </div>
                 <ul role='' className='max-w-7xl mx-auto md:columns-2 lg:columns-3 xl:columns-4 space-y-4 md:space-y-6 md:gap-6 '>
-                    {testimonials.map((testimonial, index) => (
+                    {/* {testimonials.map((testimonial, index) => (
                         <li key={index} className={`break-inside-avoid max-md:flex  ${testimonial.tweetLink ? 'h-full justify-center' : ''}`}>
                             {testimonial.tweetLink ? (
                                 <Tweet 
@@ -53,6 +53,18 @@ const Testimonials11: React.FC = () => {
                                 </div>
                             )}
                         </li>
+                    ))} */}
+                     {testimonials.map((testimonial, index) => (
+                        <TestimonialCard
+                            key={index}
+                            tweetLink={testimonial.tweetLink}
+                            description={testimonial.description}
+                            image={testimonial.image}
+                            profileName={testimonial.profileName}
+                            profileDesc={testimonial.profileDesc}
+                            showStars= {testimonial.showStars}
+                            starCount={testimonial.starCount}
+                        />
                     ))}
                     <li onClick={AddYourTweet} className='break-inside-avoid max-md:flex cursor-pointer select-none w-full h-full rounded-b-xl leading-tight relative z-20  text-lg font-medium flex flex-col'>
                     <div className='p-4 bg-cards-bg/20 backdrop-blur-lg border border-border-color-primary rounded-lg flex flex-col hover:bg-cards-bg/45 hover:border-border-color-primary/90 hover:shadow-md'>

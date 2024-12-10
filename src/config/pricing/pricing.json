@@ -7,17 +7,17 @@
           "heading": "Bypass complex boilerplates, create, validate and launch quickly!",
           "headingClass": "font-bold text-3xl lg:text-5xl tracking-tight mb-8 max-w-2xl mx-auto",
           "offer": {
-            "text": "$100 off for the first 4440 customers",
+            "text": "50% off for the first 4440 customers",
             "textClass": "text-sm md:text-base flex justify-center items-center gap-2",
-            "highlighted_text": "$100 off"
+            "highlighted_text": "50% off"
           }
         },
         "plans": [
           {
             "name": "Starter",
-            "originalPrice": "$77",
-            "discountedPrice": "$0",
-            "currency": "USD",
+            "originalPrice": "₹4,100",
+            "discountedPrice": "₹0",
+            "currency": "INR",
             "popular": false,
             "features": {
                 "feature1": {
@@ -185,9 +185,9 @@
           },
           {
             "name": "Pro Plan",
-            "originalPrice": "$129",
-            "discountedPrice": "$80",
-            "currency": "USD",
+            "originalPrice": "₹8,118",
+            "discountedPrice": "₹6,560",
+            "currency": "INR",
             "popular": true,
             "features": {
                 "feature1": {

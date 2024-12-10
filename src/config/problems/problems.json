@@ -1,22 +1,26 @@
 {
-    "heading": "Stop Wasting Time, Start Building Faster",
-    "label": "Problems",
-    "problemsList": [
-      {
-        "description": "Building a landing page from scratch is time-consuming.",
-        "icon": "Timer"
-      },
-      {
-        "description": "You have a crazy idea but don't know where to start?",
-        "icon": "LightbulbFilament"
-      },
-      {
-        "description": "Your product is awesome, but your landing page doesn't do it justice?",
-        "icon": "SmileyNervous"
-      },
-      {
-        "description": "Complex and Expensive boilerplates are hard to customize.",
-        "icon": "Money"
-      }
-    ]
-  }
+  "heading": "Stop Wasting Time, Start Building Faster",
+  "label": "Problems",
+  "problemsList": [
+    {
+      "title": "Time-Consuming",
+      "description": "Building a landing page from scratch is time-consuming.",
+      "icon": "Timer"
+    },
+    {
+      "title": "No Starting Point",
+      "description": "You have a crazy idea but don't know where to start?",
+      "icon": "LightbulbFilament"
+    },
+    {
+      "title": "Unjustified Landing Page",
+      "description": "Your product is awesome, but your landing page doesn't do it justice?",
+      "icon": "SmileyNervous"
+    },
+    {
+      "title": "Complex Boilerplates",
+      "description": "Complex and Expensive boilerplates are hard to customize.",
+      "icon": "Money"
+    }
+  ]
+}
