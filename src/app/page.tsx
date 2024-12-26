@@ -13,6 +13,7 @@ import CTA from "@components/CTA";
 import Testimonials11 from "@components/TestinomialGrid";
 import HeroCenter from "@components/Hero/HeroCenter";
 import MarqueeFeaturedIn from "@components/featuredIn/marqeeLogos";
+import ImageCardGrid from "@components/ImageCardsGrid";
 
 
 export default function Home() {
@@ -24,7 +25,8 @@ export default function Home() {
         {/* <HeroCenter/> */}
         {/* <FeaturedIn /> */}
         <MarqueeFeaturedIn speed={15}/>
-        <ProblemsComponents />
+        {/* <ProblemsComponents /> */}
+        <ImageCardGrid/>
         <FeaturesListicle />
         <About />
         <Pricing />

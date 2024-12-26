@@ -1,0 +1,36 @@
+{
+    "label": "Problems",
+    "heading": "Stop Wasting Time, Start Building Faster",
+    "problemsList": [
+        {
+            "imageSrc": "/illustrations/problem_1_illustration_sample.webp",
+            "imageAlt": "Time-Consuming",
+            "title": "Time-Consuming",
+            "description": "Building a landing page from scratch is time-consuming.",
+            "cta": {
+                "text": "Learn More",
+                "onClick": null
+            }
+        },
+        {
+            "imageSrc": "/illustrations/Sample_2_illustration_sample.webp",
+            "imageAlt": "No Starting Point",
+            "title": "No Starting Point",
+            "description": "You have a crazy idea but don't know where to start? jhgkhkjhgkhgkjhgjkhgjhg khgkhgkhg kjhgkhgkh kjghjgkhjg kjhgkhgk kjhghgkjhgk jhgkhgkjjhg kjhgkhgkjhgkjhgkhgkhgkj",
+            "cta": {
+                "text": "Get Started",
+                "onClick": null
+            }
+        },
+        {
+            "imageSrc": "/illustrations/Sample_3_illustration_sample.webp",
+            "imageAlt": "Unjustified Landing Page",
+            "title": "Unjustified Landing Page",
+            "description": "Your product is awesome, but your landing page doesn't do it justice?",
+            "cta": {
+                "text": "Fix It",
+                "onClick": null
+            }
+        }
+    ]
+}
