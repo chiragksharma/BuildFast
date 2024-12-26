@@ -25,9 +25,9 @@ export default function Home() {
         {/* <HeroCenter/> */}
         {/* <FeaturedIn /> */}
         <MarqueeFeaturedIn speed={15}/>
-        {/* <ProblemsComponents /> */}
+        <ProblemsComponents />
         {/* <ImageCardGrid/> */}
-        <NumberCardGrid/>
+        {/* <NumberCardGrid/> */}
         <FeaturesListicle />
         <About />
         <Pricing />
