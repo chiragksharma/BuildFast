@@ -3,6 +3,7 @@
     "heading": "Stop Wasting Time, Start Building Faster",
     "problemsList": [
         {
+            "iconName": "Smiley",
             "imageSrc": "/illustrations/problem_1_illustration_sample.webp",
             "imageAlt": "Time-Consuming",
             "title": "Time-Consuming",
@@ -13,16 +14,18 @@
             }
         },
         {
+            "iconName": "Star",
             "imageSrc": "/illustrations/Sample_2_illustration_sample.webp",
             "imageAlt": "No Starting Point",
             "title": "No Starting Point",
-            "description": "You have a crazy idea but don't know where to start? jhgkhkjhgkhgkjhgjkhgjhg khgkhgkhg kjhgkhgkh kjghjgkhjg kjhgkhgk kjhghgkjhgk jhgkhgkjjhg kjhgkhgkjhgkjhgkhgkhgkj",
+            "description": "You have a crazy idea but don't know where to start? jhgjhjh",
             "cta": {
                 "text": "Get Started",
                 "onClick": null
             }
         },
         {
+            "iconName": "Heart",
             "imageSrc": "/illustrations/Sample_3_illustration_sample.webp",
             "imageAlt": "Unjustified Landing Page",
             "title": "Unjustified Landing Page",

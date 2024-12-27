@@ -15,6 +15,7 @@ import HeroCenter from "@components/Hero/HeroCenter";
 import MarqueeFeaturedIn from "@components/featuredIn/marqeeLogos";
 import ImageCardGrid from "@components/ImageCardsGrid";
 import NumberCardGrid from "@components/NumberCardsGrid";
+import IconCardGrid from "@components/IconCardsGrid";
 
 export default function Home() {
  
@@ -25,9 +26,10 @@ export default function Home() {
         {/* <HeroCenter/> */}
         {/* <FeaturedIn /> */}
         <MarqueeFeaturedIn speed={15}/>
-        <ProblemsComponents />
+        {/* <ProblemsComponents /> */}
         {/* <ImageCardGrid/> */}
         {/* <NumberCardGrid/> */}
+        <IconCardGrid/>
         <FeaturesListicle />
         <About />
         <Pricing />

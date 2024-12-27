@@ -74,7 +74,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
                             {isExpanded
                                 ? description
                                 : truncateText(description, 70)} {/* Adjust maxLength as needed */}
-                            {description.length > 100 && ( // Show the toggle button only if the text is longer
+                            {description.length > 70 && ( // Show the toggle button only if the text is longer
                                 <button
                                     onClick={toggleExpanded}
                                     className="text-foreground-hsl/60 ml-1 "
