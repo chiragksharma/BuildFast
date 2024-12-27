@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "title": "Feature One",
+      "description": "Description for feature one.",
+      "videoUrl": "https://pearai.b-cdn.net/pearai-search.mp4",
+      "duration": 5000
+    },
+    {
+      "id": 2,
+      "title": "Feature Two",
+      "description": "Description for feature two.",
+      "videoUrl": "https://pearai.b-cdn.net/pearai-search.mp4",
+      "duration": 5000
+    }
+  ]
+  
