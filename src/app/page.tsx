@@ -17,6 +17,7 @@ import ImageCardGrid from "@components/ImageCardsGrid";
 import NumberCardGrid from "@components/NumberCardsGrid";
 import IconCardGrid from "@components/IconCardsGrid";
 import FeaturesCarousel from "@components/FeatureCarousel";
+import ImageContainer from "@components/atoms/Cards/Image/ImageContainer";
 
 export default function Home() {
  
@@ -26,6 +27,7 @@ export default function Home() {
         <Hero />
         {/* <HeroCenter/> */}
         {/* <FeaturedIn /> */}
+
         <MarqueeFeaturedIn speed={15}/>
         <ProblemsComponents />
         <FeaturesListicle />
