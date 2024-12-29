@@ -40,6 +40,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({
                 alignItems: 'center',
                 justifyContent: 'center',
                 width: containerWidth,
+                maxWidth: '100%',
                 background: hasBorder ? borderGradient : backgroundColor,
                 padding: hasBorder ? '4px' : undefined, // Padding for gradient border
                 borderRadius,
@@ -53,6 +54,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({
                     overflow: 'hidden',
                     width: '100%',
                     height: containerHeight,
+                    maxHeight: '100%', // Ensure it doesn't overflow
                     background: backgroundColor, // Optional background for the image container
                 }}
             >

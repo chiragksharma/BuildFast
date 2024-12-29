@@ -27,7 +27,8 @@ export default function Home() {
         <Hero />
         {/* <HeroCenter/> */}
         {/* <FeaturedIn /> */}
-
+        
+       
         <MarqueeFeaturedIn speed={15}/>
         <ProblemsComponents />
         <FeaturesListicle />
