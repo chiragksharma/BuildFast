@@ -1,6 +1,7 @@
 <!-- LOGO -->
 <h1 align="center">
-  <img src="https://github.com/user-attachments/assets/fe853809-ba8b-400b-83ab-a9a0da25be8a" alt="BuildFast Logo" width="128">
+  <img src="https://github.com/user-attachments/assets/6df40de7-0d91-453b-b783-b355bc47a8c9" alt="BuildFast Logo" width="128">
+
   <br>BuildFast
 </h1>
 
