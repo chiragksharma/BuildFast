@@ -32,6 +32,7 @@ export default function Home() {
         <MarqueeFeaturedIn speed={15}/>
         <ProblemsComponents />
         <FeaturesListicle />
+        {/* <FeaturesCarousel/> */}
         <About />
         <Pricing />
         <Testimonials11 />

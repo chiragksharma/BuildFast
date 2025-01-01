@@ -1,17 +1,23 @@
 [
-    {
-      "id": 1,
-      "title": "Feature One",
-      "description": "Description for feature one.",
-      "videoUrl": "https://pearai.b-cdn.net/pearai-search.mp4",
-      "duration": 5000
-    },
-    {
-      "id": 2,
-      "title": "Feature Two",
-      "description": "Description for feature two.",
-      "videoUrl": "https://pearai.b-cdn.net/pearai-search.mp4",
-      "duration": 5000
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "AI-Powered Assistant for Landing Pages",
+    "description": "Leverage the ChatGPT AI assistant to create high-converting, SEO-optimized landing pages effortlessly. Get recommendations and live assistance tailored to your SaaS needs.",
+    "videoUrl": "/videos/BuildFast_Chatgpt_assistant.mp4",
+    "duration": 30000
+  },
+  {
+    "id": 2,
+    "title": "One-Click Theme Customization",
+    "description": "Switch between pre-built themes instantly or create custom themes to match your SaaS brand effortlessly.",
+    "videoUrl": "/videos/BuildFast_ThemeChange.mp4",
+    "duration": 7000
+  },
+  {
+    "id": 3,
+    "title": "Add UI Components in Seconds",
+    "description": "Easily get pre-designed UI components into your landing pages. Customize them to align with your branding and functionality without touching a single line of code.",
+    "videoUrl": "/videos/BuildFast_custom_ui_components.mp4",
+    "duration": 22000
+  }
+]
