@@ -209,85 +209,87 @@ html[data-theme="GreenGlow"] {
     --button-text-color: 0 0% 100%; /* White button text */
 }
 html[data-theme="daylight"] {
-  --primary-color: 204 90% 50%; /* Brighter blue for better contrast */
-  --background-primary: 204 70% 96%; /* Softer light blue for improved readability */
-  --background-secondary: 0 0% 98%; /* Off-white for subtle contrast sections */
-  --elements-secondary: 204 80% 88%; /* Slightly darker blue for secondary elements */
-  --foreground-hsl: 0 0% 15%; /* Darker gray for text for improved contrast */
-  --foreground-opposite: 0 0% 100%; /* White for opposite elements like buttons and icons */
-  --cta-color: 204 90% 50%; /* Matching vibrant blue for CTAs */
+  --primary-color: 43 80% 45%; /* Vibrant warm golden-yellow for primary highlights */
+  --background-primary: 43 60% 96%; /* Soft warm yellow for primary background */
+  --background-secondary: 120 30% 94%; /* Pale green for subtle contrast sections */
+  --elements-secondary: 43 50% 80%; /* Light golden tone for secondary elements */
+  --foreground-hsl: 0 0% 20%; /* Deep gray for strong text readability */
+  --foreground-opposite: 0 0% 100%; /* White for high-contrast elements */
+  --cta-color: 43 80% 45%; /* Vibrant golden-yellow for CTAs */
 
-  --cards-bg: 204 80% 94%; /* Light blue for card backgrounds */
-  --cards-bg-secondary: 204 70% 90%; /* Slightly darker blue for card contrasts */
+  --cards-bg: 43 60% 95%; /* Light golden tone for card backgrounds */
+  --cards-bg-secondary: 120 30% 92%; /* Muted pale green for secondary cards */
   
-  --border-color-primary: 204 70% 60%; /* Medium blue for borders */
+  --border-color-primary: 43 50% 70%; /* Subtle golden-yellow for borders */
 
-  --text-color-headlines: 204 90% 40%; /* Vibrant blue for headlines */
-  --text-color-secondary: 204 40% 30%; /* Deep muted blue for secondary text */
-  --icons-primary: 204 80% 40%; /* Strong blue for icons */
+  --text-color-headlines: 43 90% 40%; /* Warm golden for headlines */
+  --text-color-secondary: 43 50% 30%; /* Muted golden for secondary text */
+  --icons-primary: 43 80% 45%; /* Warm golden tone for icons */
 
-  --btn-color-primary: 204 90% 50%; /* Bright blue for primary buttons */
-  --btn-color-secondary: 204 50% 70%; /* Softer blue for secondary buttons */
-  --btn-color-disabled: 204 20% 85%; /* Subtle light blue for disabled buttons */
-  --pop-colors-primary: 48 90% 50%; /* Bright yellow for warning states */
+  --btn-color-primary: 43 80% 45%; /* Vibrant golden-yellow for primary buttons */
+  --btn-color-secondary: 43 50% 70%; /* Softer golden hue for secondary buttons */
+  --btn-color-disabled: 43 30% 85%; /* Pale yellow for disabled buttons */
+  --pop-colors-primary: 348 90% 55%; /* Soft coral pink for warning states */
 
-  --navbar-bg: 204 80% 94%; /* Light blue for navbar */
-  --logo-text-color: 204 90% 50%; /* Bright blue for logo text */
-  --logo-icon-color: 204 70% 40%; /* Medium blue for logo icon */
-  --navbar-text-color: 204 40% 30%; /* Deep muted blue for text */
-  --navbar-icon-color: 204 90% 50%; /* Vibrant blue for icons */
-  --navbar-hover-link-color: 204 70% 45%; /* Medium blue for hover states */
-  --navbar-border-color: 204 80% 85%; /* Subtle light blue for navbar borders */
-  --nav-cta-btn-bg: 204 90% 50%; /* Bright blue for CTA buttons */
-  --mobile-menu-bg: 204 80% 94%; /* Matching light blue for mobile menu background */
-  --mobile-menu-text-color: 204 90% 50%; /* Bright blue for mobile menu text */
+  --navbar-bg: 43 60% 96%; /* Soft warm yellow for navbar */
+  --logo-text-color: 43 80% 45%; /* Vibrant golden-yellow for logo text */
+  --logo-icon-color: 43 70% 40%; /* Rich golden tone for logo icon */
+  --navbar-text-color: 43 50% 30%; /* Muted golden for navbar text */
+  --navbar-icon-color: 43 80% 45%; /* Warm golden-yellow for navbar icons */
+  --navbar-hover-link-color: 43 60% 40%; /* Muted golden-yellow for hover states */
+  --navbar-border-color: 43 50% 80%; /* Subtle golden tone for navbar borders */
+  --nav-cta-btn-bg: 43 80% 45%; /* Vibrant golden-yellow for CTA buttons */
+  --mobile-menu-bg: 43 60% 96%; /* Soft warm yellow for mobile menu background */
+  --mobile-menu-text-color: 43 80% 45%; /* Vibrant golden-yellow for mobile menu text */
 
-  --hero-headline-text-color: 204 40% 30%; /* Deep muted blue for hero headlines */
+  --hero-headline-text-color: 43 50% 30%; /* Muted golden for hero headlines */
 
-  --primary-text-color: 0 0% 10%; /* Darker gray for improved readability */
-  --button-border-color: 204 70% 40%; /* Medium blue for borders */
+  --primary-text-color: 0 0% 15%; /* Deep gray for readability */
+  --button-border-color: 43 60% 40%; /* Muted golden tone for button borders */
   --button-text-color: 0 0% 100%; /* White for button text */
 }
+
 html[data-theme="emerald"] {
-  --primary-color: 140 85% 38%; /* Rich emerald green for better contrast */
-  --background-primary: 140 55% 93%; /* Softer mint green for background */
-  --background-secondary: 140 40% 85%; /* Deeper pastel green for contrast */
-  --elements-secondary: 140 50% 78%; /* Balanced emerald green for secondary elements */
-  --foreground-hsl: 0 0% 15%; /* Dark gray for enhanced contrast with light backgrounds */
-  --foreground-opposite: 0 0% 100%; /* White for high contrast */
-  --cta-color: 140 85% 38%; /* Matching emerald green for CTAs */
+  --primary-color: 140 85% 25%; /* Deep emerald green */
+  --background-primary: 140 20% 12%; /* Dark forest green for primary background */
+  --background-secondary: 140 30% 18%; /* Muted green for secondary backgrounds */
+  --elements-secondary: 140 40% 22%; /* Slightly lighter green for secondary elements */
+  --foreground-hsl: 0 0% 96%; /* Light gray/white for readable text */
+  --foreground-opposite: 0 0% 10%; /* Deep black for contrast */
+  --cta-color: 140 85% 30%; /* Rich emerald green for CTAs */
 
-  --cards-bg: 140 55% 95%; /* Light mint green for card backgrounds */
-  --cards-bg-secondary: 140 40% 88%; /* Slightly darker green for card contrasts */
+  --cards-bg: 140 20% 14%; /* Very dark green for card backgrounds */
+  --cards-bg-secondary: 140 25% 18%; /* Slightly lighter dark green for secondary cards */
   
-  --border-color-primary: 140 50% 70%; /* Medium emerald green for borders */
+  --border-color-primary: 140 40% 25%; /* Medium emerald green for borders */
 
-  --text-color-headlines: 140 85% 30%; /* Bold emerald green for headlines */
-  --text-color-secondary: 140 50% 35%; /* Muted emerald green for secondary text */
-  --icons-primary: 140 70% 35%; /* Deep emerald green for icons */
+  --text-color-headlines: 140 85% 35%; /* Bright emerald green for headlines */
+  --text-color-secondary: 140 50% 50%; /* Softer muted green for secondary text */
+  --icons-primary: 140 60% 40%; /* Medium emerald green for icons */
 
-  --btn-color-primary: 140 85% 38%; /* Vibrant emerald green for primary buttons */
-  --btn-color-secondary: 140 50% 70%; /* Softer green for secondary buttons */
-  --btn-color-disabled: 140 25% 85%; /* Light green for disabled buttons */
-  --pop-colors-primary: 0 100% 50%; /* Bright red for error states or warnings */
+  --btn-color-primary: 140 85% 30%; /* Vibrant emerald green for primary buttons */
+  --btn-color-secondary: 140 50% 25%; /* Darker green for secondary buttons */
+  --btn-color-disabled: 140 30% 18%; /* Muted green for disabled buttons */
+  --pop-colors-primary: 0 100% 50%; /* Bright red for warnings or errors */
 
-  --navbar-bg: 140 55% 93%; /* Soft mint green for navbar */
-  --logo-text-color: 140 85% 38%; /* Rich emerald green for logo text */
-  --logo-icon-color: 140 70% 35%; /* Deep emerald green for logo icon */
-  --navbar-text-color: 140 50% 35%; /* Muted emerald green for text */
-  --navbar-icon-color: 140 85% 38%; /* Rich emerald green for icons */
-  --navbar-hover-link-color: 140 70% 45%; /* Medium emerald green for hover states */
-  --navbar-border-color: 140 60% 80%; /* Subtle mint green for borders */
-  --nav-cta-btn-bg: 140 85% 38%; /* Vibrant emerald green for CTA buttons */
-  --mobile-menu-bg: 140 55% 93%; /* Soft mint green for mobile menu background */
-  --mobile-menu-text-color: 140 85% 38%; /* Rich emerald green for mobile menu text */
+  --navbar-bg: 140 20% 12%; /* Dark forest green for navbar */
+  --logo-text-color: 140 85% 35%; /* Bright emerald green for logo text */
+  --logo-icon-color: 140 70% 45%; /* Medium emerald green for logo icon */
+  --navbar-text-color: 0 0% 96%; /* Light gray/white for text in navbar */
+  --navbar-icon-color: 140 85% 35%; /* Bright emerald green for navbar icons */
+  --navbar-hover-link-color: 140 60% 50%; /* Lighter green for hover states */
+  --navbar-border-color: 140 25% 20%; /* Subtle green for navbar borders */
+  --nav-cta-btn-bg: 140 85% 30%; /* Vibrant emerald green for CTA buttons in navbar */
+  --mobile-menu-bg: 140 20% 12%; /* Dark forest green for mobile menu */
+  --mobile-menu-text-color: 0 0% 96%; /* Light gray/white for mobile menu text */
 
-  --hero-headline-text-color: 140 50% 35%; /* Muted emerald green for hero headlines */
+  --hero-headline-text-color: 0 0% 96%; /* Light gray for hero headlines */
 
-  --primary-text-color: 0 0% 10%; /* Dark gray for readability */
-  --button-border-color: 140 70% 35%; /* Deep emerald green for button borders */
-  --button-text-color: 0 0% 100%; /* White for button text */
+  --primary-text-color: 0 0% 95%; /* Light gray for text */
+  --button-border-color: 140 70% 40%; /* Rich emerald green for button borders */
+  --button-text-color: 0 0% 96%; /* Light gray/white for button text */
 }
+
 
 
 
